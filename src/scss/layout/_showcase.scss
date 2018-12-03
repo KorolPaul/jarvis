@@ -1,0 +1,35 @@
+.showcase {
+    min-height: 270px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        background: url(#{$img-path}/showcase-bg.png) repeat-x 0 bottom;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 12px;
+    }
+
+    &_title {
+        color: $color;
+        margin: 0;
+        font-size: 72px;
+        position: relative;
+        z-index: 1;
+        text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    }
+    &_image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        opacity: .4;
+    }
+}

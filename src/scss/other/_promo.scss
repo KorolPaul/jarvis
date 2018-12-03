@@ -1,0 +1,16 @@
+.promo {
+    padding: 80px;
+    text-align: center;
+
+    &_button {
+        @extend %button;
+        color: $color;
+        transition: .2s ease opacity;
+
+        &:hover {
+            color: $color;
+            opacity: .7;
+            text-decoration: none;
+        }
+    }
+}

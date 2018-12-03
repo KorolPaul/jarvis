@@ -1,0 +1,383 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="HandheldFriendly" content="true">
+    <meta property="og:title" content="#{data.title}">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="300">
+    <meta property="twitter:description" content="">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_top">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-md-auto">
+                        <span class="phone-number">8-800-000-00-00</span>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <div class="working-hours">
+                            <span>
+                                Opening hours from
+                                <span class="working-hours_value">9:00</span> am to
+                                <span class="working-hours_value">01:00</span> pm
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <div class="search">
+                            <button class="search_icon"></button>
+                            <input type="text" class="search_input" placeholder="Search and hit return...">
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="dropdown_link">English</button>
+                            <div class="dropdown_list">
+                                <a href="#" class="dropdown_list-link">Spanish</a>
+                                <a href="#" class="dropdown_list-link">Chinise</a>
+                                <a href="#" class="dropdown_list-link">French</a>
+                                <a href="#" class="dropdown_list-link">Russian</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropdown_link">My account</button>
+                            <div class="dropdown_list">
+                                <a href="/login.html" class="dropdown_list-link">Log in</a>
+                                <a href="/signup.html" class="dropdown_list-link">Sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="container header_holder">
+                <a href="#" class="logo">Family Steak House</a>
+                <button class="menu-toggle col-auto"></button>
+                <nav class="menu col-auto col-lg-8 menu">
+                    <a href="#" class="menu_link">HOME</a>
+                    <a href="#" class="menu_link">STEAK MENU</a>
+                    <a href="#" class="menu_link">ABOUT US</a>
+                    <a href="#" class="menu_link">BLOG</a>
+                    <a href="#" class="menu_link">CONTACTS</a>
+                </nav>
+            </div>
+            <img src="src/img/dark-bg.jpg" alt="">
+            <div class="header_bottom-showcase">
+                <h1 class="header_bottom-title">STEAK HOUSE CART</h1>
+            </div>
+            <button class="cart-button">
+                <div class="cart-button_value">3</div>
+            </button>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="breadcrumbs">
+                        <a href="" class="breadcrumbs_link">Home</a>
+                        <span class="breadcrumbs_page">Cart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="cart">
+                        <table class="cart_table">
+                            <thead>
+                                <tr>
+                                    <th>steak</th>
+                                    <th>price</th>
+                                    <th>quantity</th>
+                                    <th>total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src=" https://via.placeholder.com/160x155" alt="" class="cart_table-image">
+                                        <p class="cart_table-title">STEAK "NORTEN CROWN"</p>
+                                        <p><strong>Garnish:</strong> French fries</p>
+                                        <p><strong>Sauce:</strong> Tomato</p>
+                                        <p><strong>Weight:</strong> 180 / 200 / 20 gramm</p>
+                                    </td>
+                                    <td>
+                                        <p class="cart_table-price">$ 12<sup>90</sup></p>
+                                    </td>
+                                    <td>
+                                        <div class="number number__big">
+                                            <button class="number_button number_button__minus"></button>
+                                            <input class="number_input" value="2">
+                                            <button class="number_button number_button__plus"></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="cart_table-price">
+                                            $ 12<sup>90</sup>
+                                            <button class="cart_table-delete"></button>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src=" https://via.placeholder.com/160x155" alt="" class="cart_table-image">
+                                        <p class="cart_table-title">STEAK "RIBEYE"</p>
+                                        <p><strong>Garnish:</strong> French fries</p>
+                                        <p><strong>Sauce:</strong> Tomato</p>
+                                        <p><strong>Weight:</strong> 180 / 200 / 20 gramm</p>
+                                    </td>
+                                    <td>
+                                        <p class="cart_table-price">$ 13<sup>20</sup></p>
+                                    </td>
+                                    <td>
+                                        <div class="number number__big">
+                                            <button class="number_button number_button__minus"></button>
+                                            <input class="number_input" value="1">
+                                            <button class="number_button number_button__plus"></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="cart_table-price">
+                                            $ 13<sup>20</sup>
+                                            <button class="cart_table-delete"></button>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="cart_forms">
+                            <div class="cart_form">
+                                <p class="cart_form-title">CALCULATE SHIPPING</p>
+                                <form action="" class="form">
+                                    <div class="form_fields form_fields__small-indent">
+                                        <div class="form_fields-row">
+                                            <div class="form_item form_item__wide">
+                                                <label for="">CITY*</label>
+                                                <input type="text" class="form_field">
+                                            </div>
+                                        </div>
+                                        <div class="form_fields-row">
+                                            <div class="form_item form_item__wide">
+                                                <label for="">ADRESS*</label>
+                                                <input type="text" class="form_field">
+                                            </div>
+                                        </div>
+                                        <div class="form_item">
+                                            <button class="button">calculate</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="cart_form">
+                                <p class="cart_form-title">PROMOTIONAL CODE</p>
+                                <form action="" class="form">
+                                    <div class="form_fields form_fields__small-indent">
+                                        <div class="form_fields-row">
+                                            <div class="form_item form_item__wide">
+                                                <label for="">ENTER THE PROMOTIONAL CODE</label>
+                                                <input type="text" class="form_field">
+                                            </div>
+                                        </div>
+                                        <div class="form_item">
+                                            <button class="button">enter</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="cart_form">
+                                <p class="cart_form-title">CART TOTALS</p>
+                                <form action="" class="form">
+                                    <div class="form_fields form_fields__small-indent">
+                                        <div class="form_fields-row">
+                                            <div class="form_item form_item__wide">
+                                                <label for="">CART SUBTOTASL: $ 64<sup>80</sup></label>
+                                                <label for="">SHIPPING: 0 $ (Free)</label>
+                                                <label for="">SHIPPING: NONE</label>
+                                                <p class="cart_form-price">Order Total: $ 64<sup>80</sup></p>
+                                            </div>
+                                        </div>
+                                        <div class="form_item">
+                                            <button class="button">checkout</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="title">RELATED STEAK</p>
+                    <div class="catalog">
+                        <div class="catalog_grid">
+                            <a href="/product" class="product-card">
+                                <img src="https://via.placeholder.com/262x252" alt="" class="product-card_image">
+                                <div class="product-card_content">
+                                    <p class="product-card_title">STEAK "MACHETE"</p>
+                                    <p class="product-card_text"><strong>Composition</strong>: Marbled beef, salt,
+                                        special spices, red onion, hot pepper, cranberry</p>
+                                    <p class="product-card_price">$ 12<sup>90</sup></p>
+                                    <button class="product-card_button">add to cart</button>
+                                </div>
+                            </A>
+                            <a href="/product" class="product-card">
+                                <img src="https://via.placeholder.com/262x252" alt="" class="product-card_image">
+                                <div class="product-card_content">
+                                    <p class="product-card_title">STEAK "NEW YORK"</p>
+                                    <p class="product-card_text"><strong>Composition</strong>: Marbled beef, salt,
+                                        special spices, red onion, hot pepper, cranberry</p>
+                                    <p class="product-card_price">$ 14<sup>50</sup></p>
+                                    <button class="product-card_button">add to cart</button>
+                                </div>
+                            </A>
+                            <a href="/product" class="product-card">
+                                <img src="https://via.placeholder.com/262x252" alt="" class="product-card_image">
+                                <div class="product-card_content">
+                                    <p class="product-card_title">STEAK "RIBEYE"</p>
+                                    <p class="product-card_text"><strong>Composition</strong>: Marbled beef, salt,
+                                        special spices, red onion, hot pepper, cranberry</p>
+                                    <p class="product-card_price">$ 16<sup>80</sup></p>
+                                    <button class="product-card_button">add to cart</button>
+                                </div>
+                            </A>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer_column col-12 col-md-4">
+                    <img class="footer_logo" src="src/img/logo.png" alt="">
+                    <p>Hi! My name is John Smith and I am the owner of a family steak house "" Fed cowboy. "Cooking
+                        steaks for us it is the business of life. Even my grandfather grilled steaks are excellent.
+                        Some recipes steaks are preserved from those times and for them we are preparing our meals.</p>
+                    <p>Here you can enjoy a variety of steaks with different sauces and garnishes. Thank you for
+                        choosing "Fed cowboy”</p>
+                </div>
+                <div class="footer_column col-12 col-md-4">
+                    <div class="recent-posts">
+                        <p class="recent-posts_title">Recent posts</p>
+                        <a href="#" class="recent-posts_item">
+                            <img src=" https://via.placeholder.com/65x65" alt="" class="recent-posts_item-image">
+                            <span class="recent-posts_item-title">How to cook the perfect steak</span>
+                            <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas temporibus esse illo doloribus maiores </p>
+                        </a>
+                        <a href="#" class="recent-posts_item">
+                            <img src=" https://via.placeholder.com/65x65" alt="" class="recent-posts_item-image">
+                            <span class="recent-posts_item-title">Recipe Ribeye steak</span>
+                            <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas temporibus esse illo doloribus maiores </p>
+                        </a>
+                        <a href="#" class="recent-posts_item">
+                            <img src=" https://via.placeholder.com/65x65" alt="" class="recent-posts_item-image">
+                            <span class="recent-posts_item-title">Choosing the right meat for steak</span>
+                            <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quas temporibus esse illo doloribus maiores </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_column col-12 col-md-4">
+                    <p class="footer_title">Follow us</p>
+                    <p class="footer_subtitle">Our instagram</p>
+                    <img src=" https://via.placeholder.com/340x360" alt="">
+                    <div class="footer_social">
+                        <a href="#" class="footer_social-icon">
+                            <img src="src/img/social/tw.png" alt="">
+                        </a>
+                        <a href="#" class="footer_social-icon">
+                            <img src="src/img/social/fb.png" alt="">
+                        </a>
+                        <a href="#" class="footer_social-icon">
+                            <img src="src/img/social/g+.png" alt="">
+                        </a>
+                        <a href="#" class="footer_social-icon">
+                            <img src="src/img/social/insta.png" alt="">
+                        </a>
+                        <a href="#" class="footer_social-icon">
+                            <img src="src/img/social/ln.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="widjet">
+        <button class="widjet_close">⨯</button>
+        <p class="title">CART TOTALS</p>
+        <table class="widjet_table">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src=" https://via.placeholder.com/100x100" alt="" class="widjet_table-image">
+                    </td>
+                    <td>
+                        <p class="widjet_table-title">
+                            STEAK "MACHETE"
+                            <button class="widjet_table-delete">⨯</button>
+                        </p>
+                        <p class="widjet_table-price">$ 12<sup>90</sup></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src=" https://via.placeholder.com/100x100" alt="" class="widjet_table-image">
+                    </td>
+                    <td>
+                        <p class="widjet_table-title">
+                            STEAK "RIBEYE"
+                            <button class="widjet_table-delete">⨯</button>
+                        </p>
+                        <p class="widjet_table-price">$ 14<sup>50</sup></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src=" https://via.placeholder.com/100x100" alt="" class="widjet_table-image">
+                    </td>
+                    <td>
+                        <p class="widjet_table-title">
+                            STEAK "NORTEN CROW"
+                            <button class="widjet_table-delete">⨯</button>
+                        </p>
+                        <p class="widjet_table-price">$ 13<sup>70</sup></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="widjet_bottom">
+            <span class="widjet_bottom-title">ORDER TOTAL:</span>
+            <span class="widjet_bottom-value">$ 54 <sup>00</sup></span>
+        </div>
+        <div class="widjet_bottom">
+            <a href="/cart.html" class="widjet_button">view cart</a>
+            <a href="/checkout.html" class="widjet_button">checkout</a>
+        </div>
+    </div>
+
+    <script src="src/js/jquery-3.3.1.min.js"></script>
+    <script src="src/js/bootstrap-slider.min.js"></script>
+    <script src="src/js/chosen.jquery.min.js"></script>
+    <script src="src/js/slick.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>

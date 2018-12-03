@@ -1,0 +1,48 @@
+.recent-posts {
+    padding: 15px 20px;
+    border: 2px solid $bright_color;
+    border-radius: 5px;
+    margin: 0 0 40px;
+
+    .footer & {
+        border: none;
+        padding: 0 10px 0 0;
+    }
+
+    &_title {
+        @extend %heading-2;
+        margin-bottom: 20px;
+
+        .footer & {
+            color: $color;
+            margin: 0 0 42px;
+            line-height: 1;
+        }
+    }
+    &_item {
+        @extend %clearfix;
+        color: $color;
+        display: block;
+        padding: 0 0 12px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &_item-image {
+        border: 2px solid $bright_color;
+        border-radius: 50%;
+        height: 65px;
+        width: 65px;
+        margin: 0 20px 0 0;
+        float: left;
+    }
+    &_item-title {
+        font-weight: 900;
+        display: block;
+        margin: 0 0 0 91px;
+    }
+    &_item-text {
+        margin: 0 0 0 91px;
+    }
+}

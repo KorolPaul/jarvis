@@ -1,0 +1,85 @@
+.cart-form {
+    border: 1px solid $link_color;
+    border-radius: 4px;
+
+    &__mini {
+        border: none;
+    }
+    &_title {
+        background: $link_color;
+        padding: 25px 45px;
+        color: $color;
+        font: bold 26px $font-family__heading;
+    }
+    &_content {
+        padding: 0 15px 30px;
+        @include tablet {
+            min-width: 500px;
+            padding: 25px 45px 50px;
+        }
+    }
+    &_table {
+        width: 100%;
+
+        td {
+            padding: 15px 0;
+        }
+        td + td {
+            padding-left: 10px;
+            width: 75px;
+        }
+        tr:not(:first-child) td {
+            border-top: 1px solid #e0e0e0;
+        }
+    }
+    &_image {
+        float: left;
+        width: 55px;
+    }
+    &_table-title {
+        font: bold 16px $font-family__heading;
+        margin: 5px 0 5px 75px;
+    }
+    &_table-sum {
+        color: $link_color;
+        display: block;
+        font: bold 16px $font-family__heading;
+        margin: 0 0 0 75px;
+    }
+    &_bottom {
+        padding: 25px 0 0;
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            width: 100%;
+            @include tablet {
+                width: auto;
+            }
+        }
+    }
+    &_bottom-title {
+        color: $link_color;
+        font: bold 26px $font-family__heading;
+    }
+    &_bottom-col + &_bottom-col {
+        margin: 10px 0 0;
+        @include tablet {
+            margin: 0;
+            text-align: right;
+        }
+    }
+    &_mobile {
+        @include tablet {
+            display: none;
+        }
+    }
+    &_desktop {
+        display: none;
+        @include tablet {
+            display: block;
+        }
+    }
+}

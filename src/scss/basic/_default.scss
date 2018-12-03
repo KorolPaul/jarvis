@@ -1,0 +1,67 @@
+body {
+    background: url(#{$img_path}/bg.jpg) 0 center repeat;
+    background-size: 50% auto;
+    color: $color;
+    font: #{$font-size}/24px $font-family;
+}
+
+a {
+    color: $link_color;
+    transition: .2s ease-in-out color;
+
+    &:hover {
+        color: $link_color__hover;
+        outline: none;
+    }
+}
+
+p {
+    line-height: 1.75;
+    margin: 0 0 10px;
+}
+
+ul,
+ol {
+    padding: 0 0 0 20px;
+}
+
+ul {
+    padding: 0;
+
+    li:not([class]) {
+        line-height: 28px;
+        list-style: none;
+        padding: 0 0 0 15px;
+        margin: 0 0 15px;
+        position: relative;
+
+        &::before {
+            content: '>';
+            color: $bright_color;
+            font-weight: bold;
+            position: absolute;
+            top: -1px;
+            left: 0;
+        }
+    }
+}
+
+blockquote {
+    background: url(#{$img-path}/quote.svg) no-repeat;
+    font-size: 20px;
+    line-height: 1.75;
+    margin: 0 0 20px;
+    padding: 20px 0 0 30px;
+}
+
+img {
+    max-width: 100%;
+}
+
+button,
+input,
+textarea {
+    &:focus {
+        outline: none;
+    }
+}

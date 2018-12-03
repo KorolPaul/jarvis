@@ -1,0 +1,91 @@
+.header {
+    &_top {
+        background: $bright_color;
+        padding: 8px 0;
+        text-align: center;
+    }
+    &_bottom {
+        background-color: #6a6a6a;
+        position: relative;
+
+        &::before {
+            content: '';
+            background: url(#{$img_path}/showcase-bg-top.png) 0 top repeat-x;
+            height: 10px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        &::after {
+            content: '';
+            background: url(#{$img_path}/showcase-bg-bottom.png) 0 bottom repeat-x;
+            height: 10px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+    &_bottom-showcase {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+
+    }
+    &_bottom-title {
+        color: $color;
+        background: url(#{$img_path}/steak.svg) center bottom no-repeat;
+        font: bold 45px $font-family__heading;
+        position: relative;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0 0 60px;
+
+        &::before {
+            content: '';
+            border-bottom: 2px solid #969696;
+            width: 100px;
+            position: absolute;
+            bottom: 17px;
+            left: 50%;
+            transform: translate(-150%, 0);
+        }
+        &::after {
+            content: '';
+            border-bottom: 2px solid #969696;
+            width: 100px;
+            position: absolute;
+            bottom: 17px;
+            right: 50%;
+            transform: translate(150%, 0);
+        }
+    }
+    &_bottom-link {
+        @extend %button;
+        font-size: $font-size;
+        display: inline-block;
+        margin: 26px 0 0;
+        color: $color;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &_other {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &_holder {
+        position: relative;
+    }
+    &_row {
+        flex-wrap: nowrap;
+    }
+}

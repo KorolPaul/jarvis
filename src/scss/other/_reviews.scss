@@ -1,0 +1,95 @@
+.reviews {
+    display: flex;
+    justify-content: space-between;
+
+    &_list {
+        width: 60%;
+    }
+    &_form {
+        width: 30%;
+    }
+    &_form-title {
+        @extend %heading-1;
+        text-align: center;
+        margin: 0 0 30px;
+    }
+}
+
+.review {
+    position: relative;
+
+    &_name {
+        color: $bright_color;
+        font: 16px/1 $font-family__heading;
+        margin: 0 0 15px;
+    }
+    &_date {
+        color: $gray_color;
+        font: 12px/1 $font-family__heading;
+        margin: 0 0 10px;
+    }
+    &_rating {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &_text {
+        p {
+            margin: 0 0 20px;
+        }
+    }
+}
+
+.reviews-slider {
+    padding: 0 0 35px;
+
+    &_item {
+        margin: 0 15px;
+    }
+    &_image {
+        border: 2px solid $bright_color;
+        border-radius: 50%;
+        margin: 0 auto 55px;
+        display: block;
+    }
+    &_content {
+        border: 2px solid $bright_color;
+        border-top: none;
+        padding: 20px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            border-top: 2px solid $bright_color;
+            left: 0;
+            top: 0;
+            right: 0;
+            clip: rect(auto, 82px, auto, auto);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            border-top: 2px solid $bright_color;
+            left: 0;
+            top: 0;
+            right: 0;
+            clip: rect(auto, auto, auto, 165px);
+        }
+    }
+    &_triangle {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        transform: rotate(45deg) translate(-69%, -2%);
+        border-top: 2px solid $bright_color;
+        border-left: 2px solid $bright_color;
+        left: 50%;
+        top: 0;
+    }
+    &_name {
+        color: $color;
+        font-weight: bold;
+        line-height: 1;
+    }
+}

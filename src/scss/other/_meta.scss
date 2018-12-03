@@ -1,0 +1,56 @@
+.meta {
+    padding: 20px 0 0;
+    margin: 0 0 25px;
+    display: flex;
+    justify-content: space-between;
+
+    &_social {
+        display: inline-block;
+        position: relative;
+        padding: 0 0 0 10px;
+        vertical-align: middle;
+        margin: -4px 0 0 0;
+    }
+    &_social-icon {
+        background: url(#{$img_path}/graph.svg) 0 center no-repeat;
+        display: inline-block;
+        height: 16px;
+        width: 15px;
+        transition: .2s ease all;
+
+        .meta_social:hover & {
+            opacity: .7;
+            transform: rotate(90deg);
+        }
+    }
+    &_social-links {
+        position: absolute;
+        top: -6px;
+        right: 100%;
+        white-space: nowrap;
+        transform: translateX(50%);
+        opacity: 0;
+        transition: .2s ease all;
+
+        .meta_social:hover & {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    &_social-link {
+        margin: 0 5px 0 0;
+        transition: .2s ease-in-out opacity;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+    &_social-image {
+        max-width: none;
+    }
+    &_author-name,
+    &_category-name {
+        color: $bright_color;
+    }
+
+}

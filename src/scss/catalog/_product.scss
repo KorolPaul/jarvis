@@ -1,0 +1,80 @@
+.product {
+    margin: 0 0 60px;
+
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 24px;
+        border-bottom: 1px solid $bright_color;
+    }
+    &_back {
+        color: $color;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &_navigation-prev {
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+        border: 2px solid $bright_color;
+        border-radius: 50%;
+        background: url("#{$img_path}/prev.svg") 13px center no-repeat;
+        transition: .2s ease-in-out border;
+
+        &:hover {
+            border-color: $color;
+        }
+    }
+    &_navigation-next {
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+        border: 2px solid $bright_color;
+        border-radius: 50%;
+        background: url("#{$img_path}/next.svg") 15px center no-repeat;
+        margin: 0 0 0 18px;
+        transition: .2s ease-in-out border;
+
+        &:hover {
+            border-color: $color;
+        }
+    }
+    &_content {
+        padding: 70px 0 0;
+        display: flex;
+        align-items: flex-start;
+    }
+    &_image {
+        margin: 8px 30px 0 0;
+    }
+    &_title {
+        @extend %heading-1;
+        margin: 0 0 16px;
+    }
+    &_price {
+        @extend %heading-1;
+
+        sup {
+            font-size: 16px;
+            margin: 0 0 0 5px;
+            top: -14px;
+        }
+    }
+    &_info-bottom {
+        display: flex;
+    }
+    &_button {
+        @extend %button;
+        color: $color;
+        border-color: $bright_color;
+        margin: 5px 0 0 45px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 30px;
+    }
+}

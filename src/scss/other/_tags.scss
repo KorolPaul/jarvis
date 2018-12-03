@@ -1,0 +1,28 @@
+.tags {
+    padding: 15px 20px;
+    border: 2px solid $bright_color;
+    border-radius: 5px;
+    margin: 0 0 40px;
+
+    &_title {
+        @extend %heading-2;
+        margin-bottom: 20px;
+    }
+}
+
+.tag {
+    border-radius: 5px;
+    color: $color;
+    border: 2px solid $bright_color;
+    margin: 0 10px 12px 0;
+    padding: 3px 10px;
+    display: inline-block;
+    transition: .2s ease-in-out background, 
+                .2s ease-in-out color;
+
+    &:hover {
+        color: $color;
+        background: $bright_color;
+        text-decoration: none;
+    }
+}

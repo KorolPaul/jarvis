@@ -1,0 +1,56 @@
+.comments {
+    margin: 0 0 30px;
+    padding: 0 0 15px;
+    border-bottom: 1px solid $bright_color;
+
+    &_title {
+        @extend %heading-1;
+        margin-bottom: 20px;
+    }
+}
+
+.comment {
+    padding: 0 0 20px;
+    position: relative;
+
+    &__inner {
+        margin-left: 91px;
+        @include tablet {
+            margin-left: 110px;
+        }
+    }
+
+    &_avatar {
+        border: 1px solid $bright_color;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: block;
+        margin: 0 0 10px;
+        float: left;
+    }
+    &_user {
+        color: $bright_color;
+        font: bold 16px $font-family__heading;
+        margin: 0 0 0 30px;
+    }
+    &_date {
+        margin: 0 0 0 16px;
+    }
+    &_reply {
+        background: url(#{$img_path}/reply.svg) no-repeat;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 20px;
+        width: 23px;
+    }
+    &_text {
+        margin: 0 0 0 91px;
+        @include tablet {
+            margin: 0;
+        }
+    }
+}
+
+

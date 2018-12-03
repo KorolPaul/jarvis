@@ -1,0 +1,19 @@
+.logo {
+    background: url(#{$img-path}/logo.png) no-repeat center top;
+    color: $color;
+    font: 12px $font-family__heading;
+    display: inline-block;
+    padding: 28px 0 0;
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+        color: $color;
+        text-decoration: none;
+    }
+}

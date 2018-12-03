@@ -1,0 +1,30 @@
+.tabs {
+    &_header {
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid $bright_color;
+    }
+    &_button {
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        color: $color;
+        font: 20px $font-family__heading;
+        margin: 0 35px;
+
+        &:hover,
+        &.active {
+            color: $bright_color;
+        }
+    }
+    &_content {
+        padding: 26px 0;
+    }
+    &_tab {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}

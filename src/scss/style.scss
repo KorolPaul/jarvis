@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Tokenz
+Theme URI: https://www.templatemonster.com/wordpress-themes/tokenz
+Author: Korol Paul
+Author URI: https://github.com/KorolPaul/
+Description: Cool theme for wordpress
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, custom-background, custom-colors
+Text Domain: tokenz
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+/*
+Base
+1.0 Normalize
+1.1 Google fonts connection
+1.2 Default tags styling
+
+Form elements
+2.0 Buttons
+2.1 Text input
+2.2 Textarea
+2.3 Radio
+2.4 Checkbox
+2.5 Label
+2.6 Number
+
+Layout
+3.0 Headings
+3.1 Header
+3.2 Footer
+3.3 Main menu
+3.4 Social
+3.5 Toggle menu button
+3.6 404 page
+3.7 Logo
+3.8 Currencies
+3.9 Cart
+3.10 Showcase
+3.11 Breadcrumbs
+3.12 Post
+3.13 Gallery
+3.14 Post navigation
+3.15 Comments
+3.16 Sidebar
+3.17 Content holder
+3.18 Tabs
+3.19 Slider
+
+Other
+ 4.0 Locatoin link
+ 4.1 Phone number
+ 4.2 Post meta
+ 4.3 Tags
+ 4.4 Share icons
+ 4.5 Catalog categories
+ 4.6 Subscribe form
+ 4.7 Recent posts
+ 4.8 Search
+ 4.9 Filters
+ 4.10 INfo
+ 4.11 Pagination
+ 4.12 Banner
+ 4.13 Title
+ 4.14 Signup steps
+ 4.15 Account
+ 4.16 Ribbons
+ 4.17 Counters
+ 4.18 Quotes slider
+
+Catalog
+5.1 Catalog
+5.2 Catalog grid
+5.3 Card
+5.4 Product
+5.5 Cart
+
+Plugins styling
+
+
+--------------------------------------------------------------*/
+
+@import  "const";
+@import  "mixins";
+@import  "placeholders";
+
+/*Basic*/
+/*
+1.0 Normalize
+Styles based on Normalize @link https://github.com/necolas/normalize.css
+*/
+@import  "basic/normalize";
+/* 1.1 Google fonts connection */
+@import  "basic/fonts";
+/* 1.2 Default tags styling */
+@import  "basic/default";
+
+/*Form elements*/
+/* 2.0 Buttons*/
+@import  "form-elements/button";
+/* 2.1 Text input */
+@import  "form-elements/input-text";
+/* 2.2 Textarea */
+@import  "form-elements/textarea";
+/* 2.3 Radio */
+@import  "form-elements/radio";
+/* 2.4 Checkbox */
+@import  "form-elements/checkbox";
+/* 2.5 Label */
+@import  "form-elements/label";
+/* 2.6 Number */
+@import  "form-elements/number";
+@import  "form-elements/form";
+
+
+/*layout*/
+/* 3.0 Headings */
+@import  "layout/headings";
+/* 3.1 Header */
+@import  "layout/header";
+/* 3.2 Footer */
+@import  "layout/footer";
+/* 3.3 Main menu */
+@import  "layout/menu";
+/* 3.4 Social */
+@import  "layout/social";
+/* 3.5 Toggle menu button */
+@import  "layout/menu-toggle";
+/* 3.6 404 page */
+@import  "layout/error-404";
+/* 3.7 Logo */
+@import  "layout/logo";
+/* 3.8 Currencies */
+@import  "layout/currencies";
+/* 3.9 Cart */
+@import  "layout/cart";
+/* 3.10 Showcase */
+@import  "layout/showcase";
+/* 3.11 Breadcrumbs */
+@import  "layout/breadcrumbs";
+/* 3.12 Post */
+@import  "layout/post";
+/* 3.13 Gallery */
+@import  "layout/gallery";  
+/* 3.14 Post navigation */
+@import  "layout/post-navigation";
+/* 3.15 Comments */
+@import  "layout/comments";
+/* 3.16 Sidebar */
+@import  "layout/sidebar";
+/* 3.17 Content holder */
+@import  "layout/content";
+/* 3.18 Tabs */
+@import  "layout/tabs";
+/* 3.19 Slider */
+@import  "layout/slider";
+@import  "layout/widjet";
+
+
+/*Other*/
+/* 4.0 Locatoin link */
+@import  "other/working-hours";
+/* 4.1 Phone number */
+@import  "other/phone-number";
+/* 4.2 Post meta */
+@import  "other/meta";
+/* 4.3 Tags */
+@import  "other/tags";
+/* 4.4 Share icons */
+@import  "other/share";
+/* 4.5 Catalog categories */
+@import  "other/categories";
+/* 4.6 Subscribe form */
+@import  "other/subscribe";
+/* 4.7 Recent posts */
+@import  "other/recent-posts";
+@import  "other/mini-menu";
+/* 4.8 Search */
+@import  "other/search";
+/* 4.9 Filters */
+@import  "other/filters";
+/* 4.10 INfo */
+@import  "other/info";
+/* 4.11 Pagination */
+@import  "other/pages";
+/* 4.12 Banner */
+@import  "other/banner";
+/* 4.13 Title */
+@import  "other/title";
+/* 4.14 Signup steps */
+@import  "other/steps";
+/* 4.15 Account */
+@import  "other/account";
+/* 4.16 Ribbons */
+/* 4.17 Counters */
+@import  "other/counters";
+/* 4.18 Quotes slider */
+@import  "other/quotes-slider";
+@import  "other/dropdown";
+@import  "other/date";
+@import  "other/rating";
+@import  "other/reviews";
+@import  "other/cooks";
+@import  "other/about";
+@import  "other/contacts";
+@import  "other/map";
+@import  "other/checkout";
+@import  "other/action";
+@import  "other/promo";
+
+
+/*Catalog*/
+/* 5.1 Catalog */
+@import  "catalog/catalog";
+/* 5.2 Catalog grid */
+@import  "catalog/catalog-grid";
+/* 5.3 Card */
+@import  "catalog/card";
+/* 5.4 Product */
+@import  "catalog/product";
+/* 5.5 Cart */
+@import  "catalog/cart-form";
+@import  "catalog/menu-list";
+
+
+
+/*Plugins*/
+/* 6.1 Range input */
+@import  "plugins/range";
+/* 6.1 Dropdown */
+@import  "plugins/chosen";
+/* 6.1 Slider plugin */
+@import  "plugins/slick";
+

@@ -1,0 +1,42 @@
+.title {
+    color: $color;
+    background: url(#{$img_path}/steak.svg) center bottom no-repeat;
+    background-size: 34px auto;
+    font: bold 26px $font-family__heading;
+    margin: 0 auto 36px;
+    padding: 0 0 50px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+
+    &::before {
+        content: '';
+        border-bottom: 2px solid #969696;
+        width: 70px;
+        position: absolute;
+        bottom: 14px;
+        left: 50%;
+        transform: translate(-150%, 0);
+    }
+    &::after {
+        content: '';
+        border-bottom: 2px solid #969696;
+        width: 70px;
+        position: absolute;
+        bottom: 14px;
+        right: 50%;
+        transform: translate(150%, 0);
+    }
+
+    .white-bg & {
+        color: #000;
+    }
+    .pattern-bg & {
+        background-image: url(#{$img_path}/steak-white.svg);
+
+        &::before,
+        &::after {
+            border-color: #fff;
+        }
+    }
+}

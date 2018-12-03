@@ -1,0 +1,11 @@
+.info {
+    padding: 0 0 30px;
+
+    &_title {
+        @extend %heading-2;
+        margin-bottom: 20px;
+    }
+    &_text {
+        
+    }
+}

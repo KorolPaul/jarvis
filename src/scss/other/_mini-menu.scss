@@ -1,0 +1,42 @@
+.mini-menu {
+    padding: 15px 20px;
+    border: 2px solid $bright_color;
+    border-radius: 5px;
+    margin: 0 0 40px;
+
+    &_title {
+        @extend %heading-2;
+        margin-bottom: 20px;
+    }
+    &_item {
+        @extend %clearfix;
+        color: $color;
+        display: flex;
+        align-items: center;
+        padding: 0 0 12px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &_item-image {
+        height: 120px;
+        width: 120px;
+        margin: 0 20px 0 0;
+        float: left;
+    }
+    &_item-title {
+        font-size: 18px;
+        font-weight: 700;
+        display: block;
+    }
+    &_item-price {
+        font-size: 18px;
+        font-weight: 700;
+        display: block;
+        color: $bright_color;
+    }
+    &_item-text {
+        text-align: center;
+    }
+}

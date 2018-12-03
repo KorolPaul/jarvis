@@ -1,0 +1,17 @@
+textarea {
+    @include placeholder-color(#444);
+    background: transparent;
+    color: $color;
+    border: 2px solid $gray_color;
+    font: $font-size $font-family__heading;
+    resize: none;
+    padding: 10px 15px;
+    min-height: 180px;
+    transition: .2s ease-in border-color,
+                .2s ease-in color;
+
+    &:focus {
+        border-color: $link_color;
+        color: $link_color;
+    }
+}

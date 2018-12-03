@@ -1,0 +1,44 @@
+.post {
+    margin: 0 0 40px;
+
+    &__small {
+        border-bottom: 1px solid $bright_color;
+        padding: 0 0 20px;
+        margin: 0 0 24px;
+    }
+
+    &_title {
+        @extend %heading-1;
+        display: block;
+
+        .post__small & {
+            font-size: 26px;
+            margin: 0 0 20px;
+        }
+    }
+    &_image-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+    &_image {
+        border: 2px solid $bright_color;
+        border-radius: 5px;
+        width: 100%;
+    }
+    &_footer {
+        border-top: 1px solid $bright_color;
+        padding: 20px 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &_tags {
+        background: url(#{$img_path}/shortcut.png) 0 center no-repeat;
+        padding: 0 0 0 25px;
+    }
+    &_tag {
+        color: $bright_color;
+        text-decoration: none;
+        margin: 0 7px 0 0;
+    }
+}

@@ -1,0 +1,16 @@
+.search {
+    display: inline-block;
+    vertical-align: middle;
+    
+    &_icon {
+        background: url(#{$img_path}/search.svg) center center no-repeat;
+        border: none;
+        height: 25px;
+        width: 25px;
+        padding: 0;
+    }
+    &_input {
+        display: none;
+    }
+
+}

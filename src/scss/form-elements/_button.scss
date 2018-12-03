@@ -1,0 +1,28 @@
+%button {
+    background: transparent;
+    border: 2px solid currentColor;
+    border-radius: 30px;
+    cursor: pointer;
+    color: $gray_color;
+    font-family: $font-family;
+    font-weight: 600;
+    padding: 10px 45px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .2s ease-in-out border, 
+                .2s ease-in-out background-color,
+                .2s ease-in-out color;
+}
+
+.button,
+button:not([class]),
+input[type="button"],
+input[type="submit"],  {
+    @extend %button;
+
+    &:hover {
+        background-color: $gray_color;
+        color: $color;
+    }
+}

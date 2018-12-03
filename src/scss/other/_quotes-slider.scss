@@ -1,0 +1,11 @@
+.quotes-slider {
+    background: #ccc url(#{$img_path}/dark-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 35px 0 15px;
+    margin: 0 0 40px;
+    overflow: hidden;
+    @include tablet {
+        margin: 0 0 80px;
+        padding: 95px 0 30px;
+    }
+}

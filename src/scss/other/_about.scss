@@ -1,0 +1,23 @@
+.about {
+    margin: 0 0 60px;
+    
+    &_title {
+        color: $color;
+        line-height: 1;
+        margin: 0 0 18px;
+    }
+    &_text {
+        text-align: center;
+        margin: 0 0 20px;
+
+        .about__small & {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+    }
+    &_link {
+        color: $color;
+        display: inline-block;
+        margin: 8px 0 0;
+    }
+}

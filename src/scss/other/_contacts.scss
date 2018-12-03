@@ -1,0 +1,48 @@
+.contacts {
+    margin: 0 0 60px;
+    
+    &_items {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 36px;
+    }
+    &_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $color;
+        text-align: center;
+        height: 254px;
+        width: 254px;
+        border-radius: 50%;
+        background: $bright_color;
+
+        &:nth-child(even) {
+            background: rgba(255, 255, 255, .1);
+
+            .white-bg & {
+                background: url(#{$img_path}/bg.jpg) center;
+            }
+        }
+    }
+    &_icon {
+        margin: 0 0 10px;
+    }
+    &_text {
+        margin: 0;
+    }
+    &_title {
+        @extend %heading-2;
+        margin: 0;
+        color: $gray_color;
+        text-align: center
+    }
+    &_link {
+        color: $color;
+
+        &:hover {
+            color: $color;
+        }
+    }
+}

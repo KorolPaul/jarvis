@@ -1,0 +1,101 @@
+.steps {
+    margin: auto;
+    @include tablet {
+        width: 320px;
+    }
+
+    &_buttons {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0 30px;
+    }
+    &_button {
+        text-align: center;
+        position: relative;
+
+        &:first-child::after {
+            content: '';
+            border-top: 1px solid #ccc;
+            width: 40px;
+            position: absolute;
+            top: 25px;
+            left: 85px;
+        }
+        &:last-child::after {
+            content: '';
+            border-top: 1px solid #ccc;
+            width: 40px;
+            position: absolute;
+            top: 25px;
+            right: 73px;
+        }
+    }
+    &_button-number {
+        display: block;
+        margin: 0 auto 3px;
+        height: 48px;
+        width: 48px;
+        border: 1px solid $link_color;
+        border-radius: 50%;
+        color: $link_color;
+        font: bold 26px $font-family__heading;
+        line-height: 46px;
+
+        .steps_button.active & {
+            background: $link_color;
+            color: $color;
+        }
+    }
+    &_button-title {
+        font: bold 16px $font-family__heading;
+
+        .steps_button.active & {
+            color: $link_color;
+        }
+    }
+    &_content {
+        border: 2px solid #f0f0f0;
+        border-radius: 5px;
+        padding: 15px;
+        @include tablet {
+            padding: 28px;
+        }
+    }
+    &_step {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+    &_form-item {
+        margin: 0 0 12px;
+
+        &__flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input {
+            width: 100%;
+        }
+        .button {
+            margin: 20px 0 0;
+            width: 100%;
+        }
+    }
+    &_form-postal {
+        width: 100px;
+        margin: 0 10px 0 0;
+    }
+    &_form-title {
+        font-family: $font-family__heading;
+        font-weight: bold;
+        margin: 0;
+    }
+    &_form-value {
+        color: $link_color;
+        font-family: $font-family__heading;
+        margin: 0;
+    }
+}

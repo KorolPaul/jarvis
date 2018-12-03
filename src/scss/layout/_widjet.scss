@@ -1,0 +1,91 @@
+.widjet {
+    background: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 20px;
+    min-width: 430px;
+    z-index: 4;
+    overflow: auto;
+    transform: translateX(100%);
+    transition: .3s ease-in-out transform;
+
+    &.opened {
+        transform: translate(0);
+    }
+
+    &_close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-weight: 900;
+        font-size: 30px;
+        color: $color;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: .2s ease color;
+        z-index: 3;
+
+        &:hover {
+            color: $bright_color;
+        }
+    }
+    &_bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    &_bottom-title {
+        font: bold 20px/38px $font-family__heading;
+        color: $bright_color;
+    }
+    &_bottom-value {
+        font: bold 20px/38px $font-family__heading;
+    }
+    &_button {
+        @extend %button;
+    }
+    &_table {
+        td {
+            padding: 30px 8px;
+            border-bottom: 1px solid $bright_color;
+        }
+        td + td {
+            text-align: center;
+        }
+    }
+    &_table-price {
+        @extend %heading-1;
+        color: $color;
+        margin: 0;
+
+        sup {
+            font-size: 16px;
+            margin: 0 0 0 5px;
+            top: -14px;
+        }
+    }
+    &_table-title {
+        @extend %heading-2;
+        position: relative;
+    }
+    &_table-delete {
+        position: absolute;
+        top: -30px;
+        right: -17px;
+        font-weight: 900;
+        font-size: 30px;
+        color: $color;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: .2s ease color;
+        z-index: 3;
+
+        &:hover {
+            color: $bright_color;
+        }
+    }
+}
