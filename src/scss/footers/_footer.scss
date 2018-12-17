@@ -1,0 +1,95 @@
+.footer {
+    background: #5c616e;
+    padding: 60px 0 40px;
+    
+    &_contact {
+        color: $light_color;
+    }
+    &_contact-icon {
+        @extend .material-icons;
+        float: left;
+        margin: 0 20px 0 0;
+
+        .material-icons {
+            font-size: 40px;
+        }
+    }
+    &_contact-title {
+        color: #a5aab5;
+        font: $font-size__small $font-family__heading;
+        display: block;
+    }
+    &_contact-text {
+        color: $light_color;
+        line-height: 1.2;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    &_menu {
+        padding: 74px 0 48px;
+    }
+    &_menu-title {
+        color: $light_color;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    &_menu-link {
+        color: #a5aab5;
+        display: block;
+        font-size: $font-size__small;
+        text-decoration: none;
+        transition: .2s ease color;
+
+        &:hover {
+            color: $light_color;
+            text-decoration: none;
+        }
+    }
+    &_menu-text {
+        color: #a5aab5;
+        font-size: $font-size__small;
+    }
+    &_bottom {
+        border-top: 1px solid #6e7380;
+        padding: 34px 0 0;
+    }
+    &_copyright {
+        color: #a5aab5;
+        font-size: $font-size__small;
+        text-align: center;
+        margin: 0 0 26px;
+    }
+    &_copyright-link {
+        color: $light_color;
+        text-decoration: none;
+    }
+    &_payments {
+        text-align: center;
+    }
+    &_newslatter {
+        position: relative;
+    }
+    &_newslatter-input {
+        border: 1px solid #a5aab5;
+        font-size: 11px;
+        color: $light_color;
+        background: transparent;
+        padding: 10px 30px 10px 6px;
+        width: 100%;
+    }
+    &_newslatter-button {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        padding: 5px;
+        position: absolute;
+        right: 6px;
+        top: 0px;
+        color: #a5aab5;
+        transition: .2s ease-in-out color;
+
+        &:hover {
+            color: $light_color;
+        }
+    }
+}

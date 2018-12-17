@@ -1,0 +1,20 @@
+.header {
+
+    &_container {
+        position: relative;
+    }
+    &_top {
+        padding: 30px 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    &_controls {
+        display: flex;
+    }
+    &_bottom {
+        
+    }
+}

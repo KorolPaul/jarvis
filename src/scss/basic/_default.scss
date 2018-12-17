@@ -2,7 +2,7 @@ body {
     background: url(#{$img_path}/bg.jpg) 0 center repeat;
     background-size: 50% auto;
     color: $color;
-    font: #{$font-size}/24px $font-family;
+    font: #{$font-size} $font-family;
 }
 
 a {
@@ -16,7 +16,6 @@ a {
 }
 
 p {
-    line-height: 1.75;
     margin: 0 0 10px;
 }
 

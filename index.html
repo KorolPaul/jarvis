@@ -2,13 +2,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>MOST DELICIOUS STEAKS</title>
+    <title>Jarvis</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta content="telephone=no" name="format-detection">
     <meta name="HandheldFriendly" content="true">
     <meta property="og:title" content="#{data.title}">
@@ -24,41 +25,57 @@
 
 <body>
     <header class="header">
-        <div class="header_top">
-            <div class="container">
+        <div class="header_container container">
+            <div class="header_top">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-12 col-md-auto">
-                        <span class="phone-number">8-800-000-00-00</span>
+                    <div class="col-12 col-md-2">
+                        <a href="/" class="logo">
+                            <img src="src/img/logo.png" alt="">
+                        </a>
                     </div>
-                    <div class="col-12 col-md-auto">
-                        <div class="working-hours">
-                            <span>
-                                Opening hours from
-                                <span class="working-hours_value">9:00</span> am to
-                                <span class="working-hours_value">01:00</span> pm
-                            </span>
-                        </div>
+                    <div class="col-12 col-md-8">
+                        <nav class="menu">
+                            <ul class="menu_list">
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">home</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">men</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">women</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">shop</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">accessories</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">contact</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">buy theme</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div class="col-12 col-md-auto">
-                        <div class="search">
-                            <button class="search_icon"></button>
-                            <input type="text" class="search_input" placeholder="Search and hit return...">
-                        </div>
-
-                        <div class="dropdown">
-                            <button class="dropdown_link">English</button>
-                            <div class="dropdown_list">
-                                <a href="#" class="dropdown_list-link">Spanish</a>
-                                <a href="#" class="dropdown_list-link">Chinise</a>
-                                <a href="#" class="dropdown_list-link">French</a>
-                                <a href="#" class="dropdown_list-link">Russian</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropdown_link">My account</button>
-                            <div class="dropdown_list">
-                                <a href="/login.html" class="dropdown_list-link">Log in</a>
-                                <a href="/signup.html" class="dropdown_list-link">Sign up</a>
+                    <div class="col-12 col-md-2">
+                        <div class="header_controls">
+                            <button class="search-button">
+                                <span class="material-icons">search</span>
+                            </button>
+                            <button class="settings-button">
+                                <span class="material-icons">settings</span>
+                            </button>
+                            <div class="cart-button">
+                                <span class="cart-button_icon"></span>
+                                <div>
+                                    <span class="cart-button_title">My Cart</span>
+                                    <span class="cart-button_sum">
+                                        <span><span class="cart-button_value">$160.00</span> (03)</span>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -66,664 +83,677 @@
             </div>
         </div>
         <div class="header_bottom">
-            <div class="container header_holder">
-                <a href="#" class="logo">Family Steak House</a>
-                <button class="menu-toggle col-auto"></button>
-                <nav class="menu col-auto col-lg-8 menu">
-                    <a href="#" class="menu_link active">HOME</a>
-                    <a href="#" class="menu_link">STEAK MENU</a>
-                    <a href="#" class="menu_link">ABOUT US</a>
-                    <a href="#" class="menu_link">BLOG</a>
-                    <a href="#" class="menu_link">CONTACTS</a>
-                </nav>
+            <div class="slider" id="slider">
+                <div class="slider_item">
+                    <div class="slider_holder container">
+                        <div class="slider_info">
+                            <p class="slider_title">New Collection 2017</p>
+                            <p class="slider_subtitle">
+                                Sale up to <span class="slider_bright">50%</span> all products
+                            </p>
+                            <a href="#" class="slider_link">[ shop now ]</a>
+                        </div>
+                    </div>
+                    <img class="slider_image" src="src/img/images/slider/slider-1.jpg" alt="">
+                </div>
+                <div class="slider_item">
+                    <div class="slider_holder container">
+                        <div class="slider_info">
+                            <p class="slider_title">New Collection 2017</p>
+                            <p class="slider_subtitle">
+                                Sale up to <span class="slider_bright">50%</span> all products
+                            </p>
+                            <a href="#" class="slider_link">[ shop now ]</a>
+                        </div>
+                    </div>
+                    <img class="slider_image" src="src/img/images/slider/slider-1.jpg" alt="">
+                </div>
             </div>
-            <img src="src/img/dark-bg.jpg" alt="">
-            <div class="header_bottom-showcase">
-                <h1 class="header_bottom-title">MOST DELICIOUS STEAKS</h1>
-                <a href="/menu.html" class="header_bottom-link">MAKE AN ORDER</a>
-            </div>
-            <button class="cart-button">
-                <div class="cart-button_value">3</div>
-            </button>
         </div>
     </header>
     <div class="content">
-        <div class="action pattern-bg">
-            <div class="container">
+        <div class="container">
+            <div class="features row">
+                <div class="features_item col-3">
+                    <div class="features_icon material-icons">local_airport</div>
+                    <span class="features_title">free shipping</span>
+                    <span class="features_text">ON ORDER OVER $200</span>
+                </div>
+                <div class="features_item col-3">
+                    <div class="features_icon material-icons">local_phone</div>
+                    <span class="features_title">24 hour</span>
+                    <span class="features_text">active support</span>
+                </div>
+                <div class="features_item col-3">
+                    <div class="features_icon material-icons">payment</div>
+                    <span class="features_title">Easy payment</span>
+                    <span class="features_text">optimal for payment</span>
+                </div>
+                <div class="features_item col-3">
+                    <div class="features_icon material-icons">card_giftcard</div>
+                    <span class="features_title">Special gift card</span>
+                    <span class="features_text">ON ORDER OVER $800</span>
+                </div>
+            </div>
+            <div class="arrivals row">
+                <a href="#"class="arrivals_item col-4">
+                    <img src="src/img/images/arrivals/mens_banner.jpg" alt="" class="arrivals_image">
+                    <p class="arrivals_title">
+                        men’s <span class="arrivals_title-strong">collection</span>
+                    </p>
+                    <span class="arrivals_link">[ shop now ]</span>
+                </a>
+                <a class="arrivals_item col-4">
+                    <img src="src/img/images/arrivals/new-arrivals_banner.jpg" alt="" class="arrivals_image">
+                    <p class="arrivals_main-title">new</p>
+                    <p class="arrivals_main-subtitle">arrivals</p>
+                </a>
+                <a class="arrivals_item col-4">
+                    <img src="src/img/images/arrivals/women__banner.jpg" alt="" class="arrivals_image">
+                    <p class="arrivals_title">
+                        women’s <span class="arrivals_title-strong">collection</span>
+                    </p>
+                    <span class="arrivals_link">[ shop now ]</span>
+                </a>
+            </div>
+            <div class="catalog-grid row">
+                <div class="product-card col-md-6 col-lg-3">
+                    <img src="src/img/images/products/recently_product_01.jpg" alt="" class="product-card_image">
+                    <div class="product-card_controls">
+                        <button class="product-card-control material-icons">shopping_basket</button>
+                        <button class="product-card-control material-icons">favorite_border</button>
+                        <button class="product-card-control material-icons">sort</button>
+                        <button class="product-card-control material-icons">remove_red_eye</button>
+                    </div>
+                    <p class="product-card_title">Bonorum et Malorum</p>
+                    <div class="rating">
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star"></button>
+                    </div>
+                    <div class="prudoct-card_price">
+                        <span class="prudoct-card_price-value">$470.00</span>
+                    </div>
+                </div>
+                <div class="product-card col-md-6 col-lg-3">
+                    <span class="product-card_discount">-30%</span>
+                    <img src="src/img/images/products/recently_product_03.jpg" alt="" class="product-card_image">
+                    <div class="product-card_controls">
+                        <button class="product-card-control material-icons">shopping_basket</button>
+                        <button class="product-card-control material-icons">favorite_border</button>
+                        <button class="product-card-control material-icons">sort</button>
+                        <button class="product-card-control material-icons">remove_red_eye</button>
+                    </div>
+                    <p class="product-card_title">handful of model</p>
+                    <div class="rating">
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star"></button>
+                    </div>
+                    <div class="prudoct-card_price">
+                        <span class="prudoct-card_price-value">$189.00</span>
+                        <span class="prudoct-card_price-old">$470.00</span>
+                    </div>
+                </div>
+                <div class="product-card col-md-6 col-lg-3">
+                    <img src="src/img/images/products/new_arrivals_product_03.jpg" alt="" class="product-card_image">
+                    <div class="product-card_controls">
+                        <button class="product-card-control material-icons">shopping_basket</button>
+                        <button class="product-card-control material-icons">favorite_border</button>
+                        <button class="product-card-control material-icons">sort</button>
+                        <button class="product-card-control material-icons">remove_red_eye</button>
+                    </div>
+                    <p class="product-card_title">slightly believable</p>
+                    <div class="rating">
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star"></button>
+                    </div>
+                    <div class="prudoct-card_price">
+                        <span class="prudoct-card_price-value">$250.00</span>
+                    </div>
+                </div>
+                <div class="product-card col-md-6 col-lg-3">
+                    <img src="src/img/images/products/recently_product_02.jpg" alt="" class="product-card_image">
+                    <div class="product-card_controls">
+                        <button class="product-card-control material-icons">shopping_basket</button>
+                        <button class="product-card-control material-icons">favorite_border</button>
+                        <button class="product-card-control material-icons">sort</button>
+                        <button class="product-card-control material-icons">remove_red_eye</button>
+                    </div>
+                    <p class="product-card_title">predefined chunks</p>
+                    <div class="rating">
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star"></button>
+                    </div>
+                    <div class="prudoct-card_price">
+                        <span class="prudoct-card_price-value">$410.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-grid row">
+                <div class="product-card col-md-6 col-lg-3">
+                    <img src="src/img/images/products/new_arrivals_product_05.jpg" alt="" class="product-card_image">
+                    <div class="product-card_controls">
+                        <button class="product-card-control material-icons">shopping_basket</button>
+                        <button class="product-card-control material-icons">favorite_border</button>
+                        <button class="product-card-control material-icons">sort</button>
+                        <button class="product-card-control material-icons">remove_red_eye</button>
+                    </div>
+                    <p class="product-card_title">Billum qui dolorem eum</p>
+                    <div class="rating">
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star"></button>
+                    </div>
+                    <div class="prudoct-card_price">
+                        <span class="prudoct-card_price-value">$180.00</span>
+                    </div>
+                </div>
+                <div class="product-card col-md-6 col-lg-3">
+                    <img src="src/img/images/products/top_product_06.jpg" alt="" class="product-card_image">
+                    <p class="product-card_title">handful of model</p>
+                    <div class="rating">
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star"></button>
+                    </div>
+                    <div class="prudoct-card_price">
+                        <span class="prudoct-card_price-value">$857.00</span>
+                    </div>
+                    <div class="product-card_out">
+                        <span class="product-card_out-text">OUT off  stock!</span>
+                    </div>
+                </div>
+                <div class="product-card col-md-6 col-lg-3">
+                    <img src="src/img/images/products/new_arrivals_product_07.jpg" alt="" class="product-card_image">
+                    <div class="product-card_controls">
+                        <button class="product-card-control material-icons">shopping_basket</button>
+                        <button class="product-card-control material-icons">favorite_border</button>
+                        <button class="product-card-control material-icons">sort</button>
+                        <button class="product-card-control material-icons">remove_red_eye</button>
+                    </div>
+                    <p class="product-card_title">undoubtable source</p>
+                    <div class="rating">
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star"></button>
+                    </div>
+                    <div class="prudoct-card_price">
+                        <span class="prudoct-card_price-value">$310.00</span>
+                    </div>
+                </div>
+                <div class="product-card col-md-6 col-lg-3">
+                    <span class="product-card_discount">-50%</span>
+                    <img src="src/img/images/products/new_arrivals_product_08.jpg" alt="" class="product-card_image">
+                    <div class="product-card_controls">
+                        <button class="product-card-control material-icons">shopping_basket</button>
+                        <button class="product-card-control material-icons">favorite_border</button>
+                        <button class="product-card-control material-icons">sort</button>
+                        <button class="product-card-control material-icons">remove_red_eye</button>
+                    </div>
+                    <p class="product-card_title">therefore always</p>
+                    <div class="rating">
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star rating_star__filled"></button>
+                        <button class="rating_star"></button>
+                    </div>
+                    <div class="prudoct-card_price">
+                        <span class="prudoct-card_price-value">$189.00</span>
+                        <span class="prudoct-card_price-old">$360.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <table class="banners">
+                        <tr>
+                            <td rowspan="2">
+                                <a href="#" class="baners_item">
+                                    <img  class="baners_image" src="src/img/images/banners/banner_01.jpg" alt="">
+                                    <p class="banners_title">huge sale</p>
+                                    <p class="banners_subtitle">now starting from *99</p>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="baners_item">
+                                    <img  class="baners_image" src="src/img/images/banners/banner_02.jpg" alt="">
+                                    <p class="banners_subtitle">New sale</p>
+                                    <p class="banners_title banners_title__border-top">50% OFF</p>
+                                </a>
+                            </td>
+                            <td rowspan="2">
+                                <a href="#" class="baners_item">
+                                    <img  class="baners_image" src="src/img/images/banners/banner_04.jpg" alt="">
+                                    <p class="banners_title banners_title__bottom">2018</p>
+                                    <p class="banners_subtitle">fashion trends</p>
+                                    <a href="#" class="banners_link">[ shop now ]</a>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" class="baners_item">
+                                    <img  class="baners_image" src="src/img/images/banners/banner_03.jpg" alt="">
+                                    <p class="banners_subtitle">super sale</p>
+                                    <p class="banners_title">shoes designed</p>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="specials">
                 <div class="row">
-                    <div class="action_holder col-12">
-                        <img src=" https://via.placeholder.com/565x415" alt="" class="action_image">
-                        <div class="action_content">
-                            <p class="action_title">DISH OF THE DAY</p>
-                            <p class="action_subtitle">
-                                Ribeye Steak <strike>$ 1850</strike>
-                                <span class="action_price">$12 <sup>20</sup></span>
-                                <div class="action_text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eligendi nemo
-                                        et, incidunt sapiente perspiciatis molestias odio obcaecati nam illo ea quo
-                                        repellendus aperiam numquam possimus recusandae dolores tempore labore!</p>
-                                </div>
-                                <a href="/product.html" class="action_button">BUY NOW!</a>
-                            </p>
+                    <div class="col-md-3">
+                        <span class="specials_title">best seller</span>
+                    </div>
+                    <div class="col-md-3">
+                        <span class="specials_title">best seller</span>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <div class="specials_navigation">
+                            <button class="specials_navigation-button">shoes</button>
+                            <button class="specials_navigation-button">clothes</button>
+                            <button class="specials_navigation-button">accessories</button>
                         </div>
                     </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="specials_column col-md-3">
+                        <div class="product-card product-card__small col-md-6 col-lg-3">
+                            <img src="src/img/images/products/best_seller_product_01.jpg" alt="" class="product-card_image">
+                            <div>
+                                <p class="product-card_title">It is a long established fact that</p>
+                                <div class="rating">
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star"></button>
+                                </div>
+                                <div class="prudoct-card_price">
+                                    <span class="prudoct-card_price-value">$250.00</span>
+                                </div>
+                                <div class="product-card_controls">
+                                    <button class="product-card-control material-icons">shopping_basket</button>
+                                    <button class="product-card-control material-icons">favorite_border</button>
+                                    <button class="product-card-control material-icons">sort</button>
+                                    <button class="product-card-control material-icons">remove_red_eye</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card product-card__small col-md-6 col-lg-3">
+                            <img src="src/img/images/products/best_seller_product_02.jpg" alt="" class="product-card_image">
+                            <div>
+                                <p class="product-card_title">Many desktop publis hing page </p>
+                                <div class="rating">
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star"></button>
+                                </div>
+                                <div class="prudoct-card_price">
+                                    <span class="prudoct-card_price-value">$390.00</span>
+                                </div>
+                                <div class="product-card_controls">
+                                    <button class="product-card-control material-icons">shopping_basket</button>
+                                    <button class="product-card-control material-icons">favorite_border</button>
+                                    <button class="product-card-control material-icons">sort</button>
+                                    <button class="product-card-control material-icons">remove_red_eye</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card product-card__small col-md-6 col-lg-3">
+                            <img src="src/img/images/products/best_seller_product_03.jpg" alt="" class="product-card_image">
+                            <div>
+                                <p class="product-card_title">Lorem Ipsum which looks reaso</p>
+                                <div class="rating">
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star"></button>
+                                </div>
+                                <div class="prudoct-card_price">
+                                    <span class="prudoct-card_price-value">$488.00</span>
+                                </div>
+                                <div class="product-card_controls">
+                                    <button class="product-card-control material-icons">shopping_basket</button>
+                                    <button class="product-card-control material-icons">favorite_border</button>
+                                    <button class="product-card-control material-icons">sort</button>
+                                    <button class="product-card-control material-icons">remove_red_eye</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specials_column col-md-3">
+                        <div class="product-card col-md-6 col-lg-3">
+                            <div class="product-card_counter">
+                                <span class="product-card_counter-item">
+                                    <span class="product-card_counter-value">04</span>
+                                    days
+                                </span>
+                                <span class="product-card_counter-item">
+                                    <span class="product-card_counter-value">56</span>
+                                    hours
+                                </span>
+                                <span class="product-card_counter-item">
+                                    <span class="product-card_counter-value">11</span>
+                                    min
+                                </span>
+                                <span class="product-card_counter-item">
+                                    <span class="product-card_counter-value">09</span>
+                                    sec
+                                </span>
+                            </div>
+                            <span class="product-card_discount">-50%</span>
+                            <div class="product-card_image-wrapper">
+                                <img src="src/img/images/products/recently_product_03.jpg" alt="" class="product-card_image">
+                                <div class="product-card_gallery">
+                                    <img src="src/img/images/products/specials_product_01.jpg" alt="" class="product-card_gallery-image">
+                                    <img src="src/img/images/products/specials_product_02.jpg" alt="" class="product-card_gallery-image">
+                                    <img src="src/img/images/products/specials_product_03.jpg" alt="" class="product-card_gallery-image">
+                                </div>
+                            </div>
+                            <p class="product-card_title">Necklace trim blouse</p>
+                            <div class="rating">
+                                <button class="rating_star rating_star__filled"></button>
+                                <button class="rating_star rating_star__filled"></button>
+                                <button class="rating_star rating_star__filled"></button>
+                                <button class="rating_star rating_star__filled"></button>
+                                <button class="rating_star"></button>
+                            </div>
+                            <div class="prudoct-card_price">
+                                <span class="prudoct-card_price-value">$250.00</span>
+                                <span class="prudoct-card_price-old">$500.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specials_column col-md-3">
+                        <div class="product-card product-card__small col-md-6 col-lg-3">
+                            <img src="src/img/images/products/specials_product_04.jpg" alt="" class="product-card_image">
+                            <div>
+                                <p class="product-card_title">It is a long established fact that</p>
+                                <div class="rating">
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star"></button>
+                                </div>
+                                <div class="prudoct-card_price">
+                                    <span class="prudoct-card_price-value">$250.00</span>
+                                </div>
+                                <div class="product-card_controls">
+                                    <button class="product-card-control material-icons">shopping_basket</button>
+                                    <button class="product-card-control material-icons">favorite_border</button>
+                                    <button class="product-card-control material-icons">sort</button>
+                                    <button class="product-card-control material-icons">remove_red_eye</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card product-card__small col-md-6 col-lg-3">
+                            <img src="src/img/images/products/specials_product_05.jpg" alt="" class="product-card_image">
+                            <div>
+                                <p class="product-card_title">pleasure that has no annoying</p>
+                                <div class="rating">
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star"></button>
+                                </div>
+                                <div class="prudoct-card_price">
+                                    <span class="prudoct-card_price-value">$350.00</span>
+                                </div>
+                                <div class="product-card_controls">
+                                    <button class="product-card-control material-icons">shopping_basket</button>
+                                    <button class="product-card-control material-icons">favorite_border</button>
+                                    <button class="product-card-control material-icons">sort</button>
+                                    <button class="product-card-control material-icons">remove_red_eye</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card product-card__small col-md-6 col-lg-3">
+                            <img src="src/img/images/products/specials_product_06.jpg" alt="" class="product-card_image">
+                            <div>
+                                <p class="product-card_title">Lorem Ipsum which looks reaso</p>
+                                <div class="rating">
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star rating_star__filled"></button>
+                                    <button class="rating_star"></button>
+                                </div>
+                                <div class="prudoct-card_price">
+                                    <span class="prudoct-card_price-value">$488.00</span>
+                                </div>
+                                <div class="product-card_controls">
+                                    <button class="product-card-control material-icons">shopping_basket</button>
+                                    <button class="product-card-control material-icons">favorite_border</button>
+                                    <button class="product-card-control material-icons">sort</button>
+                                    <button class="product-card-control material-icons">remove_red_eye</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner row">
+            <img src="src/img/images/parallax-banner.jpg" alt="" class="banner_image">
+            <div class="container">
+                <div class="col-12">
+                    <p class="banner_title">extra <strong>50%</strong> off</p>
+                    <p class="banner_title"><strong>Summer</strong> collection</p>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row">
                 <div class="col-12">
-                    <p class="title">ABOUT OUR STEAK HOUSE</p>
+                    <h3>latest news</h3>
                 </div>
             </div>
-            <div class="about about__small row justify-content-center">
-                <div class="col-6">
-                    <img src="https://via.placeholder.com/540x405" alt="">
+            <div class="row">
+                <div class="col-md-4">
+                    <a class="news" href="#">
+                        <img src="src/img/images/news/news-1.jpg" alt="" class="news_image">
+                        <div class="news_info">
+                            <span class="news_date">news</span>
+                            <span class="news_title">What I Have Done</span>
+                            <span class="news_comments">
+                                <span class="material-icons">forum</span>
+                                (20) comments
+                            </span>
+                            <span class="news_comments">
+                                <span class="material-icons">person</span>
+                                Jhon Doe
+                            </span>
+                            <a href="#" class="news_link">[ read more ]</a>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-6">
-                    <div class="">
-                        <h3 class="about_title">THIS FAMILY-RUN STEAK HOUSE</h3>
-                        <div class="about_text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eligendi nemo et,
-                                incidunt sapiente perspiciatis molestias odio obcaecati nam illo ea quo repellendus
-                                aperiam numquam possimus recusandae dolores tempore labore!</p>
-                            <p>Repellendus, architecto, cum? Corrupti, libero quo deleniti, amet quisquam expedita
-                                adipisci voluptatum voluptas et beatae perferendis earum voluptatem ab necessitatibus
-                                dolorem ad tempora atque labore illum. Quas, ex, deserunt. Et.</p>
+                <div class="col-md-4">
+                    <a class="news" href="#">
+                        <img src="src/img/images/news/news-2.jpg" alt="" class="news_image">
+                        <div class="news_info">
+                            <span class="news_date">news</span>
+                            <span class="news_title">What I Have Done</span>
+                            <span class="news_comments">
+                                <span class="material-icons">forum</span>
+                                (20) comments
+                            </span>
+                            <span class="news_comments">
+                                <span class="material-icons">person</span>
+                                Jhon Doe
+                            </span>
+                            <a href="#" class="news_link">[ read more ]</a>
                         </div>
-                        <a href="#" class="button">READ MORE</a>
-                    </div>
+                    </a>
                 </div>
-            </div>
-        </div>
-        <div class="white-bg">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <p class="title">OUR STEAK MENU</p>
-                        <div class="menu-list">
-                            <div class="menu-list_item">
-                                <img src="https://via.placeholder.com/160x160" alt="" class="menu-list_image">
-                                <div class="menu-list_content">
-                                    <div>
-                                        <p class="menu-list_title">01. RIBEYE STEAK WITH GRILLED VEGETABLES</p>
-                                        <p>Garnish to choose from</p>
-                                        <p>Sauce on a choice</p>
-                                        <p>Weight: 180*</p>
-                                    </div>
-                                    <div class="menu-list_item-right">
-                                        <p class="menu-list_price">$ 13<sup>20</sup></p>
-                                        <a href="/cart.html" class="menu-list_button">add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu-list_item">
-                                <img src="https://via.placeholder.com/160x160" alt="" class="menu-list_image">
-                                <div class="menu-list_content">
-                                    <div>
-                                        <p class="menu-list_title">02. STEAK "MACHETE"</p>
-                                        <p>Garnish to choose from</p>
-                                        <p>Sauce on a choice</p>
-                                        <p>Weight: 170*</p>
-                                    </div>
-                                    <div class="menu-list_item-right">
-                                        <p class="menu-list_price">$ 12<sup>90</sup></p>
-                                        <a href="/cart.html" class="menu-list_button">add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu-list_item">
-                                <img src="https://via.placeholder.com/160x160" alt="" class="menu-list_image">
-                                <div class="menu-list_content">
-                                    <div>
-                                        <p class="menu-list_title">03. STEAK "NEW-YORK"</p>
-                                        <p>Garnish to choose from</p>
-                                        <p>Sauce on a choice</p>
-                                        <p>Weight: 220*</p>
-                                    </div>
-                                    <div class="menu-list_item-right">
-                                        <p class="menu-list_price">$ 14<sup>50</sup></p>
-                                        <a href="/cart.html" class="menu-list_button">add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu-list_item">
-                                <img src="https://via.placeholder.com/160x160" alt="" class="menu-list_image">
-                                <div class="menu-list_content">
-                                    <div>
-                                        <p class="menu-list_title">04. STEAK “BOSTON”</p>
-                                        <p>Garnish to choose from</p>
-                                        <p>Sauce on a choice</p>
-                                        <p>Weight: 180*</p>
-                                    </div>
-                                    <div class="menu-list_item-right">
-                                        <p class="menu-list_price">$ 14<sup>20</sup></p>
-                                        <a href="/cart.html" class="menu-list_button">add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu-list_item">
-                                <img src="https://via.placeholder.com/160x160" alt="" class="menu-list_image">
-                                <div class="menu-list_content">
-                                    <div>
-                                        <p class="menu-list_title">05. STEAK "FIRE BULL"</p>
-                                        <p>Garnish to choose from</p>
-                                        <p>Sauce on a choice</p>
-                                        <p>Weight: 190*</p>
-                                    </div>
-                                    <div class="menu-list_item-right">
-                                        <p class="menu-list_price">$ 15<sup>30</sup></p>
-                                        <a href="/cart.html" class="menu-list_button">add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu-list_item">
-                                <img src="https://via.placeholder.com/160x160" alt="" class="menu-list_image">
-                                <div class="menu-list_content">
-                                    <div>
-                                        <p class="menu-list_title">06. STEAK "MELBOURNE"</p>
-                                        <p>Garnish to choose from</p>
-                                        <p>Sauce on a choice</p>
-                                        <p>Weight: 220*</p>
-                                    </div>
-                                    <div class="menu-list_item-right">
-                                        <p class="menu-list_price">$ 13<sup>20</sup></p>
-                                        <a href="/cart.html" class="menu-list_button">add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu-list_item">
-                                <img src="https://via.placeholder.com/160x160" alt="" class="menu-list_image">
-                                <div class="menu-list_content">
-                                    <div>
-                                        <p class="menu-list_title">07. STEAK "NORTHERN CROWN"</p>
-                                        <p>Garnish to choose from</p>
-                                        <p>Sauce on a choice</p>
-                                        <p>Weight: 170*</p>
-                                    </div>
-                                    <div class="menu-list_item-right">
-                                        <p class="menu-list_price">$ 16<sup>10</sup></p>
-                                        <a href="/cart.html" class="menu-list_button">add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menu-list_item">
-                                <img src="https://via.placeholder.com/160x160" alt="" class="menu-list_image">
-                                <div class="menu-list_content">
-                                    <div>
-                                        <p class="menu-list_title">08. STEAK "KING SIZE"</p>
-                                        <p>Garnish to choose from</p>
-                                        <p>Sauce on a choice</p>
-                                        <p>Weight: 500*</p>
-                                    </div>
-                                    <div class="menu-list_item-right">
-                                        <p class="menu-list_price">$ 20<sup>90</sup></p>
-                                        <a href="/cart.html" class="menu-list_button">add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-md-4">
+                    <a class="news" href="#">
+                        <img src="src/img/images/news/news-3.jpg" alt="" class="news_image">
+                        <div class="news_info">
+                            <span class="news_date">news</span>
+                            <span class="news_title">What I Have Done</span>
+                            <span class="news_comments">
+                                <span class="material-icons">forum</span>
+                                (20) comments
+                            </span>
+                            <span class="news_comments">
+                                <span class="material-icons">person</span>
+                                Jhon Doe
+                            </span>
+                            <a href="#" class="news_link">[ read more ]</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="counters ">
-            <div class="row justify-content-center">
-                <div class="container">
-                    <div class="col-12">
-                        <div class="counters_holder">
-                            <div class="counters_item">
-                                <span class="counters_value" data-number="3">0</span>
-                                <span class="counters_title">sauce</span>
-                            </div>
-                            <div class="counters_item">
-                                <span class="counters_value" data-number="12">0</span>
-                                <span class="counters_title">steaks</span>
-                            </div>
-                            <div class="counters_item">
-                                <span class="counters_value" data-number="4">0</span>
-                                <span class="counters_title">beef</span>
-                            </div>
-                            <div class="counters_item">
-                                <span class="counters_value" data-number="5">0</span>
-                                <span class="counters_title">GARNISH</span>
-                            </div>
-                            <div class="counters_item">
-                                <span class="counters_value" data-number="15">0</span>
-                                <span class="counters_title">RESTAURANTS</span>
-                            </div>
-                            <div class="counters_item">
-                                <span class="counters_value" data-number="6">0</span>
-                                <span class="counters_title">CITIES</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <p class="title">REVIES OF OUR REGULAR CUSTOMERS</p>
-                    <div class="reviews-slider">
-                        <div class="reviews-slider_item">
-                            <img class="reviews-slider_image" src="https://via.placeholder.com/120x120" alt="">
-                            <div class="reviews-slider_content">
-                                <div class="reviews-slider_triangle"></div>
-                                <p class="reviews-slider_name">JHON SMITH</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus necessitatibus
-                                    nobis error ad dicta eveniet magnam facere. Tempora exercitationem dolores </p>
-                                <div class="rating">
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-slider_item">
-                            <img class="reviews-slider_image" src="https://via.placeholder.com/120x120" alt="">
-                            <div class="reviews-slider_content">
-                                <div class="reviews-slider_triangle"></div>
-                                <p class="reviews-slider_name">Elena Gomes</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus necessitatibus
-                                    nobis error ad dicta eveniet magnam facere. Tempora exercitationem dolores </p>
-                                <div class="rating">
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-slider_item">
-                            <img class="reviews-slider_image" src="https://via.placeholder.com/120x120" alt="">
-                            <div class="reviews-slider_content">
-                                <div class="reviews-slider_triangle"></div>
-                                <p class="reviews-slider_name">Eric Cartman</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus necessitatibus
-                                    nobis error ad dicta eveniet magnam facere. Tempora exercitationem dolores </p>
-                                <div class="rating">
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-slider_item">
-                            <img class="reviews-slider_image" src="https://via.placeholder.com/120x120" alt="">
-                            <div class="reviews-slider_content">
-                                <div class="reviews-slider_triangle"></div>
-                                <p class="reviews-slider_name">TJ Friman</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus necessitatibus
-                                    nobis error ad dicta eveniet magnam facere. Tempora exercitationem dolores </p>
-                                <div class="rating">
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item"></button>
-                                    <button class="rating_item"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-slider_item">
-                            <img class="reviews-slider_image" src="https://via.placeholder.com/120x120" alt="">
-                            <div class="reviews-slider_content">
-                                <div class="reviews-slider_triangle"></div>
-                                <p class="reviews-slider_name">JHON SMITH</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus necessitatibus
-                                    nobis error ad dicta eveniet magnam facere. Tempora exercitationem dolores </p>
-                                <div class="rating">
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-slider_item">
-                            <img class="reviews-slider_image" src="https://via.placeholder.com/120x120" alt="">
-                            <div class="reviews-slider_content">
-                                <div class="reviews-slider_triangle"></div>
-                                <p class="reviews-slider_name">Elena Gomes</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus necessitatibus
-                                    nobis error ad dicta eveniet magnam facere. Tempora exercitationem dolores </p>
-                                <div class="rating">
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-slider_item">
-                            <img class="reviews-slider_image" src="https://via.placeholder.com/120x120" alt="">
-                            <div class="reviews-slider_content">
-                                <div class="reviews-slider_triangle"></div>
-                                <p class="reviews-slider_name">Eric Cartman</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus necessitatibus
-                                    nobis error ad dicta eveniet magnam facere. Tempora exercitationem dolores </p>
-                                <div class="rating">
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-slider_item">
-                            <img class="reviews-slider_image" src="https://via.placeholder.com/120x120" alt="">
-                            <div class="reviews-slider_content">
-                                <div class="reviews-slider_triangle"></div>
-                                <p class="reviews-slider_name">TJ Friman</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus necessitatibus
-                                    nobis error ad dicta eveniet magnam facere. Tempora exercitationem dolores </p>
-                                <div class="rating">
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item"></button>
-                                    <button class="rating_item"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-slider_item">
-                            <img class="reviews-slider_image" src="https://via.placeholder.com/120x120" alt="">
-                            <div class="reviews-slider_content">
-                                <div class="reviews-slider_triangle"></div>
-                                <p class="reviews-slider_name">JHON SMITH</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus necessitatibus
-                                    nobis error ad dicta eveniet magnam facere. Tempora exercitationem dolores </p>
-                                <div class="rating">
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-slider_item">
-                            <img class="reviews-slider_image" src="https://via.placeholder.com/120x120" alt="">
-                            <div class="reviews-slider_content">
-                                <div class="reviews-slider_triangle"></div>
-                                <p class="reviews-slider_name">Elena Gomes</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus necessitatibus
-                                    nobis error ad dicta eveniet magnam facere. Tempora exercitationem dolores </p>
-                                <div class="rating">
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-slider_item">
-                            <img class="reviews-slider_image" src="https://via.placeholder.com/120x120" alt="">
-                            <div class="reviews-slider_content">
-                                <div class="reviews-slider_triangle"></div>
-                                <p class="reviews-slider_name">Eric Cartman</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus necessitatibus
-                                    nobis error ad dicta eveniet magnam facere. Tempora exercitationem dolores </p>
-                                <div class="rating">
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews-slider_item">
-                            <img class="reviews-slider_image" src="https://via.placeholder.com/120x120" alt="">
-                            <div class="reviews-slider_content">
-                                <div class="reviews-slider_triangle"></div>
-                                <p class="reviews-slider_name">TJ Friman</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus necessitatibus
-                                    nobis error ad dicta eveniet magnam facere. Tempora exercitationem dolores </p>
-                                <div class="rating">
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item active"></button>
-                                    <button class="rating_item"></button>
-                                    <button class="rating_item"></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="pattern-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="promo">
-                            <p class="title">CHOOSE JUICY STEAK NOW!</p>
-                            <a href="#" class="promo_button">BUY NOW!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="white-bg">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <p class="title">OUR CONTACT INFORMATION</p>
-                        <div class="contacts">
-                            <div class="contacts_items">
-                                <div class="contacts_item">
-                                    <img src="src/img/marker.svg" alt="" class="contacts_icon">
-                                    <p class="contacts_text">Mira Avenue, 15, Krasnoyarsk</p>
-                                    <p class="contacts_text">Krasnoyarskiy kray, 660049</p>
-                                </div>
-                                <div class="contacts_item">
-                                    <img src="src/img/earth.svg" alt="" class="contacts_icon">
-                                    <p class="contacts_text">
-                                        <a class="contacts_link" href="www.fedcowboy.com">www.fedcowboy.com</a>
-                                        <a class="contacts_link" href="mailto:www.fedcowboy.com">fedcowboy@gmail.com</a>
-                                    </p>
-                                </div>
-                                <div class="contacts_item">
-                                    <img src="src/img/call.svg" alt="" class="contacts_icon">
-                                    <p class="contacts_text">8 (800) 200 06 00</p>
-                                    <p class="contacts_text">8 (800) 201 07 01</p>
-                                </div>
-                                <div class="contacts_item">
-                                    <img src="src/img/clock-white.svg" alt="" class="contacts_icon">
-                                    <p class="contacts_text">Mon-Sat: 9:00 am - 01:00 pm</p>
-                                    <p class="contacts_text">Sun: 11:00 am- 23:00 pm</p>
-                                </div>
-                            </div>
-                            <p class="contacts_title">SEND US A MESSAGE</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-8">
-                        <form action="" class="form">
-                            <div class="form_fields">
-                                <div class="form_fields-row">
-                                    <div class="form_item">
-                                        <label for="">Name*</label>
-                                        <input type="text" class="form_field">
-                                    </div>
-                                    <div class="form_item">
-                                        <label for="">E-mail*</label>
-                                        <input type="email" class="form_field">
-                                    </div>
-                                </div>
-                                <div class="form_fields-row">
-                                    <div class="form_item form_item__wide">
-                                        <label for="">Your message</label>
-                                        <textarea name="" id="" class="form_field"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form_item">
-                                    <button class="button">add</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="footer_column col-12 col-md-4">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-3">
                     <img class="footer_logo" src="src/img/logo.png" alt="">
-                    <p>Hi! My name is John Smith and I am the owner of a family steak house "" Fed cowboy. "Cooking
-                        steaks for us it is the business of life. Even my grandfather grilled steaks are excellent.
-                        Some recipes steaks are preserved from those times and for them we are preparing our meals.</p>
-                    <p>Here you can enjoy a variety of steaks with different sauces and garnishes. Thank you for
-                        choosing "Fed cowboy”</p>
                 </div>
-                <div class="footer_column col-12 col-md-4">
-                    <div class="recent-posts">
-                        <p class="recent-posts_title">Recent posts</p>
-                        <a href="#" class="recent-posts_item">
-                            <img src=" https://via.placeholder.com/65x65" alt="" class="recent-posts_item-image">
-                            <span class="recent-posts_item-title">How to cook the perfect steak</span>
-                            <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Quas temporibus esse illo doloribus maiores </p>
-                        </a>
-                        <a href="#" class="recent-posts_item">
-                            <img src=" https://via.placeholder.com/65x65" alt="" class="recent-posts_item-image">
-                            <span class="recent-posts_item-title">Recipe Ribeye steak</span>
-                            <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Quas temporibus esse illo doloribus maiores </p>
-                        </a>
-                        <a href="#" class="recent-posts_item">
-                            <img src=" https://via.placeholder.com/65x65" alt="" class="recent-posts_item-image">
-                            <span class="recent-posts_item-title">Choosing the right meat for steak</span>
-                            <p class="recent-posts_item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Quas temporibus esse illo doloribus maiores </p>
-                        </a>
+                <div class="col-12 col-md-3">
+                    <div class="footer_contact">
+                        <div class="footer_contact-icon">
+                            <span class="material-icons">place</span>
+                        </div>
+                        <span class="footer_contact-title">Reach us</span>
+                        <span class="footer_contact-text">795 Folsom Ave, NY 20001 </span>
                     </div>
                 </div>
-                <div class="footer_column col-12 col-md-4">
-                    <p class="footer_title">Follow us</p>
-                    <p class="footer_subtitle">Our instagram</p>
-                    <img src=" https://via.placeholder.com/340x360" alt="">
-                    <div class="footer_social">
-                        <a href="#" class="footer_social-icon">
-                            <img src="src/img/social/tw.png" alt="">
-                        </a>
-                        <a href="#" class="footer_social-icon">
-                            <img src="src/img/social/fb.png" alt="">
-                        </a>
-                        <a href="#" class="footer_social-icon">
-                            <img src="src/img/social/g+.png" alt="">
-                        </a>
-                        <a href="#" class="footer_social-icon">
-                            <img src="src/img/social/insta.png" alt="">
-                        </a>
-                        <a href="#" class="footer_social-icon">
-                            <img src="src/img/social/ln.png" alt="">
-                        </a>
+                <div class="col-12 col-md-3">
+                    <div class="footer_contact">
+                        <div class="footer_contact-icon">
+                            <span class="material-icons">mail_outline</span>
+                        </div>
+                        <span class="footer_contact-title">You have any question</span>
+                        <a class="footer_contact-text" href="mailto:inquiry@perfectusinc.com">inquiry@perfectusinc.com</a>
                     </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="footer_contact">
+                        <div class="footer_contact-icon">
+                            <span class="material-icons">phone_in_talk</span>
+                        </div>
+                        <span class="footer_contact-title">24 x 7 Customer service</span>
+                        <span class="footer_contact-text">+(12) 34 56 789</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-2">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">my account</p>
+                        <a href="#" class="footer_menu-link">My Account</a>
+                        <a href="#" class="footer_menu-link">Order History</a>
+                        <a href="#" class="footer_menu-link">Wish List</a>
+                        <a href="#" class="footer_menu-link">Checkout</a>
+                        <a href="#" class="footer_menu-link">Advanced search</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">shopping</p>
+                        <a href="#" class="footer_menu-link">shopping</a>
+                        <a href="#" class="footer_menu-link">Your Orders</a>
+                        <a href="#" class="footer_menu-link">Addresses</a>
+                        <a href="#" class="footer_menu-link">Wishlist Items</a>
+                        <a href="#" class="footer_menu-link">Wishlist Items</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">services</p>
+                        <a href="#" class="footer_menu-link">Contact Us</a>
+                        <a href="#" class="footer_menu-link">Returns</a>
+                        <a href="#" class="footer_menu-link">Site Map</a>
+                        <a href="#" class="footer_menu-link">Wish List</a>
+                        <a href="#" class="footer_menu-link">Newsletter</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">extras</p>
+                        <a href="#" class="footer_menu-link">Evouchers</a>
+                        <a href="#" class="footer_menu-link">Gift card</a>
+                        <a href="#" class="footer_menu-link">Gift experiance</a>
+                        <a href="#" class="footer_menu-link">Weddding gift list</a>
+                        <a href="#" class="footer_menu-link">Next credit card account</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">newsletter</p>
+                        <p class="footer_menu-text">Please register to receive these great deals from us.</p>
+                        <div class="footer_newslatter">
+                            <input type="text" class="footer_newslatter-input" placeholder="your email address">
+                            <button class="footer_newslatter-button material-icons">send</button>
+                        </div>
+                        <div class="footer_social">
+                            <a href="#" class="footer_social-icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer_bottom">
+                <div class="col-12">
+                    <p class="footer_copyright">
+                        © 2017 Jarvis. -  All Right Reserved. Designed by 
+                        <a href="#" class="footer_copyright-link">Perfectusinc</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 footer_payments">
+                    <img src="src/img/payment_icon.png" alt="">
                 </div>
             </div>
         </div>
     </footer>
-    <div class="widjet">
-        <button class="widjet_close">⨯</button>
-        <p class="title">CART TOTALS</p>
-        <table class="widjet_table">
-            <tbody>
-                <tr>
-                    <td>
-                        <img src=" https://via.placeholder.com/100x100" alt="" class="widjet_table-image">
-                    </td>
-                    <td>
-                        <p class="widjet_table-title">
-                            STEAK "MACHETE"
-                            <button class="widjet_table-delete">⨯</button>
-                        </p>
-                        <p class="widjet_table-price">$ 12<sup>90</sup></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src=" https://via.placeholder.com/100x100" alt="" class="widjet_table-image">
-                    </td>
-                    <td>
-                        <p class="widjet_table-title">
-                            STEAK "RIBEYE"
-                            <button class="widjet_table-delete">⨯</button>
-                        </p>
-                        <p class="widjet_table-price">$ 14<sup>50</sup></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src=" https://via.placeholder.com/100x100" alt="" class="widjet_table-image">
-                    </td>
-                    <td>
-                        <p class="widjet_table-title">
-                            STEAK  "NORTEN CROW"
-                            <button class="widjet_table-delete">⨯</button>
-                        </p>
-                        <p class="widjet_table-price">$ 13<sup>70</sup></p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="widjet_bottom">
-            <span class="widjet_bottom-title">ORDER TOTAL:</span>
-            <span class="widjet_bottom-value">$ 54 <sup>00</sup></span>
-        </div>
-        <div class="widjet_bottom">
-            <a href="/cart.html" class="widjet_button">view cart</a>
-            <a href="/checkout.html" class="widjet_button">checkout</a>
-        </div>
-    </div>
 
 
     <script src="src/js/jquery-3.3.1.min.js"></script>
     <script src="src/js/bootstrap-slider.min.js"></script>
     <script src="src/js/chosen.jquery.min.js"></script>
-    <script src="src/js/countUp.min.js"></script>
     <script src="src/js/slick.js"></script>
     <script src="src/js/main.js"></script>
 
     <script>
-        /* Counters */
-        var counters = document.querySelectorAll('.counters_value'),
-            options = {
-                useEasing: true,
-                useGrouping: true,
-                separator: '',
-                decimal: '.',
-            };
-
-        for (var i = 0; i < counters.length; i++) {
-            var counter = new CountUp(counters[i], 0, counters[i].dataset.number, 0, 3, options);
-            if (!counter.error) {
-                counter.start();
-            } else {
-                console.error(counter.error);
-            }
-        }
-
         /* Slider */
-        $('.reviews-slider ').slick({
+        $('#slider ').slick({
             infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            arrows: false,
-            dots: true
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            prevArrow: '<button type="button" class="slick-prev">[prev]</button>',
+            nextArrow: '<button type="button" class="slick-next">[next]</button>',
         });
     </script>
 </body>

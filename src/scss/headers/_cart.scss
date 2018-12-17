@@ -1,0 +1,28 @@
+.cart {
+    
+}
+
+.cart-button {
+    display: flex;
+    color: $light_color;
+
+    &_icon {
+        background: url(#{$img-path}/icons/shopbag.svg) no-repeat;
+        background-size: 100% auto;
+        height: 24px;
+        width: 22px;
+        display: inline-block;
+        margin: 0 8px 0 0;
+        filter: brightness(2);
+    }
+    &_title {
+        font-size: 12px;
+        display: block;
+    }
+    &_sum {
+        font-size: 14px;
+    }
+    &_value {
+        color: $bright_color;
+    }
+}

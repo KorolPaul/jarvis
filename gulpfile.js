@@ -17,10 +17,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('js', function () {
-    gulp.src(['src/js/vendors/*.js'])
-        .pipe(gulp.dest('./Content/vendors'))
-
-    gulp.src(['src/js/entities/*.js', 'src/js/*.js'])
+    gulp.src(['src/js/*.js'])
         .pipe(babel({
             presets: ['env']
         }))

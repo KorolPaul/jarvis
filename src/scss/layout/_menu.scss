@@ -1,34 +1,25 @@
 .menu {
-    position: absolute;
-    top: 50px;
-    right: 0;
-    z-index: 1;
-    padding: 0;
-    
-
+    &_list {
+        list-style: none;
+        margin: 0;
+        text-align: center;
+    }
+    &_list-item {
+        list-style: none;
+        margin: 0;
+        display: inline-block;
+    }
     &_link {
-        color: $color;
-        font-family: $font-family__heading;
+        color: $light_color;
         text-decoration: none;
         text-transform: uppercase;
         display: inline-block;
-        margin: 0 0 0 25px;
-        position: relative;
+        margin: 0 10px;
 
-        &:hover {
+        &:hover,
+        &.active {
             color: $bright_color;
             text-decoration: none;
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            top: 35px;
-            left: 7px;
-            right: 7px;
-            border-bottom: 2px solid transparent;
-        }
-        &.active::after {
-            border-color: $color;
         }
     }
 }

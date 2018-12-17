@@ -1,146 +1,33 @@
-.slick-slider {
-    max-height: calc(98vh - 160px);
-    overflow: hidden;
-
-    &__small {
-        margin: 0 0 15px;
-    }
-    &_item {
-        position: relative;
-        outline: none;
+.slider {
+    &_holder {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
     &_image {
-        object-fit: cover;
         width: 100%;
-        height: 100%;
     }
-    &_navigation {
-        margin: auto;
-        height: 120px;
-        position: relative;
-        bottom: 120px;
-
-        .slick-slider__small & {
-            max-width: 750px;
-            bottom: 3px;
-        }
-    }
-    &_holder {
-        left: 0;
-        right: 0;
+    &_info {
         position: absolute;
-        height: 100%;
-        max-height: calc(98vh - 160px);
-        @include tablet {
-            left: 50%;
-            right: auto;
-            transform: translate(-50%, 0);
-            z-index: 1;
-        }
-
-        .slick-slider__small & {
-            max-width: 750px;
-            height: auto;
-            position: static;
-            transform: none;
-        }
-    }
-    &_content {
-        position: absolute;
+        top: 50%;
         left: 0;
-        right: 0;
-        top: 30%;
-        padding: 30px;
-        transform: translate(0, -50%);
-        @include tablet {
-            top: 50%;
-            background: $color;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rbga(0, 0, 0, .3);
-            right: auto;
-        }
+        width: 60%;
     }
     &_title {
-        color: $bright_color;
-        font: 15vw/1 $font-family__cursive;
+        color: $light_color;
+        font: 60px/34px $font-family__cursive;
         margin: 0 0 20px;
-        @include tablet {
-            margin: 0;
-            font-size: 72px;
-        }
     }
-    &_text {
-        font: bold 26px $font-family__heading;
-        margin: 0;
+    &_subtitle {
+        color: $light_color;
+        font: 20px/33px $font-family;
+        margin: 0 0 20px;
     }
-    &_price {
-        display: none;
-        @include tablet {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 30px 0 0;
-            padding: 30px 0 0;
-            border-top: 1px solid #e0e0e0;
-        }
-    }
-    &_count {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .button {
-            margin: 0 0 0 10px;
-        }
-    }
-    &_price-value {
-        color: $link_color;
-        @extend %heading-1;
-        margin: 0 0 0 10px;
-    }
-    &_price-old {
-        font: 26px $font-family__heading;
-        color: #ccc;
-        margin: 0 0 0 3px;
-        text-decoration: line-through;
-        vertical-align: 4px;
-    }
-    &_quote-content {
-        width: 100%;
-        border-radius: 10px;
-        padding: 30px;
-        box-shadow: 0 2px 5px rbga(0, 0, 0, .3);
-        background: $color;
-        @include tablet {
-            display: flex;
-        }
-    }
-    &_user {
-        text-align: center;
-        @include tablet {
-            margin: 0 30px 0 0;
-            width: 110px;
-            flex-shrink: 0;
-        }
-    }
-    &_username {
-        font: bold 32px $font-family__heading;
-        margin: 0 0 10px;
-        @include tablet {
-            font-size: 16px;
-        }
-    }
-    &_avatar {
-        display: none;
-        @include tablet {
-            display: block;
-            border-radius: 50%;
-            height: 100px;
-            width: 100px;
-            margin: 0 0 10px;
-        }
-    }
-    &_social {
-        margin: 0 2px;
+    &_bright {
+        color: $bright_color;
+        font-size: 30px;
+        font-weight: bold;
     }
 }

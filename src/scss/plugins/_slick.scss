@@ -53,6 +53,7 @@
 
 .slick-slide {
   float: left;
+  position: relative;
   min-height: 1px;
 
   &.slick-loading img {
