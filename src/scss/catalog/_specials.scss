@@ -1,0 +1,11 @@
+.specials {
+    &_column {
+        border: 1PX solid transparent;
+        padding: 15px;
+        transition: .2S ease-in-out border;
+
+        &:hover {
+            border-color: $bright_color;
+        }
+    }
+}

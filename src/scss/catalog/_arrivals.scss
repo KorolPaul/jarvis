@@ -1,0 +1,72 @@
+.arrivals {
+    margin: 0 0 100px;
+    
+    &_item  {
+        background: black;
+        display: block;
+        position: relative;
+        text-decoration: none;
+    }
+    &_image {
+        opacity: .8;
+        transition: .2s ease-in-out opacity;
+
+        .arrivals_item:hover & {
+            opacity: 1;
+        }
+    }
+    &_info {
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        top: 50%;
+        margin: 20px 0 0;
+        transform: translate(0, -50%);
+    }
+    &_title {
+        color: $color;
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        position: relative;
+
+        &::after {
+            content: '';
+            border: 1px solid $light_color;
+            position: absolute;
+            left: 0; 
+            bottom: -19px;
+            width: 145px;
+            transition: .2s ease-in-out border;
+
+            .arrivals_item:hover & {
+                border-color: $bright_color;
+            }
+        }
+    }
+    &_title-strong {
+        color: $light_color;
+        font-size: 40px;
+        font-weight: bold;
+        display: block;
+        margin: 0 0 30px;
+    }
+    &_link {
+        color: $light_color;
+        font-size: 14px;
+        font-weight: 600;
+        transition: .2s ease-in-out color;
+
+        .arrivals_item:hover & {
+            color: $bright_color;
+        }
+        &::before {
+            content: '[ ';
+            color: $light_color;
+        }
+        &::after {
+            content: ' ]';
+            color: $light_color;
+        }
+    }
+}

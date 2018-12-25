@@ -2,8 +2,9 @@
     background: transparent;
     border: none;
     padding: 0;
+    margin: 0 12px;
     
-    .header & {
+    .header__main & {
         color: $light_color;
     }
     .material-icons {

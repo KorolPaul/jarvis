@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <meta content="telephone=no" name="format-detection">
     <meta name="HandheldFriendly" content="true">
     <meta property="og:title" content="#{data.title}">
@@ -24,13 +26,13 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header__main">
         <div class="header_container container">
             <div class="header_top">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-12 col-md-2">
                         <a href="/" class="logo">
-                            <img src="src/img/logo.png" alt="">
+                            <img src="src/img/logo.svg" alt="">
                         </a>
                     </div>
                     <div class="col-12 col-md-8">
@@ -40,22 +42,33 @@
                                     <a href="/" class="menu_link">home</a>
                                 </li>
                                 <li class="menu_list-item">
-                                    <a href="/" class="menu_link">men</a>
+                                    <a href="/" class="menu_link">
+                                        men
+                                        <span class="menu_arrow fas fa-angle-down"></span>
+                                    </a>
                                 </li>
                                 <li class="menu_list-item">
-                                    <a href="/" class="menu_link">women</a>
+                                    <a href="/" class="menu_link">
+                                        women
+                                        <span class="menu_arrow fas fa-angle-down"></span>
+                                    </a>
                                 </li>
                                 <li class="menu_list-item">
-                                    <a href="/" class="menu_link">shop</a>
+                                    <a href="/" class="menu_link">
+                                        shop<span class="menu_arrow fas fa-angle-down"></span>
+                                    </a>
                                 </li>
                                 <li class="menu_list-item">
-                                    <a href="/" class="menu_link">accessories</a>
+                                    <a href="/" class="menu_link">
+                                        accessories
+                                        <span class="menu_arrow fas fa-angle-down"></span>
+                                    </a>
                                 </li>
                                 <li class="menu_list-item">
                                     <a href="/" class="menu_link">contact</a>
                                 </li>
                                 <li class="menu_list-item">
-                                    <a href="/" class="menu_link">buy theme</a>
+                                    <a href="/" class="menu_link active">buy theme</a>
                                 </li>
                             </ul>
                         </nav>
@@ -116,208 +129,261 @@
             <div class="features row">
                 <div class="features_item col-3">
                     <div class="features_icon material-icons">local_airport</div>
-                    <span class="features_title">free shipping</span>
-                    <span class="features_text">ON ORDER OVER $200</span>
+                    <div>
+                        <span class="features_title">free shipping</span>
+                        <span class="features_text">ON ORDER OVER $200</span>
+                    </div>
                 </div>
                 <div class="features_item col-3">
                     <div class="features_icon material-icons">local_phone</div>
-                    <span class="features_title">24 hour</span>
-                    <span class="features_text">active support</span>
+                    <div>
+                        <span class="features_title">24 hour</span>
+                        <span class="features_text">active support</span>
+                    </div>
                 </div>
                 <div class="features_item col-3">
                     <div class="features_icon material-icons">payment</div>
-                    <span class="features_title">Easy payment</span>
-                    <span class="features_text">optimal for payment</span>
+                    <div>
+                        <span class="features_title">Easy payment</span>
+                        <span class="features_text">optimal for payment</span>
+                    </div>
                 </div>
                 <div class="features_item col-3">
                     <div class="features_icon material-icons">card_giftcard</div>
-                    <span class="features_title">Special gift card</span>
-                    <span class="features_text">ON ORDER OVER $800</span>
+                    <div>
+                        <span class="features_title">Special gift card</span>
+                        <span class="features_text">ON ORDER OVER $800</span>
+                    </div>
                 </div>
             </div>
             <div class="arrivals row">
-                <a href="#"class="arrivals_item col-4">
-                    <img src="src/img/images/arrivals/mens_banner.jpg" alt="" class="arrivals_image">
-                    <p class="arrivals_title">
-                        men’s <span class="arrivals_title-strong">collection</span>
-                    </p>
-                    <span class="arrivals_link">[ shop now ]</span>
-                </a>
-                <a class="arrivals_item col-4">
-                    <img src="src/img/images/arrivals/new-arrivals_banner.jpg" alt="" class="arrivals_image">
-                    <p class="arrivals_main-title">new</p>
-                    <p class="arrivals_main-subtitle">arrivals</p>
-                </a>
-                <a class="arrivals_item col-4">
-                    <img src="src/img/images/arrivals/women__banner.jpg" alt="" class="arrivals_image">
-                    <p class="arrivals_title">
-                        women’s <span class="arrivals_title-strong">collection</span>
-                    </p>
-                    <span class="arrivals_link">[ shop now ]</span>
-                </a>
-            </div>
-            <div class="catalog-grid row">
-                <div class="product-card col-md-6 col-lg-3">
-                    <img src="src/img/images/products/recently_product_01.jpg" alt="" class="product-card_image">
-                    <div class="product-card_controls">
-                        <button class="product-card-control material-icons">shopping_basket</button>
-                        <button class="product-card-control material-icons">favorite_border</button>
-                        <button class="product-card-control material-icons">sort</button>
-                        <button class="product-card-control material-icons">remove_red_eye</button>
-                    </div>
-                    <p class="product-card_title">Bonorum et Malorum</p>
-                    <div class="rating">
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star"></button>
-                    </div>
-                    <div class="prudoct-card_price">
-                        <span class="prudoct-card_price-value">$470.00</span>
-                    </div>
+                <div class="col-4">
+                    <a href="#" class="arrivals_item">
+                        <img src="src/img/images/arrivals/mens_banner.jpg" alt="" class="arrivals_image">
+                        <div class="arrivals_info">
+                            <p class="arrivals_title">
+                                men’s <span class="arrivals_title-strong">collection</span>
+                            </p>
+                            <span class="arrivals_link">shop now</span>
+                        </div>
+                    </a>
                 </div>
-                <div class="product-card col-md-6 col-lg-3">
-                    <span class="product-card_discount">-30%</span>
-                    <img src="src/img/images/products/recently_product_03.jpg" alt="" class="product-card_image">
-                    <div class="product-card_controls">
-                        <button class="product-card-control material-icons">shopping_basket</button>
-                        <button class="product-card-control material-icons">favorite_border</button>
-                        <button class="product-card-control material-icons">sort</button>
-                        <button class="product-card-control material-icons">remove_red_eye</button>
-                    </div>
-                    <p class="product-card_title">handful of model</p>
-                    <div class="rating">
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star"></button>
-                    </div>
-                    <div class="prudoct-card_price">
-                        <span class="prudoct-card_price-value">$189.00</span>
-                        <span class="prudoct-card_price-old">$470.00</span>
-                    </div>
+                <div class="col-4">
+                    <a class="arrivals_item" href="#">
+                        <img src="src/img/images/arrivals/new-arrivals_banner.jpg" alt="" class="arrivals_image">
+                        <div class="arrivals_info">
+                            <p class="arrivals_main-title">new</p>
+                            <p class="arrivals_main-subtitle">arrivals</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="product-card col-md-6 col-lg-3">
-                    <img src="src/img/images/products/new_arrivals_product_03.jpg" alt="" class="product-card_image">
-                    <div class="product-card_controls">
-                        <button class="product-card-control material-icons">shopping_basket</button>
-                        <button class="product-card-control material-icons">favorite_border</button>
-                        <button class="product-card-control material-icons">sort</button>
-                        <button class="product-card-control material-icons">remove_red_eye</button>
-                    </div>
-                    <p class="product-card_title">slightly believable</p>
-                    <div class="rating">
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star"></button>
-                    </div>
-                    <div class="prudoct-card_price">
-                        <span class="prudoct-card_price-value">$250.00</span>
-                    </div>
-                </div>
-                <div class="product-card col-md-6 col-lg-3">
-                    <img src="src/img/images/products/recently_product_02.jpg" alt="" class="product-card_image">
-                    <div class="product-card_controls">
-                        <button class="product-card-control material-icons">shopping_basket</button>
-                        <button class="product-card-control material-icons">favorite_border</button>
-                        <button class="product-card-control material-icons">sort</button>
-                        <button class="product-card-control material-icons">remove_red_eye</button>
-                    </div>
-                    <p class="product-card_title">predefined chunks</p>
-                    <div class="rating">
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star"></button>
-                    </div>
-                    <div class="prudoct-card_price">
-                        <span class="prudoct-card_price-value">$410.00</span>
-                    </div>
+                <div class="col-4">
+                    <a class="arrivals_item" href="#">
+                        <img src="src/img/images/arrivals/women__banner.jpg" alt="" class="arrivals_image">
+                        <div class="arrivals_info">
+                            <p class="arrivals_title">
+                                women’s <span class="arrivals_title-strong">collection</span>
+                            </p>
+                            <span class="arrivals_link">shop now</span>
+                        </div>
+                    </a>
                 </div>
             </div>
+            <h2>new arrivals</h2>
             <div class="catalog-grid row">
-                <div class="product-card col-md-6 col-lg-3">
-                    <img src="src/img/images/products/new_arrivals_product_05.jpg" alt="" class="product-card_image">
-                    <div class="product-card_controls">
-                        <button class="product-card-control material-icons">shopping_basket</button>
-                        <button class="product-card-control material-icons">favorite_border</button>
-                        <button class="product-card-control material-icons">sort</button>
-                        <button class="product-card-control material-icons">remove_red_eye</button>
-                    </div>
-                    <p class="product-card_title">Billum qui dolorem eum</p>
-                    <div class="rating">
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star"></button>
-                    </div>
-                    <div class="prudoct-card_price">
-                        <span class="prudoct-card_price-value">$180.00</span>
-                    </div>
-                </div>
-                <div class="product-card col-md-6 col-lg-3">
-                    <img src="src/img/images/products/top_product_06.jpg" alt="" class="product-card_image">
-                    <p class="product-card_title">handful of model</p>
-                    <div class="rating">
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star"></button>
-                    </div>
-                    <div class="prudoct-card_price">
-                        <span class="prudoct-card_price-value">$857.00</span>
-                    </div>
-                    <div class="product-card_out">
-                        <span class="product-card_out-text">OUT off  stock!</span>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-card_image-wrapper">
+                            <img src="src/img/images/products/new_arrivals_product_01.jpg" alt="" class="product-card_image">
+                            <div class="product-card_controls">
+                                <button class="product-card_control material-icons">shopping_basket</button>
+                                <button class="product-card_control material-icons">favorite_border</button>
+                                <button class="product-card_control material-icons">sort</button>
+                                <button class="product-card_control material-icons">remove_red_eye</button>
+                            </div>
+                        </div>
+                        <a class="product-card_title" href="#">Bonorum et Malorum</a>
+                        <div class="rating">
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star material-icons">star_border</button>
+                        </div>
+                        <div class="product-card_price">
+                            <span class="product-card_price-value">$470.00</span>
+                        </div>
                     </div>
                 </div>
-                <div class="product-card col-md-6 col-lg-3">
-                    <img src="src/img/images/products/new_arrivals_product_07.jpg" alt="" class="product-card_image">
-                    <div class="product-card_controls">
-                        <button class="product-card-control material-icons">shopping_basket</button>
-                        <button class="product-card-control material-icons">favorite_border</button>
-                        <button class="product-card-control material-icons">sort</button>
-                        <button class="product-card-control material-icons">remove_red_eye</button>
-                    </div>
-                    <p class="product-card_title">undoubtable source</p>
-                    <div class="rating">
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star"></button>
-                    </div>
-                    <div class="prudoct-card_price">
-                        <span class="prudoct-card_price-value">$310.00</span>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card">
+                        <span class="product-card_discount">-30%</span>
+                        <div class="product-card_image-wrapper">
+                            <img src="src/img/images/products/new_arrivals_product_02.jpg" alt="" class="product-card_image">
+                            <div class="product-card_controls">
+                                <button class="product-card_control material-icons">shopping_basket</button>
+                                <button class="product-card_control material-icons">favorite_border</button>
+                                <button class="product-card_control material-icons">sort</button>
+                                <button class="product-card_control material-icons">remove_red_eye</button>
+                            </div>
+                        </div>
+                        <a class="product-card_title" href="#">handful of model</a>
+                        <div class="rating">
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star material-icons">star_border</button>
+                        </div>
+                        <div class="product-card_price">
+                            <span class="product-card_price-value">$189.00</span>
+                            <span class="product-card_price-old">$470.00</span>
+                        </div>
                     </div>
                 </div>
-                <div class="product-card col-md-6 col-lg-3">
-                    <span class="product-card_discount">-50%</span>
-                    <img src="src/img/images/products/new_arrivals_product_08.jpg" alt="" class="product-card_image">
-                    <div class="product-card_controls">
-                        <button class="product-card-control material-icons">shopping_basket</button>
-                        <button class="product-card-control material-icons">favorite_border</button>
-                        <button class="product-card-control material-icons">sort</button>
-                        <button class="product-card-control material-icons">remove_red_eye</button>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-card_image-wrapper">
+                            <img src="src/img/images/products/new_arrivals_product_03.jpg" alt="" class="product-card_image">
+                            <div class="product-card_controls">
+                                <button class="product-card_control material-icons">shopping_basket</button>
+                                <button class="product-card_control material-icons">favorite_border</button>
+                                <button class="product-card_control material-icons">sort</button>
+                                <button class="product-card_control material-icons">remove_red_eye</button>
+                            </div>
+                        </div>
+                        <a class="product-card_title" href="#">slightly believable</a>
+                        <div class="rating">
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star material-icons">star_border</button>
+                        </div>
+                        <div class="product-card_price">
+                            <span class="product-card_price-value">$250.00</span>
+                        </div>
                     </div>
-                    <p class="product-card_title">therefore always</p>
-                    <div class="rating">
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star rating_star__filled"></button>
-                        <button class="rating_star"></button>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-card_image-wrapper">
+                            <img src="src/img/images/products/new_arrivals_product_04.jpg" alt="" class="product-card_image">
+                            <div class="product-card_controls">
+                                <button class="product-card_control material-icons">shopping_basket</button>
+                                <button class="product-card_control material-icons">favorite_border</button>
+                                <button class="product-card_control material-icons">sort</button>
+                                <button class="product-card_control material-icons">remove_red_eye</button>
+                            </div>
+                        </div>
+                        <a class="product-card_title" href="#">predefined chunks</a>
+                        <div class="rating">
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star material-icons">star_border</button>
+                        </div>
+                        <div class="product-card_price">
+                            <span class="product-card_price-value">$410.00</span>
+                        </div>
                     </div>
-                    <div class="prudoct-card_price">
-                        <span class="prudoct-card_price-value">$189.00</span>
-                        <span class="prudoct-card_price-old">$360.00</span>
+                </div>
+            </div>
+            <div class="catalog-grid row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-card_image-wrapper">
+                            <img src="src/img/images/products/new_arrivals_product_05.jpg" alt="" class="product-card_image">
+                            <div class="product-card_controls">
+                                <button class="product-card_control material-icons">shopping_basket</button>
+                                <button class="product-card_control material-icons">favorite_border</button>
+                                <button class="product-card_control material-icons">sort</button>
+                                <button class="product-card_control material-icons">remove_red_eye</button>
+                            </div>
+                        </div>
+                        <a class="product-card_title" href="#">Billum qui dolorem eum</a>
+                        <div class="rating">
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star material-icons">star_border</button>
+                        </div>
+                        <div class="product-card_price">
+                            <span class="product-card_price-value">$180.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-card_image-wrapper">
+                            <img src="src/img/images/products/new_arrivals_product_06.jpg" alt="" class="product-card_image">
+                        </div>
+                        <a class="product-card_title" href="#">handful of model</a>
+                        <div class="rating">
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star material-icons">star_border</button>
+                        </div>
+                        <div class="product-card_price">
+                            <span class="product-card_price-value">$857.00</span>
+                        </div>
+                        <div class="product-card_out">
+                            <span class="product-card_out-text">OUT off stock!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card">
+                        <div class="product-card_image-wrapper">
+                            <img src="src/img/images/products/new_arrivals_product_07.jpg" alt="" class="product-card_image">
+                            <div class="product-card_controls">
+                                <button class="product-card_control material-icons">shopping_basket</button>
+                                <button class="product-card_control material-icons">favorite_border</button>
+                                <button class="product-card_control material-icons">sort</button>
+                                <button class="product-card_control material-icons">remove_red_eye</button>
+                            </div>
+                        </div>
+                        <a class="product-card_title" href="#">undoubtable source</a>
+                        <div class="rating">
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star material-icons">star_border</button>
+                        </div>
+                        <div class="product-card_price">
+                            <span class="product-card_price-value">$310.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card">
+                        <span class="product-card_discount">-50%</span>
+                        <div class="product-card_image-wrapper">
+                            <img src="src/img/images/products/new_arrivals_product_08.jpg" alt="" class="product-card_image">
+                            <div class="product-card_controls">
+                                <button class="product-card_control material-icons">shopping_basket</button>
+                                <button class="product-card_control material-icons">favorite_border</button>
+                                <button class="product-card_control material-icons">sort</button>
+                                <button class="product-card_control material-icons">remove_red_eye</button>
+                            </div>
+                        </div>
+                        <a class="product-card_title" href="#">therefore always</a>
+                        <div class="rating">
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star rating_star__filled material-icons">star</button>
+                            <button class="rating_star material-icons">star_border</button>
+                        </div>
+                        <div class="product-card_price">
+                            <span class="product-card_price-value">$189.00</span>
+                            <span class="product-card_price-old">$360.00</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -326,34 +392,42 @@
                     <table class="banners">
                         <tr>
                             <td rowspan="2">
-                                <a href="#" class="baners_item">
-                                    <img  class="baners_image" src="src/img/images/banners/banner_01.jpg" alt="">
-                                    <p class="banners_title">huge sale</p>
-                                    <p class="banners_subtitle">now starting from *99</p>
+                                <a href="#" class="banners_item">
+                                    <img class="banners_image" src="src/img/images/banners/banner_01.jpg" alt="">
+                                    <div class="banners_text">
+                                        <p class="banners_title">huge sale</p>
+                                        <p class="banners_subtitle">now starting from *99</p>
+                                    </div>
                                 </a>
                             </td>
                             <td>
-                                <a href="#" class="baners_item">
-                                    <img  class="baners_image" src="src/img/images/banners/banner_02.jpg" alt="">
-                                    <p class="banners_subtitle">New sale</p>
-                                    <p class="banners_title banners_title__border-top">50% OFF</p>
+                                <a href="#" class="banners_item">
+                                    <img class="banners_image" src="src/img/images/banners/banner_02.jpg" alt="">
+                                    <div class="banners_text">
+                                        <p class="banners_subtitle">New sale</p>
+                                        <p class="banners_title banners_title__border-top">50% OFF</p>
+                                    </div>
                                 </a>
                             </td>
                             <td rowspan="2">
-                                <a href="#" class="baners_item">
-                                    <img  class="baners_image" src="src/img/images/banners/banner_04.jpg" alt="">
-                                    <p class="banners_title banners_title__bottom">2018</p>
-                                    <p class="banners_subtitle">fashion trends</p>
-                                    <a href="#" class="banners_link">[ shop now ]</a>
+                                <a href="#" class="banners_item">
+                                    <img class="banners_image" src="src/img/images/banners/banner_04.jpg" alt="">
+                                    <div class="banners_text banners_text__bottom">
+                                        <p class="banners_title banners_title__bottom">2018</p>
+                                        <p class="banners_subtitle">fashion trends</p>
+                                        <span class="banners_link">shop now</span>
+                                    </div>
                                 </a>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <a href="#" class="baners_item">
-                                    <img  class="baners_image" src="src/img/images/banners/banner_03.jpg" alt="">
-                                    <p class="banners_subtitle">super sale</p>
-                                    <p class="banners_title">shoes designed</p>
+                                <a href="#" class="banners_item">
+                                    <img class="banners_image" src="src/img/images/banners/banner_03.jpg" alt="">
+                                    <div class="banners_text">
+                                        <p class="banners_subtitle">shoes designed</p>
+                                        <p class="banners_title">super sale</p>
+                                    </div>
                                 </a>
                             </td>
                         </tr>
@@ -378,78 +452,78 @@
                     </div>
                 </div>
                 <div class="row justify-content-between">
-                    <div class="specials_column col-md-3">
-                        <div class="product-card product-card__small col-md-6 col-lg-3">
+                    <div class="specials_column col-md-4">
+                        <div class="product-card product-card__small">
                             <img src="src/img/images/products/best_seller_product_01.jpg" alt="" class="product-card_image">
                             <div>
-                                <p class="product-card_title">It is a long established fact that</p>
+                                <a class="product-card_title" href="#">It is a long established fact that</a>
                                 <div class="rating">
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star"></button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star material-icons">star_border</button>
                                 </div>
-                                <div class="prudoct-card_price">
-                                    <span class="prudoct-card_price-value">$250.00</span>
+                                <div class="product-card_price">
+                                    <span class="product-card_price-value">$250.00</span>
                                 </div>
                                 <div class="product-card_controls">
-                                    <button class="product-card-control material-icons">shopping_basket</button>
-                                    <button class="product-card-control material-icons">favorite_border</button>
-                                    <button class="product-card-control material-icons">sort</button>
-                                    <button class="product-card-control material-icons">remove_red_eye</button>
+                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                    <button class="product-card_control material-icons">favorite_border</button>
+                                    <button class="product-card_control material-icons">sort</button>
+                                    <button class="product-card_control material-icons">remove_red_eye</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="product-card product-card__small col-md-6 col-lg-3">
+                        <div class="product-card product-card__small">
                             <img src="src/img/images/products/best_seller_product_02.jpg" alt="" class="product-card_image">
                             <div>
-                                <p class="product-card_title">Many desktop publis hing page </p>
+                                <a class="product-card_title" href="#">Many desktop publis hing page </a>
                                 <div class="rating">
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star"></button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star material-icons">star_border</button>
                                 </div>
-                                <div class="prudoct-card_price">
-                                    <span class="prudoct-card_price-value">$390.00</span>
+                                <div class="product-card_price">
+                                    <span class="product-card_price-value">$390.00</span>
                                 </div>
                                 <div class="product-card_controls">
-                                    <button class="product-card-control material-icons">shopping_basket</button>
-                                    <button class="product-card-control material-icons">favorite_border</button>
-                                    <button class="product-card-control material-icons">sort</button>
-                                    <button class="product-card-control material-icons">remove_red_eye</button>
+                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                    <button class="product-card_control material-icons">favorite_border</button>
+                                    <button class="product-card_control material-icons">sort</button>
+                                    <button class="product-card_control material-icons">remove_red_eye</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="product-card product-card__small col-md-6 col-lg-3">
+                        <div class="product-card product-card__small">
                             <img src="src/img/images/products/best_seller_product_03.jpg" alt="" class="product-card_image">
                             <div>
-                                <p class="product-card_title">Lorem Ipsum which looks reaso</p>
+                                <a class="product-card_title" href="#">Lorem Ipsum which looks reaso</a>
                                 <div class="rating">
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star"></button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star material-icons">star_border</button>
                                 </div>
-                                <div class="prudoct-card_price">
-                                    <span class="prudoct-card_price-value">$488.00</span>
+                                <div class="product-card_price">
+                                    <span class="product-card_price-value">$488.00</span>
                                 </div>
                                 <div class="product-card_controls">
-                                    <button class="product-card-control material-icons">shopping_basket</button>
-                                    <button class="product-card-control material-icons">favorite_border</button>
-                                    <button class="product-card-control material-icons">sort</button>
-                                    <button class="product-card-control material-icons">remove_red_eye</button>
+                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                    <button class="product-card_control material-icons">favorite_border</button>
+                                    <button class="product-card_control material-icons">sort</button>
+                                    <button class="product-card_control material-icons">remove_red_eye</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="specials_column col-md-3">
-                        <div class="product-card col-md-6 col-lg-3">
+                    <div class="specials_column col-md-4">
+                        <div class="product-card">
                             <div class="product-card_counter">
-                                <span class="product-card_counter-item">
+                                <span class="product-card_counter-item product-card_counter-item__days">
                                     <span class="product-card_counter-value">04</span>
                                     days
                                 </span>
@@ -468,91 +542,91 @@
                             </div>
                             <span class="product-card_discount">-50%</span>
                             <div class="product-card_image-wrapper">
-                                <img src="src/img/images/products/recently_product_03.jpg" alt="" class="product-card_image">
+                                <img src="src/img/images/products/specials_product.jpg" alt="" class="product-card_image">
                                 <div class="product-card_gallery">
                                     <img src="src/img/images/products/specials_product_01.jpg" alt="" class="product-card_gallery-image">
                                     <img src="src/img/images/products/specials_product_02.jpg" alt="" class="product-card_gallery-image">
                                     <img src="src/img/images/products/specials_product_03.jpg" alt="" class="product-card_gallery-image">
                                 </div>
                             </div>
-                            <p class="product-card_title">Necklace trim blouse</p>
+                            <a class="product-card_title" href="#">Necklace trim blouse</a>
                             <div class="rating">
-                                <button class="rating_star rating_star__filled"></button>
-                                <button class="rating_star rating_star__filled"></button>
-                                <button class="rating_star rating_star__filled"></button>
-                                <button class="rating_star rating_star__filled"></button>
-                                <button class="rating_star"></button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star material-icons">star_border</button>
                             </div>
-                            <div class="prudoct-card_price">
-                                <span class="prudoct-card_price-value">$250.00</span>
-                                <span class="prudoct-card_price-old">$500.00</span>
+                            <div class="product-card_price">
+                                <span class="product-card_price-value">$250.00</span>
+                                <span class="product-card_price-old">$500.00</span>
                             </div>
                         </div>
                     </div>
-                    <div class="specials_column col-md-3">
-                        <div class="product-card product-card__small col-md-6 col-lg-3">
+                    <div class="specials_column col-md-4">
+                        <div class="product-card product-card__small">
                             <img src="src/img/images/products/specials_product_04.jpg" alt="" class="product-card_image">
                             <div>
-                                <p class="product-card_title">It is a long established fact that</p>
+                                <a class="product-card_title" href="#">It is a long established fact that</a>
                                 <div class="rating">
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star"></button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star material-icons">star_border</button>
                                 </div>
-                                <div class="prudoct-card_price">
-                                    <span class="prudoct-card_price-value">$250.00</span>
+                                <div class="product-card_price">
+                                    <span class="product-card_price-value">$250.00</span>
                                 </div>
                                 <div class="product-card_controls">
-                                    <button class="product-card-control material-icons">shopping_basket</button>
-                                    <button class="product-card-control material-icons">favorite_border</button>
-                                    <button class="product-card-control material-icons">sort</button>
-                                    <button class="product-card-control material-icons">remove_red_eye</button>
+                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                    <button class="product-card_control material-icons">favorite_border</button>
+                                    <button class="product-card_control material-icons">sort</button>
+                                    <button class="product-card_control material-icons">remove_red_eye</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="product-card product-card__small col-md-6 col-lg-3">
+                        <div class="product-card product-card__small">
                             <img src="src/img/images/products/specials_product_05.jpg" alt="" class="product-card_image">
                             <div>
-                                <p class="product-card_title">pleasure that has no annoying</p>
+                                <a class="product-card_title" href="#">pleasure that has no annoying</a>
                                 <div class="rating">
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star"></button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star material-icons">star_border</button>
                                 </div>
-                                <div class="prudoct-card_price">
-                                    <span class="prudoct-card_price-value">$350.00</span>
+                                <div class="product-card_price">
+                                    <span class="product-card_price-value">$350.00</span>
                                 </div>
                                 <div class="product-card_controls">
-                                    <button class="product-card-control material-icons">shopping_basket</button>
-                                    <button class="product-card-control material-icons">favorite_border</button>
-                                    <button class="product-card-control material-icons">sort</button>
-                                    <button class="product-card-control material-icons">remove_red_eye</button>
+                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                    <button class="product-card_control material-icons">favorite_border</button>
+                                    <button class="product-card_control material-icons">sort</button>
+                                    <button class="product-card_control material-icons">remove_red_eye</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="product-card product-card__small col-md-6 col-lg-3">
+                        <div class="product-card product-card__small">
                             <img src="src/img/images/products/specials_product_06.jpg" alt="" class="product-card_image">
                             <div>
-                                <p class="product-card_title">Lorem Ipsum which looks reaso</p>
+                                <a class="product-card_title" href="#">Lorem Ipsum which looks reaso</a>
                                 <div class="rating">
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star rating_star__filled"></button>
-                                    <button class="rating_star"></button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star rating_star__filled material-icons">star</button>
+                                    <button class="rating_star material-icons">star_border</button>
                                 </div>
-                                <div class="prudoct-card_price">
-                                    <span class="prudoct-card_price-value">$488.00</span>
+                                <div class="product-card_price">
+                                    <span class="product-card_price-value">$488.00</span>
                                 </div>
                                 <div class="product-card_controls">
-                                    <button class="product-card-control material-icons">shopping_basket</button>
-                                    <button class="product-card-control material-icons">favorite_border</button>
-                                    <button class="product-card-control material-icons">sort</button>
-                                    <button class="product-card-control material-icons">remove_red_eye</button>
+                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                    <button class="product-card_control material-icons">favorite_border</button>
+                                    <button class="product-card_control material-icons">sort</button>
+                                    <button class="product-card_control material-icons">remove_red_eye</button>
                                 </div>
                             </div>
                         </div>
@@ -561,18 +635,17 @@
             </div>
         </div>
         <div class="banner row">
-            <img src="src/img/images/parallax-banner.jpg" alt="" class="banner_image">
-            <div class="container">
-                <div class="col-12">
-                    <p class="banner_title">extra <strong>50%</strong> off</p>
-                    <p class="banner_title"><strong>Summer</strong> collection</p>
-                </div>
+            <div class="banner_holder container">
+                <p class="banner_title">extra <strong>50%</strong> off</p>
+                <p class="banner_title"><strong>Summer</strong> collection</p>
+                <a href="#" class="banner_link">shop now</a>
             </div>
+            <img src="src/img/images/parallax-banner.jpg" alt="" class="banner_image">
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h3>latest news</h3>
+                    <h2>latest news</h2>
                 </div>
             </div>
             <div class="row">
@@ -580,17 +653,19 @@
                     <a class="news" href="#">
                         <img src="src/img/images/news/news-1.jpg" alt="" class="news_image">
                         <div class="news_info">
-                            <span class="news_date">news</span>
+                            <span class="news_date">24 Feb</span>
                             <span class="news_title">What I Have Done</span>
-                            <span class="news_comments">
-                                <span class="material-icons">forum</span>
-                                (20) comments
-                            </span>
-                            <span class="news_comments">
-                                <span class="material-icons">person</span>
-                                Jhon Doe
-                            </span>
-                            <a href="#" class="news_link">[ read more ]</a>
+                            <div class="news_meta">
+                                <span class="news_meta-item">
+                                    <span class="material-icons">forum</span>
+                                    (20) comments
+                                </span>
+                                <span class="news_meta-item">
+                                    <span class="material-icons">person</span>
+                                    Jhon Doe
+                                </span>
+                            </div>
+                            <span class="news_link">[ read more ]</span>
                         </div>
                     </a>
                 </div>
@@ -598,17 +673,19 @@
                     <a class="news" href="#">
                         <img src="src/img/images/news/news-2.jpg" alt="" class="news_image">
                         <div class="news_info">
-                            <span class="news_date">news</span>
+                            <span class="news_date">24 Feb</span>
                             <span class="news_title">What I Have Done</span>
-                            <span class="news_comments">
-                                <span class="material-icons">forum</span>
-                                (20) comments
-                            </span>
-                            <span class="news_comments">
-                                <span class="material-icons">person</span>
-                                Jhon Doe
-                            </span>
-                            <a href="#" class="news_link">[ read more ]</a>
+                            <div class="news_meta">
+                                <span class="news_meta-item">
+                                    <span class="material-icons">forum</span>
+                                    (20) comments
+                                </span>
+                                <span class="news_meta-item">
+                                    <span class="material-icons">person</span>
+                                    Jhon Doe
+                                </span>
+                            </div>
+                            <span class="news_link">[ read more ]</span>
                         </div>
                     </a>
                 </div>
@@ -616,20 +693,268 @@
                     <a class="news" href="#">
                         <img src="src/img/images/news/news-3.jpg" alt="" class="news_image">
                         <div class="news_info">
-                            <span class="news_date">news</span>
+                            <span class="news_date">24 Feb</span>
                             <span class="news_title">What I Have Done</span>
-                            <span class="news_comments">
-                                <span class="material-icons">forum</span>
-                                (20) comments
-                            </span>
-                            <span class="news_comments">
-                                <span class="material-icons">person</span>
-                                Jhon Doe
-                            </span>
-                            <a href="#" class="news_link">[ read more ]</a>
+                            <div class="news_meta">
+                                <span class="news_meta-item">
+                                    <span class="material-icons">forum</span>
+                                    (20) comments
+                                </span>
+                                <span class="news_meta-item">
+                                    <span class="material-icons">person</span>
+                                    Jhon Doe
+                                </span>
+                            </div>
+                            <span class="news_link">[ read more ]</span>
                         </div>
                     </a>
                 </div>
+            </div>
+
+            <h2>top product</h2>
+            <div class="row">
+                <div class="col-sm-2 col-md-3">
+                    <a href="#" class="product-card product-card__nano">
+                        <img src="src/img/images/products/top_product_01.jpg" alt="" class="product-card_image">
+                        <div>
+                            <p class="product-card_title">MOC BAK</P>
+                            <div class="rating">
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star material-icons">star_border</button>
+                            </div>
+                            <div class="product-card_price">
+                                <span class="product-card_price-value">$120.00</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-md-3">
+                    <a href="#" class="product-card product-card__nano">
+                        <img src="src/img/images/products/top_product_02.jpg" alt="" class="product-card_image">
+                        <div>
+                            <p class="product-card_title">Bonorum et Malorum</P>
+                            <div class="rating">
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star material-icons">star_border</button>
+                            </div>
+                            <div class="product-card_price">
+                                <span class="product-card_price-value">$260.00</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-md-3">
+                    <a href="#" class="product-card product-card__nano">
+                        <img src="src/img/images/products/top_product_03.jpg" alt="" class="product-card_image">
+                        <div>
+                            <p class="product-card_title">Maximus lac us</P>
+                            <div class="rating">
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star material-icons">star_border</button>
+                                <button class="rating_star material-icons">star_border</button>
+                            </div>
+                            <div class="product-card_price">
+                                <span class="product-card_price-value">$410.00</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-md-3">
+                    <a href="#" class="product-card product-card__nano">
+                        <img src="src/img/images/products/top_product_04.jpg" alt="" class="product-card_image">
+                        <div>
+                            <p class="product-card_title">Quis nostrum</P>
+                            <div class="rating">
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star material-icons">star_border</button>
+                            </div>
+                            <div class="product-card_price">
+                                <span class="product-card_price-value">$670.00</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-md-3">
+                    <a href="#" class="product-card product-card__nano">
+                        <img src="src/img/images/products/top_product_05.jpg" alt="" class="product-card_image">
+                        <div>
+                            <p class="product-card_title">Haracteristic words</P>
+                            <div class="rating">
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star material-icons">star_border</button>
+                            </div>
+                            <div class="product-card_price">
+                                <span class="product-card_price-value">$150.00</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-md-3">
+                    <a href="#" class="product-card product-card__nano">
+                        <img src="src/img/images/products/top_product_06.jpg" alt="" class="product-card_image">
+                        <div>
+                            <p class="product-card_title">Odio ornare</P>
+                            <div class="rating">
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star material-icons">star_border</button>
+                            </div>
+                            <div class="product-card_price">
+                                <span class="product-card_price-value">$160.00</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-md-3">
+                    <a href="#" class="product-card product-card__nano">
+                        <img src="src/img/images/products/featured_product_01.jpg" alt="" class="product-card_image">
+                        <div>
+                            <p class="product-card_title">Pain itself who </P>
+                            <div class="rating">
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star material-icons">star_border</button>
+                                <button class="rating_star material-icons">star_border</button>
+                            </div>
+                            <div class="product-card_price">
+                                <span class="product-card_price-value">$650.00</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-md-3">
+                    <a href="#" class="product-card product-card__nano">
+                        <img src="src/img/images/products/featured_product_02.jpg" alt="" class="product-card_image">
+                        <div>
+                            <p class="product-card_title">Lorem Ipsum which</P>
+                            <div class="rating">
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star material-icons">star_border</button>
+                            </div>
+                            <div class="product-card_price">
+                                <span class="product-card_price-value">$760.00</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-md-3">
+                    <a href="#" class="product-card product-card__nano">
+                        <img src="src/img/images/products/featured_product_03.jpg" alt="" class="product-card_image">
+                        <div>
+                            <p class="product-card_title">Haracteristic words</P>
+                            <div class="rating">
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star material-icons">star_border</button>
+                            </div>
+                            <div class="product-card_price">
+                                <span class="product-card_price-value">$150.00</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-md-3">
+                    <a href="#" class="product-card product-card__nano">
+                        <img src="src/img/images/products/featured_product_04.jpg" alt="" class="product-card_image">
+                        <div>
+                            <p class="product-card_title">Odio ornare</P>
+                            <div class="rating">
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star material-icons">star_border</button>
+                            </div>
+                            <div class="product-card_price">
+                                <span class="product-card_price-value">$160.00</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-md-3">
+                    <a href="#" class="product-card product-card__nano">
+                        <img src="src/img/images/products/featured_product_05.jpg" alt="" class="product-card_image">
+                        <div>
+                            <p class="product-card_title">Pain itself who </P>
+                            <div class="rating">
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star material-icons">star_border</button>
+                                <button class="rating_star material-icons">star_border</button>
+                            </div>
+                            <div class="product-card_price">
+                                <span class="product-card_price-value">$650.00</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-2 col-md-3">
+                    <a href="#" class="product-card product-card__nano">
+                        <img src="src/img/images/products/featured_product_06.jpg" alt="" class="product-card_image">
+                        <div>
+                            <p class="product-card_title">Lorem Ipsum which</P>
+                            <div class="rating">
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                <button class="rating_star material-icons">star_border</button>
+                            </div>
+                            <div class="product-card_price">
+                                <span class="product-card_price-value">$760.00</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="brands">
+            <div class="brands_holder container">
+                <a href="#" class="brands_item">
+                    <img class="brands_image" src="src/img/logos/jordan.png" alt="">
+                </a>
+                <a href="#" class="brands_item">
+                    <img class="brands_image" src="src/img/logos/adidas.png" alt="">
+                </a>
+                <a href="#" class="brands_item">
+                    <img class="brands_image" src="src/img/logos/nike.png" alt="">
+                </a>
+                <a href="#" class="brands_item">
+                    <img class="brands_image" src="src/img/logos/champio.png" alt="">
+                </a>
+                <a href="#" class="brands_item">
+                    <img class="brands_image" src="src/img/logos/dg.png" alt="">
+                </a>
+                <a href="#" class="brands_item">
+                    <img class="brands_image" src="src/img/logos/canon.png" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -717,7 +1042,11 @@
                             <button class="footer_newslatter-button material-icons">send</button>
                         </div>
                         <div class="footer_social">
-                            <a href="#" class="footer_social-icon"></a>
+                            <a href="#" class="footer_social-icon fab fa-facebook-f"></a>
+                            <a href="#" class="footer_social-icon fab fa-twitter"></a>
+                            <a href="#" class="footer_social-icon fab fa-pinterest"></a>
+                            <a href="#" class="footer_social-icon fab fa-google-plus-g"></a>
+                            <a href="#" class="footer_social-icon fab fa-vine"></a>
                         </div>
                     </div>
                 </div>
@@ -725,7 +1054,7 @@
             <div class="row footer_bottom">
                 <div class="col-12">
                     <p class="footer_copyright">
-                        © 2017 Jarvis. -  All Right Reserved. Designed by 
+                        © 2017 Jarvis. - All Right Reserved. Designed by
                         <a href="#" class="footer_copyright-link">Perfectusinc</a>
                     </p>
                 </div>
@@ -752,8 +1081,8 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: false,
-            prevArrow: '<button type="button" class="slick-prev">[prev]</button>',
-            nextArrow: '<button type="button" class="slick-next">[next]</button>',
+            prevArrow: '<button type="button" class="slick-prev">prev</button>',
+            nextArrow: '<button type="button" class="slick-next">next</button>',
         });
     </script>
 </body>

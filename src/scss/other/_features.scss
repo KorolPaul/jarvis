@@ -1,0 +1,36 @@
+.features {
+    margin: 0 0 50px;
+
+    &_item {
+        border-left: 1px solid $gray_color; 
+        color: #343434;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        
+        &:first-child {
+            border: none;
+        }
+    }
+    &_icon.material-icons {
+        color: $gray_color;
+        font-size: 30px;
+        margin: 0 20px 0 0;
+        transition: .2s ease-in-out color;
+
+        .features_item:hover & {
+            color: $bright_color;
+        }
+    }
+    &_title {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.1;
+        text-transform: uppercase;
+    }
+    &_text {
+        font-size: $font-size__small;
+    }
+}

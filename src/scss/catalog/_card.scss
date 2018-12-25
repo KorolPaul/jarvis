@@ -1,49 +1,175 @@
 .product-card {
     position: relative;
-    margin: 0 0 2px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    padding: 28px 15px;
-    width: 30%;
-    transition: .2s ease-in-out box-shadow;
+    padding: 0 0 34px;
+    text-align: center;
+    color: $color;
 
     &:hover {
         text-decoration: none;
-        box-shadow: 0 0 0 2px $bright_color;
-    }
-    &_content {
-        text-align: center;
-    }
-    &_image {
-        margin: 0 30px;
-        width: auto;
-    }
-    &_title {
-        @extend %heading-2;
-        margin: 30px 0 10px;
-    }
-    &_text {
         color: $color;
     }
-    &_price {
-        font: bold 30px $font-family__heading;
-        margin: 0;
 
-        sup {
-            font-size: 16px;
-            margin: 0 0 0 5px;
-            top: -14px;
+    &__small,
+    &__nano {
+        display: flex;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    &_image {
+        display: block;
+        width: 100%;
+
+        .product-card__small & {
+            margin: 0 16px 0 0;
+            width: auto;
+        }
+        .product-card__nano & {
+            margin: 0 16px 0 0;
+            width: 80px;
         }
     }
-    &_button {
-        @extend %button;
+    &_image-wrapper {
+        position: relative;
+        margin: 0 0 15px;
+    }
+    &_controls {
+        background: $light_color;
+        border-radius: 3px;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        display: flex;
+        justify-content: stretch;
+        padding: 12px 0;
         opacity: 0;
         transition: .2s ease-in-out opacity;
 
         .product-card:hover & {
-            color: $color;
             opacity: 1;
         }
+
+        .product-card__small & {
+            position: static;
+            opacity: 1;
+        }
+    }
+    &_control {
+        background: transparent;
+        cursor: pointer;
+        flex-grow: 1;
+        border: none;
+        border-left: 1px solid $gray_color;
+        padding: 5px;
+        color: $gray_color;
+        transition: .2s ease-in-out color;
+
+        &:hover {
+            color: $color;
+        }
+        &:first-child {
+            border-left: none;
+        }
+        &.material-icons {
+            font-size: 16px;
+        }
+        .product-card__small & {
+            border: 1px solid currentColor;
+            margin: 0 10px 0 0;
+        }
+    }
+    &_title {
+        color: $color;
+        display: block;
+        margin: 0 0 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $bright_color;
+            text-decoration: none;
+        }
+    }
+    &_price {
+        margin: 10px 0 0;
+    }
+    &_price-value {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    &_price-old {
+        color: $gray_color;
+        font-size: 16px;
+        margin: 0 0 0 16px;
+        text-decoration: line-through;
+    }
+    &_discount {
+        background: #27ae60;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: $light_color;
+        font: 12px $font-family__heading;
+        padding: 6px 10px;
+        z-index: 1;
+    }
+    &_out {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(255, 255, 255, .8);
+    }
+    &_out-text {
+        background: $bright_color;
+        color: $light_color;
+        font-size: 18px;
+        padding: 10px 14px;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, 0);
+        white-space: nowrap;
+        text-transform: uppercase;
+    }
+    &_counter {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+    }
+    &_counter-item {
+        background: $light_color;
+        border-radius: 5px;
+        box-shadow: 0 2px 0 $gray_color;
+        display: block;
+        font: 9px $font-family__heading;
+        padding: 4px 0;
+        margin: 0 0 10px;
+        width: 40px;
+
+        &__days {
+            background: $bright_color;
+            box-shadow: 0 2px 0 #e86d56;
+            color: $light_color;
+        }
+    }
+    &_counter-value {
+        font: 900 19px/1 $font-family__heading;
+        display: block;
+    }
+    &_gallery {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        right: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &_gallery-image {
+        border: 4px solid $light_color;
+        width: 28%;
     }
 }

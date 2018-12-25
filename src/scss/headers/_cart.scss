@@ -4,16 +4,23 @@
 
 .cart-button {
     display: flex;
-    color: $light_color;
+    align-items: center;
+
+    .header__main & {
+        color: $light_color;
+    }
 
     &_icon {
-        background: url(#{$img-path}/icons/shopbag.svg) no-repeat;
+        background: url(#{$img-path}/icons/shopbag-dark.svg) no-repeat 0 center;
         background-size: 100% auto;
-        height: 24px;
-        width: 22px;
-        display: inline-block;
+        height: 28px;
+        width: 30px;
         margin: 0 8px 0 0;
-        filter: brightness(2);
+        display: inline-block;
+        
+        .header__main & {
+            background-image: url(#{$img-path}/icons/shopbag.svg);
+        }
     }
     &_title {
         font-size: 12px;
@@ -21,6 +28,7 @@
     }
     &_sum {
         font-size: 14px;
+        white-space: nowrap;
     }
     &_value {
         color: $bright_color;

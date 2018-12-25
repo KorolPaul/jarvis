@@ -1,19 +1,15 @@
 %heading-1 {
-    color: $bright_color;
-    font: bold 28px/38px $font-family__heading;
-    letter-spacing: .1em;
+    font: bold 40px $font-family;
     margin: 30px 0 10px;
     @include tablet {
-        font: bold 24px $font-family__heading;
+        font: bold 24px $font-family;
     }
 }
 %heading-2 {
-    color: $bright_color;
-    font: bold 20px/38px $font-family__heading;
-    letter-spacing: .1em;
-    margin: 0 0 5px;
+    font: bold 30px/28px $font-family;
+    margin: 0 0 50px;
     @include tablet {
-        font: bold 18px $font-family__heading;
+        font: bold 18px $font-family;
     }
 }
 %heading-3 {

@@ -1,20 +1,24 @@
 .breadcrumbs {
-    font-size: 12px;
-    color: $bright_color;
-    padding: 30px 0 35px;
+    text-align: center;
 
     &_link {
-        padding: 0 9px 0 0;
-        margin: 0 3px 0 0;
-        color: $bright_color;
+        padding: 0 15px 0 0;
+        margin: 0 10px 0 0;
+        color: $color;
         position: relative;
         text-decoration: none;
 
         &::after {
-            content: '>';
+            content: '•';
             position: absolute;
-            right: -2px;
-            top: -4px;
+            right: 0;
+            top: 0px;
         }
+        &.material-icons {
+            font-size: 13px;
+        }
+    }
+    &_page {
+        color: $bright_color;
     }
 }

@@ -10,6 +10,7 @@
   -webkit-tap-highlight-color: transparent;
 
 }
+
 .slick-list {
   position: relative;
   display: block;
@@ -18,8 +19,9 @@
   overflow: hidden;
 
   &:focus {
-   outline: none;
+    outline: none;
   }
+
   &.dragging {
     cursor: pointer;
   }
@@ -29,6 +31,7 @@
 .slick-slider .slick-list {
   transform: translate3d(0, 0, 0);
 }
+
 .slick-track {
   position: relative;
   left: 0;
@@ -42,10 +45,11 @@
     content: "";
     display: table;
   }
+
   &:after {
     clear: both;
   }
-    
+
   .slick-loading & {
     visibility: hidden;
   }
@@ -59,12 +63,15 @@
   &.slick-loading img {
     display: none;
   }
+
   &.dragging img {
     pointer-events: none;
   }
+
   .slick-initialized & {
     display: block;
   }
+
   .slick-loading & {
     visibility: hidden
   }
@@ -77,39 +84,45 @@
 
 .slick-prev,
 .slick-next {
-  @include invisible-text;
   cursor: pointer;
   border: none;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  height: 120px;
-  width: 50px;
+  background: transparent;
+  color: $bright_color;
+  font-size: 16px;
+  font-weight: 600;
   position: absolute;
-  bottom: 0;
+  top: 50%;
   min-width: inherit;
   z-index: 1;
-  opacity: .5;
-  transition: .2s ease-in-out opacity;
+  transform: translate(0, -50%);
+  transition: .2s ease-in-out color;
   display: none;
   @include tablet {
-      display: block;
+    display: block;
   }
 
+  &::before {
+    content: '[ ';
+    color: $light_color;
+  }
+  &::after {
+    content: ' ]';
+    color: $light_color;
+  }
   &:hover {
-    background-color: transparent;
+    color: $light_color;
     opacity: 1;
   }
 }
+
 .slick-prev {
-  background-image: url(#{$img_path}/slider-prev.svg);
-  background-position: 0 center;
-  left: 15px;
+  left: 0;
 }
+
 .slick-next {
-  background-image: url(#{$img_path}/slider-next.svg);
-  background-position: right center;
-  right: 15px;
+  right: 0;
 }
+
 .slick-disabled {
   opacity: .2;
 }
@@ -121,10 +134,11 @@
   text-align: center;
 
   .slick-slider__small & {
-      bottom: 10px;
-      @include tablet {
-          bottom: 55px;
-      }
+    bottom: 10px;
+
+    @include tablet {
+      bottom: 55px;
+    }
   }
 
   li[role] {
@@ -132,10 +146,12 @@
     display: inline;
     margin: 0;
     padding: 0;
+
     &::before {
       display: none;
     }
   }
+
   button {
     display: inline-block;
     background: transparent;

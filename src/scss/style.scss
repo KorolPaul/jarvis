@@ -89,6 +89,8 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "layout/tabs";
 /* 3.19 Slider */
 @import  "layout/slider";
+@import  "layout/banner";
+@import  "layout/news";
 
 /* Headers */
 @import  "headers/header";
@@ -98,6 +100,18 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 
 /* Footrrs */
 @import  "footers/footer";
+
+/* other */
+@import "other/features";
+@import "other/rating";
+@import "other/brands";
+
+/* catalog */
+@import "catalog/arrivals";
+@import "catalog/card";
+@import "catalog/specials";
+@import "catalog/catalog-grid";
+@import "catalog/banners";
 
 
 /*Plugins*/

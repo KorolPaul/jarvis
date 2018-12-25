@@ -1,0 +1,18 @@
+.rating {
+    cursor: pointer;
+
+    &_star {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        padding: 0;
+
+        &__filled {
+            color: #ffbf34;
+        }
+
+        &.material-icons {
+            font-size: 16px;
+        }
+    }
+}

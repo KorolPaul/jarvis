@@ -1,0 +1,42 @@
+.banner {
+    position: relative;
+    color: $light_color;
+    margin: 0 0 80px;
+
+    &_image {
+        width: 100%;
+    }
+    &_holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        text-align: center;
+        transform: translate(-50%, 0);
+    }
+    &_title {
+        font-size: 30px;
+        line-height: 1.2;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    &_link {
+        color: $light_color;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin: 10px 0 0;
+
+        &::before {
+            content: '[ ';
+            color: $light_color;
+        }
+        &::after {
+            content: ' ]';
+            color: $light_color;
+        }
+    }
+}

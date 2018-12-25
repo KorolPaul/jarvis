@@ -7,7 +7,7 @@ input[type="tel"] {
     @include placeholder-color(#444);
     background: transparent;
     color: $color;
-    border: 2px solid $gray_color;
+    border: 1px solid $gray_color;
     font: $font-size $font-family__heading;
     padding: 6px 15px 7px;
     transition: .2s ease-in border-color,

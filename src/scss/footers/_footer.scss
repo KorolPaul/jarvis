@@ -32,10 +32,12 @@
         color: $light_color;
         font-size: 20px;
         font-weight: bold;
+        margin: 0 0 26px;
     }
     &_menu-link {
         color: #a5aab5;
         display: block;
+        margin: 0 0 16px;
         font-size: $font-size__small;
         text-decoration: none;
         transition: .2s ease color;
@@ -68,6 +70,7 @@
     }
     &_newslatter {
         position: relative;
+        margin: 0 0 30px;
     }
     &_newslatter-input {
         border: 1px solid #a5aab5;
@@ -84,12 +87,36 @@
         padding: 5px;
         position: absolute;
         right: 6px;
-        top: 0px;
+        top: 3px;
         color: #a5aab5;
         transition: .2s ease-in-out color;
 
         &:hover {
             color: $light_color;
+        }
+        &.material-icons {
+            font-size: 16px;
+        }
+    }
+    &_social-icon {
+        color: #5c616e;
+        font-size: 12px;
+        background: $gray_color;
+        border-radius: 50%;
+        height: 24px;
+        width: 24px;
+        margin: 0 10px 0 0;
+        text-align: center;
+        transition: .2s ease-in-out background;
+        
+        &.fab {
+            line-height: 24px;
+        }
+
+        &:hover {
+            background: $light_color;
+            color: #5c616e;
+            text-decoration: none;
         }
     }
 }
