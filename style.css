@@ -1869,6 +1869,131 @@ h6,
   font-weight: 600;
 }
 
+.blog-entry {
+  position: relative;
+  margin: 0 0 30px;
+}
+
+.blog-entry_image {
+  margin: 0 0 15px;
+  width: 100%;
+}
+
+.blog-entry_date {
+  background: #dc462b;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.blog-entry_date-value {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.blog-entry_title {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  margin: 0 0 15px;
+}
+
+.blog-entry_meta {
+  margin: 0 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.blog-entry_author {
+  color: #c8c8c8;
+  font-style: italic;
+}
+
+.blog-entry_comments .material-icons, .blog-entry_comments .footer_contact-icon {
+  vertical-align: -1px;
+  font-size: 12px;
+  color: #dc462b;
+  margin: 0 6px 0 0;
+}
+
+.blog-entry_more {
+  color: #dc462b;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  text-align: right;
+  -webkit-transition: .2s ease-in-out color;
+  transition: .2s ease-in-out color;
+}
+
+.blog-entry_more::before {
+  content: '[ ';
+  color: #1d1d1d;
+}
+
+.blog-entry_more::after {
+  content: ' ]';
+  color: #1d1d1d;
+}
+
+.blog-grid {
+  margin-bottom: 50px;
+}
+
+.pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 0 100px;
+}
+
+.pages_holder {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 10px 80px;
+  text-align: center;
+  display: inline-block;
+}
+
+.pages_link {
+  background: #fff;
+  color: #1d1d1d;
+  display: inline-block;
+  line-height: 26px;
+  height: 26px;
+  min-width: 26px;
+  border-radius: 13px;
+  margin: 0 5px;
+  padding: 0 8px;
+}
+
 /* Headers */
 .header {
   background: #f5f5f5;
