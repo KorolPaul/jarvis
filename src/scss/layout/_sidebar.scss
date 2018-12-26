@@ -1,3 +1,23 @@
 .sidebar {
-    margin: 0 0 20px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    width: 33%;
+
+    &_title {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 0 0 15px;
+        border-bottom: 1px solid $gray_color;
+        margin: 0 0 18px;
+
+        &::after {
+            content: '';
+            border-bottom: 1px solid $bright_color;
+            margin: 0 0 0 10px;
+            width: 30px;
+            display: inline-block;
+            vertical-align: 6px; 
+        }
+    }
 }

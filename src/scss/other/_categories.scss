@@ -1,0 +1,25 @@
+.categories {
+    margin: 0 0 45px;
+
+    &_link {
+        color: $color;
+        display: block;
+        margin: 0 0 30px;
+        padding: 0 0 0 30px;
+        font-weight: 600;
+        position: relative;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $bright_color;
+            text-decoration: none;
+        }
+
+        & > span {
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

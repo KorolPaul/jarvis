@@ -1,0 +1,50 @@
+.contacts-widjet {
+    position: relative;
+    min-height: 200px;
+    margin: 0 0 45px;
+    
+    &_image {
+        width: 100%;
+    }
+    &_logo-wrapper {
+        border-radius: 50%;
+        background: $bright_color;
+        height: 130px;
+        width: 130px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &_logo {
+        max-width: 80%;
+    }
+    &_social {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        right: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &_social-title {
+        color: $light_color;
+        font-weight: 600;
+        display: block;
+        margin: 0 0 20px;
+    }
+    &_social-buttons {
+        background: $light_color;
+        border-radius: 5px;
+        padding: 0 10px;
+    }
+    &_social-icon {
+        color: #5c616e;
+        padding: 10px;
+    }
+}
