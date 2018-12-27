@@ -1,3 +1,45 @@
 .calendar {
-    
+    margin: 0 0 30px;
+
+    &_heading {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 20px;
+
+        .material-icons {
+            font-size: 20px;
+        }
+    }
+    &_title {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    &_table {
+        margin: 0 -9px;
+        width: 105%;
+
+        th {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 9px 0;
+        }
+        td {
+            text-align: center;
+
+            &:first-child {
+                color: $bright-color;
+                padding: 9px 0;
+            }
+        }
+    }
+    &_day {
+        display: inline-block;
+        background: $bright-color;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: $light_color;
+    }
 }

@@ -6,13 +6,25 @@
         background: transparent;
         border: none;
         padding: 0;
-
+        
         &__filled {
             color: #ffbf34;
         }
-
+        
         &.material-icons {
             font-size: 16px;
         }
+    }
+    &_reviews {
+        font-family: $font-family__heading;
+        vertical-align: 3px;
+        margin: 0 0 0 5px;
+    }
+    &_reviews-slash {
+        margin: 0 3px;
+    }
+    &_write-review {
+        color: $color;
+        text-decoration: underline;
     }
 }
