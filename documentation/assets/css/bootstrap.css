@@ -489,7 +489,7 @@ pre {
   margin: 0 0 9px;
   font-size: 12px;
   line-height: 18px;
-  background-color: #f5f5f5;
+  background-color: $light-gray_color;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   -webkit-border-radius: 4px;
@@ -762,7 +762,7 @@ textarea[disabled],
 input[readonly],
 select[readonly],
 textarea[readonly] {
-  background-color: #f5f5f5;
+  background-color: $light-gray_color;
   border-color: #ddd;
   cursor: not-allowed;
 }
@@ -834,7 +834,7 @@ input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, selec
   padding: 17px 20px 18px;
   margin-top: 18px;
   margin-bottom: 18px;
-  background-color: #f5f5f5;
+  background-color: $light-gray_color;
   border-top: 1px solid #ddd;
 }
 .uneditable-input {
@@ -913,7 +913,7 @@ input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, selec
   color: #999999;
   text-align: center;
   text-shadow: 0 1px 0 #ffffff;
-  background-color: #f5f5f5;
+  background-color: $light-gray_color;
   border: 1px solid #ccc;
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
@@ -1103,7 +1103,7 @@ table {
   background-color: #f9f9f9;
 }
 .table tbody tr:hover td, .table tbody tr:hover th {
-  background-color: #f5f5f5;
+  background-color: $light-gray_color;
 }
 table .span1 {
   float: none;
@@ -1651,7 +1651,7 @@ table .span12 {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
+  background-color: $light-gray_color;
   border: 1px solid #eee;
   border: 1px solid rgba(0, 0, 0, 0.05);
   -webkit-border-radius: 4px;
@@ -1716,7 +1716,7 @@ table .span12 {
   text-align: center;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   vertical-align: middle;
-  background-color: #f5f5f5;
+  background-color: $light-gray_color;
   background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
   background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
@@ -2495,7 +2495,7 @@ z-index:10000 !important;
   display: block;
   width: 18px;
   height: 2px;
-  background-color: #f5f5f5;
+  background-color: $light-gray_color;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
@@ -2742,14 +2742,14 @@ margin-left:10px;
   padding: 7px 14px;
   margin: 0 0 18px;
   background-color: #fbfbfb;
-  background-image: -moz-linear-gradient(top, #ffffff, #f5f5f5);
-  background-image: -ms-linear-gradient(top, #ffffff, #f5f5f5);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f5f5f5));
-  background-image: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
-  background-image: -o-linear-gradient(top, #ffffff, #f5f5f5);
-  background-image: linear-gradient(top, #ffffff, #f5f5f5);
+  background-image: -moz-linear-gradient(top, #ffffff, $light-gray_color);
+  background-image: -ms-linear-gradient(top, #ffffff, $light-gray_color);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to($light-gray_color));
+  background-image: -webkit-linear-gradient(top, #ffffff, $light-gray_color);
+  background-image: -o-linear-gradient(top, #ffffff, $light-gray_color);
+  background-image: linear-gradient(top, #ffffff, $light-gray_color);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f5f5f5', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='$light-gray_color', GradientType=0);
   border: 1px solid #ddd;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -2800,7 +2800,7 @@ margin-left:10px;
   border-left-width: 0;
 }
 .pagination a:hover, .pagination .active a {
-  background-color: #f5f5f5;
+  background-color: $light-gray_color;
 }
 .pagination .active a {
   color: #999999;
@@ -2856,7 +2856,7 @@ margin-left:10px;
 }
 .pager a:hover {
   text-decoration: none;
-  background-color: #f5f5f5;
+  background-color: $light-gray_color;
 }
 .pager .next a {
   float: right;
@@ -2944,7 +2944,7 @@ margin-left:10px;
 .modal-footer {
   padding: 14px 15px 15px;
   margin-bottom: 0;
-  background-color: #f5f5f5;
+  background-color: $light-gray_color;
   border-top: 1px solid #ddd;
   -webkit-border-radius: 0 0 6px 6px;
   -moz-border-radius: 0 0 6px 6px;
@@ -3113,7 +3113,7 @@ margin-left:10px;
 .popover-title {
   padding: 9px 15px;
   line-height: 1;
-  background-color: #f5f5f5;
+  background-color: $light-gray_color;
   border-bottom: 1px solid #eee;
   -webkit-border-radius: 3px 3px 0 0;
   -moz-border-radius: 3px 3px 0 0;
@@ -3243,14 +3243,14 @@ a.thumbnail:hover {
   height: 18px;
   margin-bottom: 18px;
   background-color: #f7f7f7;
-  background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
-  background-image: -ms-linear-gradient(top, #f5f5f5, #f9f9f9);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
-  background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
-  background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
-  background-image: linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: -moz-linear-gradient(top, $light-gray_color, #f9f9f9);
+  background-image: -ms-linear-gradient(top, $light-gray_color, #f9f9f9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($light-gray_color), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, $light-gray_color, #f9f9f9);
+  background-image: -o-linear-gradient(top, $light-gray_color, #f9f9f9);
+  background-image: linear-gradient(top, $light-gray_color, #f9f9f9);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#f9f9f9', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$light-gray_color', endColorstr='#f9f9f9', GradientType=0);
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);

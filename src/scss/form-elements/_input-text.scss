@@ -1,20 +1,24 @@
+@mixin input {
+    @include placeholder-color(#404040);
+    background: $light_color;
+    color: $color;
+    border: 1px solid $gray_color;
+    font: $font-size__small $font-family;
+    height: 40px;
+    padding: 6px 15px 7px;
+    transition: .2s ease-in border-color,
+                .2s ease-in color;
+
+    &:focus {
+        border-color: $color;
+    }
+}
+
 input[type="text"],
 input[type="password"],
 input[type="search"],
 input[type="email"],
 input[type="url"],
 input[type="tel"] {
-    @include placeholder-color(#444);
-    background: transparent;
-    color: $color;
-    border: 1px solid $gray_color;
-    font: $font-size $font-family__heading;
-    padding: 6px 15px 7px;
-    transition: .2s ease-in border-color,
-                .2s ease-in color;
-
-    &:focus {
-        border-color: $link_color;
-        color: $link_color;
-    }
+    @include input;
 }

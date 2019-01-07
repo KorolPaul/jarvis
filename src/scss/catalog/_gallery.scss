@@ -1,0 +1,16 @@
+.gallery {
+    &_image {
+        margin: 0 0 20px;
+        width: 100%;
+    }
+    &_carousel {
+        margin: 0 -10px;
+    }
+    &_carousel-item {
+        margin: 0 10px;
+    }
+    &_carousel-image {
+        box-sizing: border-box;
+        border: 3px solid $light_color;
+    }
+}

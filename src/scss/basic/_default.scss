@@ -17,6 +17,10 @@ a {
 
 p {
     margin: 0 0 10px;
+
+    &:not([class]) {
+        line-height: 1.7;
+    }
 }
 
 ul,
@@ -30,16 +34,14 @@ ul {
     li:not([class]) {
         line-height: 28px;
         list-style: none;
-        padding: 0 0 0 15px;
-        margin: 0 0 15px;
+        padding: 0 0 0 20px;
+        margin: 0 0 5px;
         position: relative;
 
         &::before {
-            content: '>';
-            color: $bright_color;
-            font-weight: bold;
+            content: '➜';
             position: absolute;
-            top: -1px;
+            top: 0;
             left: 0;
         }
     }

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jarvis</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="HandheldFriendly" content="true">
+    <meta property="og:title" content="#{data.title}">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="300">
+    <meta property="twitter:description" content="">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_container container">
+            <div class="header_top">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-md-2">
+                        <a href="/" class="logo">
+                            <img src="src/img/logo-dark.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <nav class="menu">
+                            <ul class="menu_list">
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">home</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">
+                                        men
+                                        <span class="menu_arrow fas fa-angle-down"></span>
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">
+                                        women
+                                        <span class="menu_arrow fas fa-angle-down"></span>
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">
+                                        shop<span class="menu_arrow fas fa-angle-down"></span>
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">
+                                        accessories
+                                        <span class="menu_arrow fas fa-angle-down"></span>
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">contact</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link active">buy theme</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <div class="header_controls">
+                            <button class="search-button">
+                                <span class="material-icons">search</span>
+                            </button>
+                            <button class="settings-button">
+                                <span class="material-icons">settings</span>
+                            </button>
+                            <div class="cart-button">
+                                <span class="cart-button_icon"></span>
+                                <div>
+                                    <span class="cart-button_title">My Cart</span>
+                                    <span class="cart-button_sum">
+                                        <span><span class="cart-button_value">$160.00</span> (03)</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="showcase">
+            <img src="src/img/breadcrumb_background.jpg" alt="" class="showcase_image">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="showcase_title">Shopping cart</h1>
+                        <div class="breadcrumbs">
+                            <a href="/" class="breadcrumbs_link material-icons">home</a>
+                            <span class="breadcrumbs_page">Shopping cart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form class="cart">
+                        <table class="cart_table">
+                            <tbody>
+                                <tr>
+                                    <th>Edit</th>
+                                    <th>Product</th>
+                                    <th>Product code</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Subtotal</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="cart_edit">
+                                            <span class="material-icons">create</span>
+                                        </button>
+                                        <button class="cart_delete">
+                                            <span class="material-icons">close</span>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="cart_product">
+                                            <img src="src/img/images/cart/product_01.jpg" alt="" class="cart_product-image">
+                                            <div>
+                                                <p class="cart_product-title">Aero Canvas Loafers</p>
+                                                <div class="cart_product-data">
+                                                    <span class="cart_product-data-title">size:</span>
+                                                    <span class="cart_product-data-value">09</span>
+                                                    <span class="cart_product-data-title">color:</span>
+                                                    <span class="cart_product-data-value">brown</span>
+                                                </div>
+                                                <div class="cart_product-data">
+                                                    <span class="cart_product-data-title">seller:</span>
+                                                    <span class="cart_product-data-value">Jhon doe</span>
+                                                </div>
+                                                <div class="cart_product-data">
+                                                    <span class="cart_product-data-title">delivery:</span>
+                                                    <span class="cart_product-data-value">in 3-4 days</span>
+                                                </div>
+                                                <button class="cart_product-wishlist">
+                                                    move to Wishlist
+                                                    <span class="material-icons">favorite_border</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>M3012456</td>
+                                    <td>
+                                        <span class="cart_price">$120.00</span>
+                                    </td>
+                                    <td>
+                                        <div class="number">
+                                            <button class="number_button number_button__minus"></button>
+                                            <input type="text" class="number_input" value="2">
+                                            <button class="number_button number_button__plus"></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="cart_price">$240.00</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="cart_edit">
+                                            <span class="material-icons">create</span>
+                                        </button>
+                                        <button class="cart_delete">
+                                            <span class="material-icons">close</span>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="cart_product">
+                                            <img src="src/img/images/cart/product_02.jpg" alt="" class="cart_product-image">
+                                            <div>
+                                                <p class="cart_product-title">handful of model</p>
+                                                <div class="cart_product-data">
+                                                    <span class="cart_product-data-title">size:</span>
+                                                    <span class="cart_product-data-value">m</span>
+                                                    <span class="cart_product-data-title">color:</span>
+                                                    <span class="cart_product-data-value">navy blue</span>
+                                                </div>
+                                                <div class="cart_product-data">
+                                                    <span class="cart_product-data-title">seller:</span>
+                                                    <span class="cart_product-data-value">Jhon doe</span>
+                                                </div>
+                                                <div class="cart_product-data">
+                                                    <span class="cart_product-data-title">delivery:</span>
+                                                    <span class="cart_product-data-value">in 3-4 days</span>
+                                                </div>
+                                                <button class="cart_product-wishlist">
+                                                    move to Wishlist
+                                                    <span class="material-icons">favorite_border</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>F24000897</td>
+                                    <td>
+                                        <span class="cart_price">$78.00</span>
+                                        <span class="cart_price-old">$180.00</span>
+                                    </td>
+                                    <td>
+                                        <div class="number">
+                                            <button class="number_button number_button__minus"></button>
+                                            <input type="text" class="number_input" value="1">
+                                            <button class="number_button number_button__plus"></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="cart_price">$78.00</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="cart_edit">
+                                            <span class="material-icons">create</span>
+                                        </button>
+                                        <button class="cart_delete">
+                                            <span class="material-icons">close</span>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="cart_product">
+                                            <img src="src/img/images/cart/product_03.jpg" alt="" class="cart_product-image">
+                                            <div>
+                                                <p class="cart_product-title">F Gear Astir Small Gym Bag</p>
+                                                <div class="cart_product-data">
+                                                    <span class="cart_product-data-title">color:</span>
+                                                    <span class="cart_product-data-value">gray</span>
+                                                </div>
+                                                <div class="cart_product-data">
+                                                    <span class="cart_product-data-title">seller:</span>
+                                                    <span class="cart_product-data-value">Jhon doe</span>
+                                                </div>
+                                                <div class="cart_product-data">
+                                                    <span class="cart_product-data-title">delivery:</span>
+                                                    <span class="cart_product-data-value">in 2 days</span>
+                                                </div>
+                                                <button class="cart_product-wishlist">
+                                                    move to Wishlist
+                                                    <span class="material-icons">favorite_border</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>ER5559742</td>
+                                    <td>
+                                        <span class="cart_price">$230.00</span>
+                                    </td>
+                                    <td>
+                                        <div class="number">
+                                            <button class="number_button number_button__minus"></button>
+                                            <input type="text" class="number_input" value="1">
+                                            <button class="number_button number_button__plus"></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="cart_price">$230.00</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="cart_controls">
+                            <div class="cart_controls-left">
+                                <a href="#" class="button button__gray">Continue shopping</a>
+                                <div class="dropdown">
+                                    <button class="dropdown_button">Gift Options</button>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="button">Proceed to checkout</a>
+                            </div>
+                        </div>
+                        <div class="cart_info row">
+                            <div class="col-12 col-md-4">
+                                <div class="cart_info-column">
+                                    <p class="cart_info-title">Estimate Shipping cost and Tax</p>
+                                    <div class="form">
+                                        <div class="form_row">
+                                            <label for="">Country</label>
+                                            <select name="" id="">
+                                                <option value="">Great Britain</option>
+                                                <option value="">USA</option>
+                                            </select>
+                                        </div>
+                                        <div class="form_row">
+                                            <label for="">State / Province</label>
+                                            <select name="" id="">
+                                                <option value="">Great Britain</option>
+                                                <option value="">USA</option>
+                                            </select>
+                                        </div>
+                                        <div class="form_row">
+                                            <label for="">Zip/Postal Code</label>
+                                            <input type="text" >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="cart_info-column">
+                                    <p class="cart_info-title">Shipping</p>
+                                    <div class="form">
+                                        <div class="form_row">
+                                            <input type="radio" name="shipping" id="free-shipping" >
+                                            <label for="free-shipping">Free  Shipping</label>
+                                            <input type="radio" name="shipping" id="next-day-shipping" >
+                                            <label for="next-day-shipping">Next Day Delivery ($15)</label>
+                                        </div>
+                                    </div>
+                                    <p class="cart_info-title">Flat Rate</p>
+                                    <div class="form">
+                                        <div class="form_row">
+                                            <input type="radio" name="rate" id="fixed-rate" >
+                                            <label for="fixed-rate">Fixed $5.00</label>
+                                        </div>
+                                    </div>
+                                    <p class="cart_info-title">Check Out with Multiple Addresses</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="cart_info-column">
+                                    <table class="cart_summary">
+                                        <tr>
+                                            <td>Subtotal</td>
+                                            <td>TAX (2%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shipping</td>
+                                            <td>$20.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TAX (2%)</td>
+                                            <td>$12.00</td>
+                                        </tr>
+                                        <tr class="cart_summary-total">
+                                            <td>total</td>
+                                            <td>$580.00s</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="cart_coupon">
+                                    <input class="cart_coupon-input" type="text" placeholder="Type coupon code">
+                                    <button class="cart_coupon-button">Apply coupon</button>
+                                </div>
+                                <button class="cart_update">
+                                    Update cart
+                                    <span class="material-icons">loop</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-3">
+                    <img class="footer_logo" src="src/img/logo.png" alt="">
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="footer_contact">
+                        <div class="footer_contact-icon">
+                            <span class="material-icons">place</span>
+                        </div>
+                        <span class="footer_contact-title">Reach us</span>
+                        <span class="footer_contact-text">795 Folsom Ave, NY 20001 </span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="footer_contact">
+                        <div class="footer_contact-icon">
+                            <span class="material-icons">mail_outline</span>
+                        </div>
+                        <span class="footer_contact-title">You have any question</span>
+                        <a class="footer_contact-text" href="mailto:inquiry@perfectusinc.com">inquiry@perfectusinc.com</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="footer_contact">
+                        <div class="footer_contact-icon">
+                            <span class="material-icons">phone_in_talk</span>
+                        </div>
+                        <span class="footer_contact-title">24 x 7 Customer service</span>
+                        <span class="footer_contact-text">+(12) 34 56 789</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-2">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">my account</p>
+                        <a href="#" class="footer_menu-link">My Account</a>
+                        <a href="#" class="footer_menu-link">Order History</a>
+                        <a href="#" class="footer_menu-link">Wish List</a>
+                        <a href="#" class="footer_menu-link">Checkout</a>
+                        <a href="#" class="footer_menu-link">Advanced search</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">shopping</p>
+                        <a href="#" class="footer_menu-link">shopping</a>
+                        <a href="#" class="footer_menu-link">Your Orders</a>
+                        <a href="#" class="footer_menu-link">Addresses</a>
+                        <a href="#" class="footer_menu-link">Wishlist Items</a>
+                        <a href="#" class="footer_menu-link">Wishlist Items</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">services</p>
+                        <a href="#" class="footer_menu-link">Contact Us</a>
+                        <a href="#" class="footer_menu-link">Returns</a>
+                        <a href="#" class="footer_menu-link">Site Map</a>
+                        <a href="#" class="footer_menu-link">Wish List</a>
+                        <a href="#" class="footer_menu-link">Newsletter</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">extras</p>
+                        <a href="#" class="footer_menu-link">Evouchers</a>
+                        <a href="#" class="footer_menu-link">Gift card</a>
+                        <a href="#" class="footer_menu-link">Gift experiance</a>
+                        <a href="#" class="footer_menu-link">Weddding gift list</a>
+                        <a href="#" class="footer_menu-link">Next credit card account</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">newsletter</p>
+                        <p class="footer_menu-text">Please register to receive these great deals from us.</p>
+                        <div class="footer_newslatter">
+                            <input type="text" class="footer_newslatter-input" placeholder="your email address">
+                            <button class="footer_newslatter-button material-icons">send</button>
+                        </div>
+                        <div class="footer_social">
+                            <a href="#" class="footer_social-icon fab fa-facebook-f"></a>
+                            <a href="#" class="footer_social-icon fab fa-twitter"></a>
+                            <a href="#" class="footer_social-icon fab fa-pinterest"></a>
+                            <a href="#" class="footer_social-icon fab fa-google-plus-g"></a>
+                            <a href="#" class="footer_social-icon fab fa-vine"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer_bottom">
+                <div class="col-12">
+                    <p class="footer_copyright">
+                        © 2017 Jarvis. - All Right Reserved. Designed by
+                        <a href="#" class="footer_copyright-link">Perfectusinc</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 footer_payments">
+                    <img src="src/img/payment_icon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="src/js/jquery-3.3.1.min.js"></script>
+    <script src="src/js/bootstrap-slider.min.js"></script>
+    <script src="src/js/chosen.jquery.min.js"></script>
+    <script src="src/js/slick.js"></script>
+    <script src="src/js/main.js"></script>
+    
+    <script>
+        /* Slider */
+        $('.gallery_carousel').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+            nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
+        });
+    </script>
+</body>
+
+</html>

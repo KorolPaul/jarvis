@@ -51,6 +51,7 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 /* 2.6 Number */
 @import  "form-elements/number";
 @import  "form-elements/form";
+@import  "form-elements/dropdown";
 
 
 /*layout*/
@@ -76,7 +77,6 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 /* 3.12 Post */
 @import  "layout/post";
 /* 3.13 Gallery */
-@import  "layout/gallery";  
 /* 3.14 Post navigation */
 @import  "layout/post-navigation";
 /* 3.15 Comments */
@@ -94,6 +94,7 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "layout/blog-entry";
 @import  "layout/blog-grid";
 @import  "layout/pages";
+@import  "layout/information";
 
 /* Headers */
 @import  "headers/header";
@@ -124,6 +125,8 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import "catalog/colors";
 @import "catalog/sizes";
 
+/* checkout */
+@import "checkout/cart";
 
 /*Plugins*/
 /* 6.1 Range input */

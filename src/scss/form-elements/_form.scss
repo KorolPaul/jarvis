@@ -1,46 +1,8 @@
 .form {
-    margin: 0 0 50px;
 
-    &_fields {
-        border: 2px solid $bright_color;
-        padding: 26px 55px;
-
-        &__small-indent {
-            padding-left: 25px;
-            padding-right: 25px;
-        }
-    }
-    &_title {
-        @extend %heading-2;
-    }
-    &_fields-row {
+    &_row {
         display: flex;
-        justify-content: space-between;
-        margin: 0 0 26px;
-
-        &__indent {
-            margin: -14px 0 10px;
-        }
-    }
-    &_field {
-        width: 100%;
-    }
-    &_item {
-        width: 45%;
-
-        &__wide {
-            flex-basis: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            width: 100%;
-        }
-    }
-    &_social {
-        color: $gray_color;
-    }
-    &_social-icon {
-        margin: 0 0 0 10px;
-        vertical-align: middle;
+        flex-direction: column;
+        margin: 0 0 15px;
     }
 }

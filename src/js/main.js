@@ -27,6 +27,15 @@ $(window).on('load', function () {
         $('.tabs_tab[data-tab="'+ $(this).data('tab') +'"]').addClass('active');
     });
 
+    $(".information").on('click', 'button', function(e) {
+        e.preventDefault();
+
+        $(".information_button.active, .information_page.active").removeClass('active');
+
+        $(this).addClass('active');
+        $('.information_page[data-tab="'+ $(this).data('tab') +'"]').addClass('active');
+    });
+
     /* Widjet */
     $('.cart-button, .widjet_close').on('click', function() {
         $('.widjet').toggleClass('opened');

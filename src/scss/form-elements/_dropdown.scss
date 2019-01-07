@@ -1,0 +1,25 @@
+.dropdown {
+    display: inline-block;
+    position: relative;
+
+    &_button {
+        cursor: pointer;
+        display: inline-block;
+        background: $light-gray_color;
+        border: 1px solid $light-gray_color;
+        color: $color;
+        font: 600 14px $font-family;
+        padding: 10px 12px;
+        text-align: center;
+        text-decoration: none;
+        transition: .2s ease-in-out background-color,
+                    .2s ease-in-out border-color,
+                    .2s ease-in-out color;
+
+        &:hover {
+            background-color: $color;
+            border-color: $color;
+            color: $light-gray_color;
+        }
+    }
+}

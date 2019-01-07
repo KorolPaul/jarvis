@@ -1,10 +1,19 @@
 .product {
+    background: #e8e8e8;
+    margin: -80px 0 100px;
+    padding: 50px 0;
+
+    &_info {
+        background: $light_color;
+        padding: 30px;
+        height: 100%;
+    }
     &_title {
         font: 600 24px $font-family;
         text-transform: uppercase;
     }
     &_price {
-        margin: 10px 0 0;
+        margin: 10px 0 20px;
     }
     &_price-value {
         color: $bright_color;
@@ -16,5 +25,75 @@
         font-size: 16px;
         margin: 0 0 0 16px;
         text-decoration: line-through;
+    }
+    &_data-item {
+        margin: 0 0 13px;
+    }
+    &_data-title {
+        font-weight: 600;
+        margin: 0 2px 0 0;
+    }
+    &_data-value {
+        color: $gray_color;
+    }
+    &_text {
+        margin: 0 0 30px;
+    }
+    &_paremeters {
+        display: flex;
+        margin: 0 0 40px;
+    }
+    &_paremeters-item {
+        margin: 0 40px 0 0;
+    }
+    &_paremeters-title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    &_bottom {
+        display: flex;
+    }
+    &_add-to-cart {
+        cursor: pointer;
+        background: $color;
+        border: 1px solid $color;
+        color: $light_color;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 15px;
+        margin: 0 15px;
+        transition: .2s ease-in-out color,
+                    .2s ease-in-out background;
+
+        &:hover {
+            background: $light_color;
+            color: $color;    
+        }
+
+        .material-icons {
+            font-size: 15px;
+            vertical-align: -2px;
+        }
+    }
+    &_button {
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid currentColor;
+        color: $gray_color;
+        height: 40px;
+        line-height: 40px;
+        width: 40px;
+        text-align: center;
+        margin: 0 10px 0 0;
+        transition: .2s ease-in-out color;
+
+        &:hover {
+            color: $color;    
+        }
+
+        .material-icons {
+            font-size: 15px;
+            vertical-align: -2px;
+        }
     }
 }

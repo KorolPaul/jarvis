@@ -120,9 +120,21 @@
                         <div class="gallery">
                             <img src="src/img/images/product/product_01.jpg" alt="" class="gallery_image">
                             <div class="gallery_carousel">
-                                <img src="src/img/images/product/additional_product_01.jpg" alt="" class="gallery_carousel-image">
-                                <img src="src/img/images/product/additional_product_02.jpg" alt="" class="gallery_carousel-image">
-                                <img src="src/img/images/product/additional_product_03.jpg" alt="" class="gallery_carousel-image">
+                                <div class="gallery_carousel-item">
+                                    <img src="src/img/images/product/additional_product_01.jpg" alt="" class="gallery_carousel-image">
+                                </div>
+                                <div class="gallery_carousel-item">
+                                    <img src="src/img/images/product/additional_product_02.jpg" alt="" class="gallery_carousel-image">
+                                </div>
+                                <div class="gallery_carousel-item">
+                                    <img src="src/img/images/product/additional_product_03.jpg" alt="" class="gallery_carousel-image">
+                                </div>
+                                <div class="gallery_carousel-item">
+                                    <img src="src/img/images/product/additional_product_02.jpg" alt="" class="gallery_carousel-image">
+                                </div>
+                                <div class="gallery_carousel-item">
+                                    <img src="src/img/images/product/additional_product_03.jpg" alt="" class="gallery_carousel-image">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -160,10 +172,10 @@
                                 <div class="product_data-item">
                                     <span class="product_data-title">Product tags:</span>
                                     <span class="product_data-value">
-                                        <a href="#" class="tag">bags</a>
-                                        <a href="#" class="tag">clothes</a>
-                                        <a href="#" class="tag">shoes</a>
-                                        <a href="#" class="tag">dresses</a>
+                                        <a href="#" class="tag tag__small">bags</a>
+                                        <a href="#" class="tag tag__small">clothes</a>
+                                        <a href="#" class="tag tag__small">shoes</a>
+                                        <a href="#" class="tag tag__small">dresses</a>
                                     </span>
                                 </div>
                             </div>
@@ -184,18 +196,28 @@
                                 <div class="product_paremeters-item">
                                     <p class="product_paremeters-title">Select color :</p>
                                     <div class="colors">
-                                        <button class="colors_item" style="background-color: #d3bd74"></button>
-                                        <button class="colors_item active" style="background-color: #61727a"></button>
-                                        <button class="colors_item" style="background-color: #181830"></button>
-                                        <button class="colors_item" style="background-color: #b9a7c2"></button>
-                                        <button class="colors_item" style="background-color: #584b3f"></button>
+                                        <button class="colors_item" style="background-color: #d3bd74">
+                                            <span class="material-icons">check</span>
+                                        </button>
+                                        <button class="colors_item active" style="background-color: #61727a">
+                                            <span class="material-icons">check</span>
+                                        </button>
+                                        <button class="colors_item" style="background-color: #181830">
+                                            <span class="material-icons">check</span>
+                                        </button>
+                                        <button class="colors_item" style="background-color: #b9a7c2">
+                                            <span class="material-icons">check</span>
+                                        </button>
+                                        <button class="colors_item" style="background-color: #584b3f">
+                                            <span class="material-icons">check</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="product_bottom">
                                 <div class="number">
                                     <button class="number_button number_button__minus"></button>
-                                    <input type="text" class="number_input" value="1">
+                                    <input type="text" class="number_input" value="2">
                                     <button class="number_button number_button__plus"></button>
                                 </div>
                                 <button class="product_add-to-cart">
@@ -203,13 +225,13 @@
                                     add to cart
                                 </button>
                                 <button class="product_button">
-                                    <span class="material_icons">favorite_border</span>
+                                    <span class="material-icons">favorite_border</span>
                                 </button>
                                 <button class="product_button">
-                                    <span class="material_icons">sort</span>
+                                    <span class="material-icons">sort</span>
                                 </button>
                                 <button class="product_button">
-                                    <span class="material_icons">share</span>
+                                    <span class="material-icons">share</span>
                                 </button>
                             </div>
                         </div>
@@ -222,14 +244,14 @@
                 <div class="col-12">
                     <div class="information">
                         <div class="information_buttons">
-                            <button class="information_button active">Description</button>
-                            <button class="information_button">Details</button>
-                            <button class="information_button">Comments</button>
-                            <button class="information_button">Video</button>
-                            <button class="information_button">Custom tab</button>
+                            <button class="information_button active" data-tab="1">Description</button>
+                            <button class="information_button" data-tab="2">Details</button>
+                            <button class="information_button" data-tab="3">Comments</button>
+                            <button class="information_button" data-tab="4">Video</button>
+                            <button class="information_button" data-tab="5">Custom tab</button>
                         </div>
                         <div class="information_pages">
-                            <div class="information_page active">
+                            <div class="information_page active" data-tab="1">
                                 <p>Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
                                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 <ul>
@@ -242,19 +264,19 @@
                                     <li>Tax Rates per location, customer group and product type</li>
                                 </ul>
                             </div>
-                            <div class="information_page">
+                            <div class="information_page" data-tab="2">
                                 <p>Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
                                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
-                            <div class="information_page">
+                            <div class="information_page" data-tab="3">
                                 <p>Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
                                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
-                            <div class="information_page">
+                            <div class="information_page" data-tab="4">
                                 <p>Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
                                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
-                            <div class="information_page">
+                            <div class="information_page" data-tab="5">
                                 <p>Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
                                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
@@ -480,16 +502,16 @@
     <script src="src/js/chosen.jquery.min.js"></script>
     <script src="src/js/slick.js"></script>
     <script src="src/js/main.js"></script>
-
+    
     <script>
         /* Slider */
-        $('#slider ').slick({
+        $('.gallery_carousel').slick({
             infinite: true,
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 1,
             dots: false,
-            prevArrow: '<button type="button" class="slick-prev">prev</button>',
-            nextArrow: '<button type="button" class="slick-next">next</button>',
+            prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+            nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
         });
     </script>
 </body>

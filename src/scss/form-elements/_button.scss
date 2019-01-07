@@ -1,17 +1,15 @@
-%button {
-    background: transparent;
-    border: 2px solid currentColor;
-    border-radius: 30px;
+@mixin button {
+    background: $bright_color;
+    border: 1px solid $bright_color;
+    display: inline-block;
     cursor: pointer;
-    color: $gray_color;
-    font-family: $font-family;
-    font-weight: 600;
-    padding: 10px 45px;
-    position: relative;
+    color: $light_color;
+    font: 600 14px $font-family;
+    padding: 10px 12px;
     text-align: center;
-    text-transform: uppercase;
-    transition: .2s ease-in-out border, 
-                .2s ease-in-out background-color,
+    text-decoration: none;
+    transition: .2s ease-in-out background-color,
+                .2s ease-in-out border-color,
                 .2s ease-in-out color;
 }
 
@@ -19,10 +17,24 @@
 button:not([class]),
 input[type="button"],
 input[type="submit"],  {
-    @extend %button;
+    @include button;
 
     &:hover {
-        background-color: $gray_color;
-        color: $color;
+        background-color: $light_color;
+        color: $bright_color;
+        text-decoration: none;
+    }
+}
+
+.button__gray {
+    @include button;
+    background: $light-gray_color;
+    border-color: $light-gray_color;
+    color: $color;
+
+    &:hover {
+        background-color: $color;
+        border-color: $color;
+        color: $light-gray_color;
     }
 }

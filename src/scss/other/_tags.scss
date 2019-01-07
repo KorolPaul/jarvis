@@ -10,6 +10,14 @@
     text-transform: uppercase;
     margin: 0 10px 10px 0;
 
+    &__small {
+        color: $gray_color;
+        text-transform: none;
+        font-size: 12px;
+        padding: 2px 8px;
+        margin: 0 6px;
+    }
+
     &:hover {
         color: $bright_color;
         text-decoration: none;

@@ -1,0 +1,21 @@
+.sizes {
+    &_button {
+        cursor: pointer;
+        color: $gray_color;
+        background: transparent;
+        border: 1px solid currentColor;
+        display: inline-block;
+        line-height: 28px;
+        height: 28px;
+        width: 28px;
+        margin: 0 10px 0 0;
+        padding: 0;
+        text-align: center;
+        text-transform: uppercase;
+
+        &.active,
+        &:hover {
+            color: $color;
+        }
+    }
+}

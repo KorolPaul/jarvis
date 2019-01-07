@@ -1,3 +1,51 @@
 .information {
-    
+    display: flex;
+    margin: 0 0 100px;
+
+    &_buttons {
+        flex-shrink: 0;
+        width: 25%;
+    }
+    &_button {
+        display: block;
+        background: transparent;
+        border: 1px solid $gray_color;
+        border-right: none;
+        font-size: 16px;
+        color: $gray_color;
+        padding: 15px;
+        position: relative;
+        text-align: left;
+        text-transform: uppercase;
+        width: 100%;
+        transition: .2s ease-in-out color,
+                    .2s ease-in-out border-color;
+
+        & + & {
+            border-top-color: transparent; 
+        }
+        &.active,
+        &:hover {
+            color: $color;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: -1px;
+                bottom: 0;
+                width: 1px;
+                background: $light_color;
+            }
+        }
+    }
+    &_page {
+        display: none;
+        border: 1px solid $gray_color;
+        padding: 20px 30px;
+
+        &.active {
+            display: block;
+        }
+    }
 }
