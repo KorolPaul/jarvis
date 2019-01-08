@@ -38,3 +38,19 @@ input[type="submit"],  {
         color: $light-gray_color;
     }
 }
+
+
+.button__light {
+    @include button;
+    background: $light_color;
+    border-color: $light-gray_color;
+    color: $gray_color;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &:hover {
+        background-color: $color;
+        border-color: $color;
+        color: $light_color;
+    }
+}
