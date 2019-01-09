@@ -95,6 +95,7 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "layout/blog-grid";
 @import  "layout/pages";
 @import  "layout/information";
+@import  "layout/accordion";
 
 /* Headers */
 @import  "headers/header";
@@ -127,6 +128,7 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 
 /* checkout */
 @import "checkout/cart";
+@import "checkout/checkout-widjet";
 
 /*Plugins*/
 /* 6.1 Range input */

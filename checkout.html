@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jarvis</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="HandheldFriendly" content="true">
+    <meta property="og:title" content="#{data.title}">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="300">
+    <meta property="twitter:description" content="">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_container container">
+            <div class="header_top">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-md-2">
+                        <a href="/" class="logo">
+                            <img src="src/img/logo-dark.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <nav class="menu">
+                            <ul class="menu_list">
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">home</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">
+                                        men
+                                        <span class="menu_arrow fas fa-angle-down"></span>
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">
+                                        women
+                                        <span class="menu_arrow fas fa-angle-down"></span>
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">
+                                        shop<span class="menu_arrow fas fa-angle-down"></span>
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">
+                                        accessories
+                                        <span class="menu_arrow fas fa-angle-down"></span>
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link">contact</a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="/" class="menu_link active">buy theme</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <div class="header_controls">
+                            <button class="search-button">
+                                <span class="material-icons">search</span>
+                            </button>
+                            <button class="settings-button">
+                                <span class="material-icons">settings</span>
+                            </button>
+                            <div class="cart-button">
+                                <span class="cart-button_icon"></span>
+                                <div>
+                                    <span class="cart-button_title">My Cart</span>
+                                    <span class="cart-button_sum">
+                                        <span><span class="cart-button_value">$160.00</span> (03)</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="showcase">
+            <img src="src/img/breadcrumb_background.jpg" alt="" class="showcase_image">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="showcase_title">Checkout</h1>
+                        <div class="breadcrumbs">
+                            <a href="/" class="breadcrumbs_link material-icons">home</a>
+                            <span class="breadcrumbs_page">Checkout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="checkout row">
+                <div class="col-12 col-md-8">
+                    <form class="accordion">
+                        <label class="accordion_title">
+                            <input type="radio" name="accordion">
+                            01  checkout method
+                        </label>
+                        <div class="accordion_content">
+                            <div class="accordion_column">
+                                <div class="form">
+                                    <p class="form_title">CHECKOUT AS A GUEST OR REGISTER</p>
+                                    <div class="form_row">
+                                        <label for="">Register with us for future convenience:</label>
+                                        <input type="radio" id="guest" name="account">
+                                        <label for="guest">Checkout as Guest</label>
+                                        <input type="radio" id="register" name="account">
+                                        <label for="register">Register</label>
+                                    </div>
+                                    <div class="form_row">
+                                        <label for="">Register and save time!</label>
+                                        <p class="form_text">Fast and easy check out</p>
+                                        <p class="form_text">Easy access to your order history and status</p>
+                                    </div>
+                                    <div class="form_row">
+                                        <button class="button button__gray">Continue</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion_column">
+                                <div class="form">
+                                    <p class="form_title">Login</p>
+                                    <div class="form_row">
+                                        <p class="form_text">Already registered?</p>
+                                    </div>
+                                    <div class="form_row">
+                                        <label for="">Email address</label>
+                                        <input type="email" name="email">
+                                    </div>
+                                    <div class="form_row">
+                                        <label for="">Password</label>
+                                        <input type="password" name="password">
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <input type="radio" id="remember" name="remember" checked>
+                                            <label for="remember">Remember me</label>
+                                        </div>
+                                        <div class="form_row-item">
+                                            <a href="#" class="form_link">Forgot Password?</a>
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <button class="button button__gray">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="accordion_title">
+                            <input type="radio" name="accordion">
+                            02  Billing Details
+                        </label>
+                        <div class="accordion_content">
+                            <div class="form">
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">First name</label>
+                                        <input type="text" placeholder="John">
+                                    </div>
+                                    <div class="form_row-item">
+                                        <label for="">Last name</label>
+                                        <input type="text" name="doe">
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">Company</label>
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">Country</label>
+                                        <select name="" id="">
+                                            <option value="">USA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">Address</label>
+                                        <input type="text" placeholder="Street address...">
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <input type="text" placeholder="Appartment,Suite etc. (optional)">
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">Town / City</label>
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">State</label>
+                                        <select name="" id="">
+                                            <option value="">Alabama</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_row-item">
+                                        <label for="">Postcode / Zip</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <input type="radio" name="shipping" id="ship-adress" checked>
+                                        <label for="ship-adress">Ship to this address</label>
+                                        <input type="radio" name="shipping" id="ship-diff-adress" checked>
+                                        <label for="ship-diff-adress">Ship to different address</label>
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <button class="button button__gray">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="accordion_title">
+                            <input type="radio" name="accordion">
+                            03  shipping Details
+                        </label>
+                        <div class="accordion_content">
+                            <div class="form">
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">First name</label>
+                                        <input type="text" placeholder="John">
+                                    </div>
+                                    <div class="form_row-item">
+                                        <label for="">Last name</label>
+                                        <input type="text" placeholder="doe">
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">Company</label>
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">Email</label>
+                                        <input type="email">
+                                    </div>
+                                    <div class="form_row-item">
+                                        <label for="">Phone</label>
+                                        <input type="tel" placeholder="doe">
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">Country</label>
+                                        <select name="" id="">
+                                            <option value="">USA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">Address</label>
+                                        <input type="text" placeholder="Street address...">
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <input type="text" placeholder="Appartment,Suite etc. (optional)">
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">Town / City</label>
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">State</label>
+                                        <select name="" id="">
+                                            <option value="">Alabama</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_row-item">
+                                        <label for="">Postcode / Zip</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <input type="radio" name="billing-adress" id="billing-adress" checked>
+                                        <label for="billing-adress">Use Billing Address</label>
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <button class="button button__gray">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="accordion_title">
+                            <input type="radio" name="accordion">
+                            04  Shipping Method
+                        </label>
+                        <div class="accordion_content">
+                            <div class="form">
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">United Parcel Service</label>
+                                        <input type="radio" name="parcel-service" id="parcel-service-1" checked>
+                                        <label for="parcel-service-1">Worldwide Expedited $800.00</label>
+                                        <input type="radio" name="parcel-service" id="parcel-service-2">
+                                        <label for="parcel-service-2">Worldwide Express Saver $1020.00</label>
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">Flat Rate</label>
+                                        <input type="radio" name="flat-rate" id="flat-rate" checked>
+                                        <label for="flat-rate">Fixed $10.00</label>
+                                    </div>
+                                </div>
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <label for="">DO YOU HAVE ANY GIFT ITEMS IN YOUR ORDER?</label>
+                                        <input type="radio" name="add-gift" id="add-gift" checked>
+                                        <label for="add-gift">Add gift options.</label>
+                                    </div>
+                                </div>
+                                <div class="form_fieldset">
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <label for="">To</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="form_row-item">
+                                            <label for="">From</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <label for="">Message</label>
+                                            <textarea name="" id=""></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="form_row-item form_row-item__align_right">
+                                            <button class="button button__gray">Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="accordion_title">
+                            <input type="radio" name="accordion">
+                            05  Payment Method
+                        </label>
+                        <div class="accordion_content">
+                            <div class="form">
+                                <div class="form_row">
+                                    <div class="form_row-item">
+                                        <div class="rario-buttons">
+                                            <input type="radio" name="payment" id="check" checked>
+                                            <label for="check"> Check / Money order</label>
+                                            <input type="radio" name="payment" id="card">
+                                            <label for="card">Debit/Credit</label>
+                                            <input type="radio" name="payment" id="net-bankking">
+                                            <label for="net-bankking">Net Banking</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_fieldset">
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <input type="radio" name="Balance" id="Balance" checked>
+                                            <label for="Balance">Balance</label>
+                                            <span>50$</span>
+                                        </div>
+                                        <div class="form_row-item">
+                                            <label class="inline-label" for="">Promo code</label>
+                                            <input type="text" placeholder="Type here...">
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <input for="text" placeholder="Card Number" />
+                                        </div>
+                                        <div class="form_row-item form_row-item__small">
+                                            <select name="" id="">
+                                                <option value="">january</option>
+                                            </select>
+                                        </div>
+                                        <div class="form_row-item form_row-item__small">
+                                            <select name="" id="">
+                                                <option value="">2024</option>
+                                            </select>
+                                        </div>
+                                        <div class="form_row-item form_row-item__small">
+                                            <input type="text" placeholder="CVV">
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="form_row-item form_row-item__align_right">
+                                            <button class="button button__gray">Cancel</button>
+                                            <button class="button">Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="accordion_title">
+                            <input type="radio" name="accordion">
+                            06  Order Review
+                        </label>
+                        <div class="accordion_content">
+                            <table class="checkout_total">
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Price</th>
+                                        <th>Qty</th>
+                                        <th>Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Aero Canvas Loafers</td>
+                                        <td>
+                                            <span class="checkout_total-price">$120.00</span>
+                                        </td>
+                                        <td>2</td>
+                                        <td>
+                                            <span class="checkout_total-price">$240.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>F Gear Gym Bag</td>
+                                        <td>
+                                            <span class="checkout_total-price">$450.00</span>
+                                        </td>
+                                        <td>3</td>
+                                        <td>
+                                            <span class="checkout_total-price">$1350.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>handful of model</td>
+                                        <td>
+                                            <span class="checkout_total-price">$310.00</span>
+                                        </td>
+                                        <td>2</td>
+                                        <td>
+                                            <span class="checkout_total-price">$620.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody class="checkout_total-sum">
+                                    <tr>
+                                        <td>Subtotal</td>
+                                        <td>$2210.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>shipping & Handling (Flat Rate - Fixed)</td>
+                                        <td>$15.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="checkout_total-title">TOTAL</span>
+                                        </td>
+                                        <td>$2225.00</td>
+                                    </tr>
+                                </tbody>
+                                <tbody class="checkout_total-bottom">
+                                    <tr>
+                                        <td>Forgot an Item? Edit Your Cart</td>
+                                        <td>
+                                            <button class="button">Place Order</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-4">
+                    <aside class="sidebar">
+                        <p class="sidebar_title">tags</p>
+                        <table class="checkout-widjet">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="checkout-widjet_product">
+                                            <img src="src/img/images/cart/product_01.jpg" alt="" class="cart_product-image">
+                                            <div>
+                                                <p class="checkout-widjet_product-title">Aero Canvas Loafers x 2 </p>
+                                                <p class="checkout-widjet_price">$120.00</p>
+                                                <div>
+                                                    <button class="cart_edit">
+                                                        <span class="material-icons">create</span>
+                                                    </button>
+                                                    <button class="cart_delete">
+                                                        <span class="material-icons">close</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkout-widjet_product">
+                                            <img src="src/img/images/cart/product_02.jpg" alt="" class="cart_product-image">
+                                            <div>
+                                                <p class="checkout-widjet_product-title">F Gear Gym Bag x 3 </p>
+                                                <p class="checkout-widjet_price">$420.00</p>
+                                                <div>
+                                                    <button class="cart_edit">
+                                                        <span class="material-icons">create</span>
+                                                    </button>
+                                                    <button class="cart_delete">
+                                                        <span class="material-icons">close</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkout-widjet_product">
+                                            <img src="src/img/images/cart/product_03.jpg" alt="" class="cart_product-image">
+                                            <div>
+                                                <p class="checkout-widjet_product-title">handful of model x 1 </p>
+                                                <p class="checkout-widjet_price">$87.00</p>
+                                                <div>
+                                                    <button class="cart_edit">
+                                                        <span class="material-icons">create</span>
+                                                    </button>
+                                                    <button class="cart_delete">
+                                                        <span class="material-icons">close</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="/cart.html" class="button button__gray">Go to cart</a>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-3">
+                    <img class="footer_logo" src="src/img/logo.png" alt="">
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="footer_contact">
+                        <div class="footer_contact-icon">
+                            <span class="material-icons">place</span>
+                        </div>
+                        <span class="footer_contact-title">Reach us</span>
+                        <span class="footer_contact-text">795 Folsom Ave, NY 20001 </span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="footer_contact">
+                        <div class="footer_contact-icon">
+                            <span class="material-icons">mail_outline</span>
+                        </div>
+                        <span class="footer_contact-title">You have any question</span>
+                        <a class="footer_contact-text" href="mailto:inquiry@perfectusinc.com">inquiry@perfectusinc.com</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="footer_contact">
+                        <div class="footer_contact-icon">
+                            <span class="material-icons">phone_in_talk</span>
+                        </div>
+                        <span class="footer_contact-title">24 x 7 Customer service</span>
+                        <span class="footer_contact-text">+(12) 34 56 789</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-2">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">my account</p>
+                        <a href="#" class="footer_menu-link">My Account</a>
+                        <a href="#" class="footer_menu-link">Order History</a>
+                        <a href="#" class="footer_menu-link">Wish List</a>
+                        <a href="#" class="footer_menu-link">Checkout</a>
+                        <a href="#" class="footer_menu-link">Advanced search</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">shopping</p>
+                        <a href="#" class="footer_menu-link">shopping</a>
+                        <a href="#" class="footer_menu-link">Your Orders</a>
+                        <a href="#" class="footer_menu-link">Addresses</a>
+                        <a href="#" class="footer_menu-link">Wishlist Items</a>
+                        <a href="#" class="footer_menu-link">Wishlist Items</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">services</p>
+                        <a href="#" class="footer_menu-link">Contact Us</a>
+                        <a href="#" class="footer_menu-link">Returns</a>
+                        <a href="#" class="footer_menu-link">Site Map</a>
+                        <a href="#" class="footer_menu-link">Wish List</a>
+                        <a href="#" class="footer_menu-link">Newsletter</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">extras</p>
+                        <a href="#" class="footer_menu-link">Evouchers</a>
+                        <a href="#" class="footer_menu-link">Gift card</a>
+                        <a href="#" class="footer_menu-link">Gift experiance</a>
+                        <a href="#" class="footer_menu-link">Weddding gift list</a>
+                        <a href="#" class="footer_menu-link">Next credit card account</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="footer_menu">
+                        <p class="footer_menu-title">newsletter</p>
+                        <p class="footer_menu-text">Please register to receive these great deals from us.</p>
+                        <div class="footer_newslatter">
+                            <input type="text" class="footer_newslatter-input" placeholder="your email address">
+                            <button class="footer_newslatter-button material-icons">send</button>
+                        </div>
+                        <div class="footer_social">
+                            <a href="#" class="footer_social-icon fab fa-facebook-f"></a>
+                            <a href="#" class="footer_social-icon fab fa-twitter"></a>
+                            <a href="#" class="footer_social-icon fab fa-pinterest"></a>
+                            <a href="#" class="footer_social-icon fab fa-google-plus-g"></a>
+                            <a href="#" class="footer_social-icon fab fa-vine"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer_bottom">
+                <div class="col-12">
+                    <p class="footer_copyright">
+                        © 2017 Jarvis. - All Right Reserved. Designed by
+                        <a href="#" class="footer_copyright-link">Perfectusinc</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 footer_payments">
+                    <img src="src/img/payment_icon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="src/js/jquery-3.3.1.min.js"></script>
+    <script src="src/js/bootstrap-slider.min.js"></script>
+    <script src="src/js/chosen.jquery.min.js"></script>
+    <script src="src/js/slick.js"></script>
+    <script src="src/js/main.js"></script>
+    
+    <script>
+        /* Slider */
+        $('.gallery_carousel').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+            nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
+        });
+    </script>
+</body>
+
+</html>
