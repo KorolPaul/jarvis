@@ -157,6 +157,38 @@
     }
 }
 
+.slick-prev-arrow,
+.slick-next-arrow {
+    cursor: pointer;
+    border: 1px solid currentColor;
+    font-size: 0;
+    background: transparent;
+    color: $light_color;
+    position: absolute;
+    top: 50%;
+    height: 22px;
+    width: 22px;
+    z-index: 1;
+    padding: 0;
+    text-align: center;
+    transform: translate(0, -50%);
+    transition: .2s ease-in-out color;
+
+    &:hover {
+        color: $bright_color;
+    }
+    .material-icons {
+        font-size: $font-size;
+    }
+}
+
+.slick-prev-arrow {
+    left: 35px;
+}
+.slick-next-arrow {
+    right: 35px;
+}
+
 .slick-disabled {
     opacity: .2;
 }
@@ -167,13 +199,6 @@
     margin: 40px 0 0;
     text-align: center;
 
-    .slick-slider__small & {
-        bottom: 10px;
-
-        @include tablet {
-            bottom: 55px;
-        }
-    }
 
     li[role] {
         @include invisible-text;
@@ -187,21 +212,21 @@
     }
 
     button {
+        @include invisible-text;
+        cursor: pointer;
         display: inline-block;
-        background: transparent;
-        border: 2PX solid $color;
-        border-radius: 50%;
-        height: 14px;
-        width: 14px;
+        background: $gray_color;
+        border: none;
+        border-radius: 2px;
+        height: 5px;
+        width: 18px;
         padding: 0;
         margin: 0 7px;
-        transition: .2s ease background, .2s ease border;
+        transition: .2s ease background;
     }
 }
 
 .slick-dots .slick-active button,
 .slick-dots button:hover {
     background: $bright_color;
-    border-color: $bright_color;
-    cursor: pointer;
 }

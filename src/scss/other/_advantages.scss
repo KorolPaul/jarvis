@@ -1,0 +1,14 @@
+.advantages {
+    margin: 75px 0;
+
+    .material-icons {
+        font-size: 50px;
+    }
+    &_item {
+        text-align: center;
+    }
+    &_title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}

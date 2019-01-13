@@ -1,8 +1,74 @@
 .form {
-
+    &__small {
+        max-width: 480px;
+    }
+    
+    &_big-title {
+        @extend .sidebar_title;
+    }
+    &_title {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
     &_row {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         margin: 0 0 15px;
+
+        &__indent-botton {
+            margin-bottom: 30px;
+        }
+    }
+    &_row-item {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        & + & {
+            margin: 0 0 0 30px;
+        }
+        &__align_right {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        &__small {
+            flex-grow: 0;
+        }
+    }
+    &_text {
+        margin: 0;
+    }
+    &_link {
+        color: $color;
+        text-align: right;
+    }
+    &_fieldset {
+        border: 1px solid $gray_color;
+        padding: 25px;
+    }
+    &_or {
+        display: inline-block;
+        margin: auto;
+        font-size: 14px;
+        text-transform: uppercase;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 40px;
+            border-bottom: 1px solid $gray_color;
+            position: absolute;
+            top: 50%;
+            left: 150%;
+        }
+        &::after {
+            content: '';
+            width: 40px;
+            border-bottom: 1px solid $gray_color;
+            position: absolute;
+            top: 50%;
+            right: 150%;
+        }
     }
 }

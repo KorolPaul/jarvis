@@ -1,0 +1,28 @@
+.login {
+    margin: 0 0 100px;
+
+    &_facebook,
+    &_google {
+        cursor: pointer;
+        border: none;
+        color: $light_color;
+        height: 38px;
+        line-height: 38px;
+        padding: 0 20px;
+        text-align: left;
+        transition: .2s ease-in-out filter .05s;
+
+        span {
+            margin: 0 15px 0 0;
+        }
+        &:hover {
+            filter: saturate(1.5);
+        }
+    }
+    &_facebook {
+        background: #3b5998;
+    }
+    &_google {
+        background: #d34836;
+    }
+}

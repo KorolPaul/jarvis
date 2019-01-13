@@ -2,4 +2,9 @@ label {
     font: 600 $font-size $font-family;
     display: block;
     margin: 0 0 15px;
+
+    &.inline-label {
+        margin: 0 15px 0 0;
+        line-height: 35px;
+    }
 }

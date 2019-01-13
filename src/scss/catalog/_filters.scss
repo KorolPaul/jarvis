@@ -1,0 +1,83 @@
+.filters {
+
+    &_section {
+        margin: 0 0 30px;
+    }
+    &_title {
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 0 30px;
+        transition: .2s ease-in-out color .05s;
+
+        &:hover {
+            color: $bright_color;
+        }
+
+        .material-icons {
+            font-size: 16px;
+            position: absolute;
+            top: 7px;
+            right: 0;
+            line-height: 16px;
+            height: 17px;
+            width: 17px;
+            border-radius: 50%;
+            border: 1px solid currentColor;
+            text-align: center;
+            transition: .2s ease-in-out transform .03s;
+        }
+    }
+    &_content {
+        display: none;
+
+        input:checked + label + & {
+            display: block;
+        }
+    }
+    &_label {
+        cursor: pointer;
+        font-size: 14px;
+        margin: 0;
+        text-transform: uppercase;
+        padding: 10px 10px 10px 0;
+        transition: .2s ease-in-out color;
+
+        &__inner {
+            background: $light_color;
+            padding: 12px 20px;
+            border-bottom: 1px solid $light-gray_color;
+            font-size: $font-size;
+            text-transform: none;
+        }
+        input:checked + & {
+            color: $bright_color;
+        }
+    } 
+    &_option {
+        position: relative;
+
+        .material-icons {
+            position: absolute;
+            font-size: 16px;
+            top: 12px;
+            right: 0;
+        }
+    }
+    &_suboptions {
+        box-shadow: 0 3px 8px #ababab;
+        position: absolute;
+        left: 98%;
+        top: 0;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+
+        .filters_option:hover & {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

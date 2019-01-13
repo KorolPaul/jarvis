@@ -1,0 +1,16 @@
+.range {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 30px;
+
+    &_demitter {
+        font-weight: 600;
+        margin: 0 10px;
+        flex-shrink: 0;
+    }
+    &_input {
+        flex-shrink: 1;
+        min-width: 0;
+    }
+}

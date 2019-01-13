@@ -1,18 +1,14 @@
 .catalog {
 
-    &_header {
-        border-bottom: 1px solid $bright_color;
-        padding: 0 0 30px;
-        margin: 0 0 50px;
-        position: relative;
+    &_controls {
         display: flex;
         justify-content: space-between;
-        align-items: center;
     }
 
-    &_grid {
+    &_content {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+
+
     }
 }

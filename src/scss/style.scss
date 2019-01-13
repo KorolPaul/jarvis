@@ -52,6 +52,7 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import  "form-elements/number";
 @import  "form-elements/form";
 @import  "form-elements/dropdown";
+@import  "form-elements/range";
 
 
 /*layout*/
@@ -115,6 +116,13 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import "other/tags";
 @import "other/categories";
 @import "other/calendar";
+@import "other/error-404";
+@import "other/counters";
+@import "other/advantages";
+@import "other/team";
+@import "other/reviews";
+@import "other/login";
+@import "other/latest-news";
 
 /* catalog */
 @import "catalog/arrivals";
@@ -127,9 +135,12 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 @import "catalog/colors";
 @import "catalog/sizes";
 @import "catalog/camparison";
+@import "catalog/filters";
+@import "catalog/catalog";
 
 /* checkout */
 @import "checkout/cart";
+@import "checkout/checkout";
 @import "checkout/checkout-widjet";
 
 /*Plugins*/

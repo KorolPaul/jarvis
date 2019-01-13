@@ -1,4 +1,6 @@
 .colors {
+    white-space: nowrap;
+
     &_item {
         cursor: pointer;
         background: transparent;
@@ -9,17 +11,30 @@
         width: 24px;
         margin: 0 10px 0 0;
         padding: 0;
+        text-align: center;
 
         .material-icons {
             color: $light_color;
             font-size: 13px;
-            line-height: 18px;
+            line-height: 24px;
             opacity: 0;
             transition: .2s ease-in-out opacity;
-
         }
+
+        &__big {
+            height: 30px;
+            width: 30px;
+            margin-bottom: 10px;
+
+            .material-icons {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
         &.active .material-icons,
-        &:hover .material-icons {
+        &:hover .material-icons,
+        input:checked + & .material-icons {
             opacity: 1;
         }
     }

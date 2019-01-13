@@ -116,406 +116,446 @@
             <div class="checkout row">
                 <div class="col-12 col-md-8">
                     <form class="accordion">
-                        <label class="accordion_title">
-                            <input type="radio" name="accordion">
+                        <input type="radio" name="accordion" checked id="accordion-1">
+                        <label class="accordion_title" for="accordion-1">
                             01  checkout method
                         </label>
-                        <div class="accordion_content">
-                            <div class="accordion_column">
+                        <div class="accordion_content-wrapper">
+                            <div class="accordion_content">
+                                <div class="accordion_columns">
+                                    <div class="accordion_column">
+                                        <div class="form">
+                                            <p class="form_title">CHECKOUT AS A GUEST OR REGISTER</p>
+                                            <div class="form_row">
+                                                <div class="form_row-item">
+                                                    <label for="">Register with us for future convenience:</label>
+                                                    <input type="radio" id="guest" name="account" checked>
+                                                    <label for="guest">Checkout as Guest</label>
+                                                    <input type="radio" id="register" name="account">
+                                                    <label for="register">Register</label>
+                                                </div>
+                                            </div>
+                                            <div class="form_row">
+                                                <div class="form_row-item">
+                                                    <label for="">Register and save time!</label>
+                                                    <p class="form_text">Fast and easy check out</p>
+                                                    <p class="form_text">Easy access to your order history and status</p>
+                                                </div>
+                                            </div>
+                                            <div class="form_row">
+                                                <button class="button button__gray">Continue</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion_column">
+                                        <div class="form">
+                                            <p class="form_title">Login</p>
+                                            <div class="form_row">
+                                                <div class="form_row-item">
+                                                    <p class="form_text">Already registered?</p>
+                                                </div>
+                                            </div>
+                                            <div class="form_row">
+                                                <div class="form_row-item">
+                                                    <label for="">Email address</label>
+                                                    <input type="email" name="email">
+                                                </div>
+                                            </div>
+                                            <div class="form_row">
+                                                <div class="form_row-item">
+                                                    <label for="">Password</label>
+                                                    <input type="password" name="password">
+                                                </div>
+                                            </div>
+                                            <div class="form_row">
+                                                <div class="form_row-item">
+                                                    <input type="radio" id="remember" name="remember" checked>
+                                                    <label for="remember">Remember me</label>
+                                                </div>
+                                                <div class="form_row-item">
+                                                    <a href="#" class="form_link">Forgot Password?</a>
+                                                </div>
+                                            </div>
+                                            <div class="form_row">
+                                                <button class="button button__gray">Login</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="radio" name="accordion" id="accordion-2">
+                        <label class="accordion_title" for="accordion-2">
+                            02  Billing Details
+                        </label>
+                        <div class="accordion_content-wrapper">
+                            <div class="accordion_content">
                                 <div class="form">
-                                    <p class="form_title">CHECKOUT AS A GUEST OR REGISTER</p>
                                     <div class="form_row">
-                                        <label for="">Register with us for future convenience:</label>
-                                        <input type="radio" id="guest" name="account">
-                                        <label for="guest">Checkout as Guest</label>
-                                        <input type="radio" id="register" name="account">
-                                        <label for="register">Register</label>
+                                        <div class="form_row-item">
+                                            <label for="">First name</label>
+                                            <input type="text" placeholder="John">
+                                        </div>
+                                        <div class="form_row-item">
+                                            <label for="">Last name</label>
+                                            <input type="text" placeholder="doe">
+                                        </div>
                                     </div>
                                     <div class="form_row">
-                                        <label for="">Register and save time!</label>
-                                        <p class="form_text">Fast and easy check out</p>
-                                        <p class="form_text">Easy access to your order history and status</p>
+                                        <div class="form_row-item">
+                                            <label for="">Company</label>
+                                            <input type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                            <div class="form_row-item">
+                                                <label for="">Email</label>
+                                                <input type="email" placeholder="John">
+                                            </div>
+                                            <div class="form_row-item">
+                                                <label for="">Phone</label>
+                                                <input type="tel" placeholder="doe">
+                                            </div>
+                                        </div>
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <label for="">Country</label>
+                                            <select name="" id="">
+                                                <option value="">USA</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <label for="">Address</label>
+                                            <input type="text" placeholder="Street address...">
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <input type="text" placeholder="Appartment,Suite etc. (optional)">
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <label for="">Town / City</label>
+                                            <input type="text" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <label for="">State</label>
+                                            <select name="" id="">
+                                                <option value="">Alabama</option>
+                                            </select>
+                                        </div>
+                                        <div class="form_row-item">
+                                            <label for="">Postcode / Zip</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <input type="radio" name="shipping" id="ship-adress" checked>
+                                            <label for="ship-adress">Ship to this address</label>
+                                            <input type="radio" name="shipping" id="ship-diff-adress" checked>
+                                            <label for="ship-diff-adress">Ship to different address</label>
+                                        </div>
                                     </div>
                                     <div class="form_row">
                                         <button class="button button__gray">Continue</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion_column">
-                                <div class="form">
-                                    <p class="form_title">Login</p>
-                                    <div class="form_row">
-                                        <p class="form_text">Already registered?</p>
-                                    </div>
-                                    <div class="form_row">
-                                        <label for="">Email address</label>
-                                        <input type="email" name="email">
-                                    </div>
-                                    <div class="form_row">
-                                        <label for="">Password</label>
-                                        <input type="password" name="password">
-                                    </div>
-                                    <div class="form_row">
-                                        <div class="form_row-item">
-                                            <input type="radio" id="remember" name="remember" checked>
-                                            <label for="remember">Remember me</label>
-                                        </div>
-                                        <div class="form_row-item">
-                                            <a href="#" class="form_link">Forgot Password?</a>
-                                        </div>
-                                    </div>
-                                    <div class="form_row">
-                                        <button class="button button__gray">Login</button>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <label class="accordion_title">
-                            <input type="radio" name="accordion">
-                            02  Billing Details
-                        </label>
-                        <div class="accordion_content">
-                            <div class="form">
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">First name</label>
-                                        <input type="text" placeholder="John">
-                                    </div>
-                                    <div class="form_row-item">
-                                        <label for="">Last name</label>
-                                        <input type="text" name="doe">
-                                    </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">Company</label>
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">Country</label>
-                                        <select name="" id="">
-                                            <option value="">USA</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">Address</label>
-                                        <input type="text" placeholder="Street address...">
-                                    </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <input type="text" placeholder="Appartment,Suite etc. (optional)">
-                                    </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">Town / City</label>
-                                        <input type="text" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">State</label>
-                                        <select name="" id="">
-                                            <option value="">Alabama</option>
-                                        </select>
-                                    </div>
-                                    <div class="form_row-item">
-                                        <label for="">Postcode / Zip</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <input type="radio" name="shipping" id="ship-adress" checked>
-                                        <label for="ship-adress">Ship to this address</label>
-                                        <input type="radio" name="shipping" id="ship-diff-adress" checked>
-                                        <label for="ship-diff-adress">Ship to different address</label>
-                                    </div>
-                                </div>
-                                <div class="form_row">
-                                    <button class="button button__gray">Continue</button>
-                                </div>
-                            </div>
-                        </div>
-                        <label class="accordion_title">
-                            <input type="radio" name="accordion">
+                        <input type="radio" name="accordion" id="accordion-3">
+                        <label class="accordion_title" for="accordion-3">
                             03  shipping Details
                         </label>
-                        <div class="accordion_content">
-                            <div class="form">
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">First name</label>
-                                        <input type="text" placeholder="John">
+                        <div class="accordion_content-wrapper">
+                            <div class="accordion_content">
+                                <div class="form">
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <label for="">First name</label>
+                                            <input type="text" placeholder="John">
+                                        </div>
+                                        <div class="form_row-item">
+                                            <label for="">Last name</label>
+                                            <input type="text" placeholder="doe">
+                                        </div>
                                     </div>
-                                    <div class="form_row-item">
-                                        <label for="">Last name</label>
-                                        <input type="text" placeholder="doe">
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <label for="">Company</label>
+                                            <input type="text" placeholder="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">Company</label>
-                                        <input type="text" placeholder="">
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <label for="">Email</label>
+                                            <input type="email">
+                                        </div>
+                                        <div class="form_row-item">
+                                            <label for="">Phone</label>
+                                            <input type="tel" placeholder="doe">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">Email</label>
-                                        <input type="email">
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <label for="">Country</label>
+                                            <select name="" id="">
+                                                <option value="">USA</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="form_row-item">
-                                        <label for="">Phone</label>
-                                        <input type="tel" placeholder="doe">
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <label for="">Address</label>
+                                            <input type="text" placeholder="Street address...">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">Country</label>
-                                        <select name="" id="">
-                                            <option value="">USA</option>
-                                        </select>
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <input type="text" placeholder="Appartment,Suite etc. (optional)">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">Address</label>
-                                        <input type="text" placeholder="Street address...">
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <label for="">Town / City</label>
+                                            <input type="text" placeholder="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <input type="text" placeholder="Appartment,Suite etc. (optional)">
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <label for="">State</label>
+                                            <select name="" id="">
+                                                <option value="">Alabama</option>
+                                            </select>
+                                        </div>
+                                        <div class="form_row-item">
+                                            <label for="">Postcode / Zip</label>
+                                            <input type="text">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">Town / City</label>
-                                        <input type="text" placeholder="">
+                                    <div class="form_row">
+                                        <div class="form_row-item">
+                                            <input type="radio" name="billing-adress" id="billing-adress" checked>
+                                            <label for="billing-adress">Use Billing Address</label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">State</label>
-                                        <select name="" id="">
-                                            <option value="">Alabama</option>
-                                        </select>
+                                    <div class="form_row">
+                                        <button class="button button__gray">Continue</button>
                                     </div>
-                                    <div class="form_row-item">
-                                        <label for="">Postcode / Zip</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <input type="radio" name="billing-adress" id="billing-adress" checked>
-                                        <label for="billing-adress">Use Billing Address</label>
-                                    </div>
-                                </div>
-                                <div class="form_row">
-                                    <button class="button button__gray">Continue</button>
                                 </div>
                             </div>
                         </div>
-                        <label class="accordion_title">
-                            <input type="radio" name="accordion">
+                        <input type="radio" name="accordion" id="accordion-4">
+                        <label class="accordion_title" for="accordion-4">
                             04  Shipping Method
                         </label>
-                        <div class="accordion_content">
-                            <div class="form">
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">United Parcel Service</label>
-                                        <input type="radio" name="parcel-service" id="parcel-service-1" checked>
-                                        <label for="parcel-service-1">Worldwide Expedited $800.00</label>
-                                        <input type="radio" name="parcel-service" id="parcel-service-2">
-                                        <label for="parcel-service-2">Worldwide Express Saver $1020.00</label>
-                                    </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">Flat Rate</label>
-                                        <input type="radio" name="flat-rate" id="flat-rate" checked>
-                                        <label for="flat-rate">Fixed $10.00</label>
-                                    </div>
-                                </div>
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <label for="">DO YOU HAVE ANY GIFT ITEMS IN YOUR ORDER?</label>
-                                        <input type="radio" name="add-gift" id="add-gift" checked>
-                                        <label for="add-gift">Add gift options.</label>
-                                    </div>
-                                </div>
-                                <div class="form_fieldset">
+                        <div class="accordion_content-wrapper">
+                            <div class="accordion_content">
+                                <div class="form">
                                     <div class="form_row">
                                         <div class="form_row-item">
-                                            <label for="">To</label>
-                                            <input type="text">
-                                        </div>
-                                        <div class="form_row-item">
-                                            <label for="">From</label>
-                                            <input type="text">
+                                            <label for="">United Parcel Service</label>
+                                            <input type="radio" name="parcel-service" id="parcel-service-1" checked>
+                                            <label for="parcel-service-1">Worldwide Expedited $800.00</label>
+                                            <input type="radio" name="parcel-service" id="parcel-service-2">
+                                            <label for="parcel-service-2">Worldwide Express Saver $1020.00</label>
                                         </div>
                                     </div>
                                     <div class="form_row">
                                         <div class="form_row-item">
-                                            <label for="">Message</label>
-                                            <textarea name="" id=""></textarea>
+                                            <label for="">Flat Rate</label>
+                                            <input type="radio" name="flat-rate" id="flat-rate" checked>
+                                            <label for="flat-rate">Fixed $10.00</label>
                                         </div>
                                     </div>
                                     <div class="form_row">
-                                        <div class="form_row-item form_row-item__align_right">
-                                            <button class="button button__gray">Continue</button>
+                                        <div class="form_row-item">
+                                            <label for="">DO YOU HAVE ANY GIFT ITEMS IN YOUR ORDER?</label>
+                                            <input type="radio" name="add-gift" id="add-gift" checked>
+                                            <label for="add-gift">Add gift options.</label>
+                                        </div>
+                                    </div>
+                                    <div class="form_fieldset">
+                                        <div class="form_row">
+                                            <div class="form_row-item">
+                                                <label for="">To</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="form_row-item">
+                                                <label for="">From</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form_row">
+                                            <div class="form_row-item">
+                                                <label for="">Message</label>
+                                                <textarea name="" id=""></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form_row">
+                                            <div class="form_row-item form_row-item__align_right">
+                                                <button class="button button__gray">Continue</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <label class="accordion_title">
-                            <input type="radio" name="accordion">
+                        <input type="radio" name="accordion" id="accordion-5">
+                        <label class="accordion_title" for="accordion-5">
                             05  Payment Method
                         </label>
-                        <div class="accordion_content">
-                            <div class="form">
-                                <div class="form_row">
-                                    <div class="form_row-item">
-                                        <div class="rario-buttons">
-                                            <input type="radio" name="payment" id="check" checked>
-                                            <label for="check"> Check / Money order</label>
-                                            <input type="radio" name="payment" id="card">
-                                            <label for="card">Debit/Credit</label>
-                                            <input type="radio" name="payment" id="net-bankking">
-                                            <label for="net-bankking">Net Banking</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form_fieldset">
+                        <div class="accordion_content-wrapper">
+                            <div class="accordion_content">
+                                <div class="form">
                                     <div class="form_row">
                                         <div class="form_row-item">
-                                            <input type="radio" name="Balance" id="Balance" checked>
-                                            <label for="Balance">Balance</label>
-                                            <span>50$</span>
-                                        </div>
-                                        <div class="form_row-item">
-                                            <label class="inline-label" for="">Promo code</label>
-                                            <input type="text" placeholder="Type here...">
-                                        </div>
-                                    </div>
-                                    <div class="form_row">
-                                        <div class="form_row-item">
-                                            <input for="text" placeholder="Card Number" />
-                                        </div>
-                                        <div class="form_row-item form_row-item__small">
-                                            <select name="" id="">
-                                                <option value="">january</option>
-                                            </select>
-                                        </div>
-                                        <div class="form_row-item form_row-item__small">
-                                            <select name="" id="">
-                                                <option value="">2024</option>
-                                            </select>
-                                        </div>
-                                        <div class="form_row-item form_row-item__small">
-                                            <input type="text" placeholder="CVV">
+                                            <div class="rario-buttons">
+                                                <input type="radio" name="payment" id="check" checked>
+                                                <label for="check"> Check / Money order</label>
+                                                <input type="radio" name="payment" id="card">
+                                                <label for="card">Debit/Credit</label>
+                                                <input type="radio" name="payment" id="net-bankking">
+                                                <label for="net-bankking">Net Banking</label>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="form_row">
-                                        <div class="form_row-item form_row-item__align_right">
-                                            <button class="button button__gray">Cancel</button>
-                                            <button class="button">Continue</button>
+                                    <div class="form_fieldset">
+                                        <div class="form_row form_row__indent-botton">
+                                            <div class="form_row-item">
+                                                <input type="radio" name="Balance" id="Balance" checked>
+                                                <label for="Balance">Balance <span>&nbsp;&nbsp;50$</span></label>
+                                            </div>
+                                            <div class="form_row-item form_row-item__align_right">
+                                                <label class="inline-label" for="">Promo code</label>
+                                                <input type="text" placeholder="Type here..." style="width: 90px;">
+                                            </div>
+                                        </div>
+                                        <div class="form_row form_row__indent-botton">
+                                            <div class="form_row-item">
+                                                <input type="text" placeholder="Card Number" />
+                                            </div>
+                                            <div class="form_row-item form_row-item__small">
+                                                <select name="" id="">
+                                                    <option value="">january</option>
+                                                </select>
+                                            </div>
+                                            <div class="form_row-item form_row-item__small">
+                                                <select name="" id="">
+                                                    <option value="">2024</option>
+                                                </select>
+                                            </div>
+                                            <div class="form_row-item form_row-item__small">
+                                                <input type="text" placeholder="CVV" style="width: 90px;">
+                                            </div>
+                                        </div>
+                                        <div class="form_row">
+                                            <div class="form_row-item form_row-item__align_right">
+                                                <button class="button button__gray">Cancel</button>
+                                                &nbsp;
+                                                &nbsp;
+                                                <button class="button">Continue</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <label class="accordion_title">
-                            <input type="radio" name="accordion">
+                        <input type="radio" name="accordion" id="accordion-6">
+                        <label class="accordion_title" for="accordion-6">
                             06  Order Review
                         </label>
-                        <div class="accordion_content">
-                            <table class="checkout_total">
-                                <thead>
-                                    <tr>
-                                        <th>Product</th>
-                                        <th>Price</th>
-                                        <th>Qty</th>
-                                        <th>Subtotal</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Aero Canvas Loafers</td>
-                                        <td>
-                                            <span class="checkout_total-price">$120.00</span>
-                                        </td>
-                                        <td>2</td>
-                                        <td>
-                                            <span class="checkout_total-price">$240.00</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>F Gear Gym Bag</td>
-                                        <td>
-                                            <span class="checkout_total-price">$450.00</span>
-                                        </td>
-                                        <td>3</td>
-                                        <td>
-                                            <span class="checkout_total-price">$1350.00</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>handful of model</td>
-                                        <td>
-                                            <span class="checkout_total-price">$310.00</span>
-                                        </td>
-                                        <td>2</td>
-                                        <td>
-                                            <span class="checkout_total-price">$620.00</span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody class="checkout_total-sum">
-                                    <tr>
-                                        <td>Subtotal</td>
-                                        <td>$2210.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>shipping & Handling (Flat Rate - Fixed)</td>
-                                        <td>$15.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="checkout_total-title">TOTAL</span>
-                                        </td>
-                                        <td>$2225.00</td>
-                                    </tr>
-                                </tbody>
-                                <tbody class="checkout_total-bottom">
-                                    <tr>
-                                        <td>Forgot an Item? Edit Your Cart</td>
-                                        <td>
-                                            <button class="button">Place Order</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="accordion_content-wrapper">
+                            <div class="accordion_content">
+                                <table class="checkout_total">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Price</th>
+                                            <th>Qty</th>
+                                            <th>Subtotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Aero Canvas Loafers</td>
+                                            <td>
+                                                <span class="checkout_total-price">$120.00</span>
+                                            </td>
+                                            <td>2</td>
+                                            <td>
+                                                <span class="checkout_total-price">$240.00</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>F Gear Gym Bag</td>
+                                            <td>
+                                                <span class="checkout_total-price">$450.00</span>
+                                            </td>
+                                            <td>3</td>
+                                            <td>
+                                                <span class="checkout_total-price">$1350.00</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>handful of model</td>
+                                            <td>
+                                                <span class="checkout_total-price">$310.00</span>
+                                            </td>
+                                            <td>2</td>
+                                            <td>
+                                                <span class="checkout_total-price">$620.00</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody class="checkout_total-sum">
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Subtotal</td>
+                                            <td>$2210.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td colspan="2">shipping & Handling (Flat Rate - Fixed)</td>
+                                            <td>$15.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <span class="checkout_total-title">TOTAL</span>
+                                            </td>
+                                            <td class="checkout_total-title">$2225.00</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody class="checkout_total-bottom">
+                                        <tr>
+                                            <td colspan="2">Forgot an Item? Edit Your Cart</td>
+                                            <td colspan="2">
+                                                <button class="button">Place Order</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </form>
                 </div>
                 <div class="col-12 col-md-4">
-                    <aside class="sidebar">
-                        <p class="sidebar_title">tags</p>
+                    <aside class="sidebar sidebar__wide">
+                        <p class="sidebar_title">View cart Products</p>
                         <table class="checkout-widjet">
                             <tbody>
                                 <tr>
                                     <td>
                                         <div class="checkout-widjet_product">
-                                            <img src="src/img/images/cart/product_01.jpg" alt="" class="cart_product-image">
+                                            <img src="src/img/images/cart/product_01.jpg" alt="" class="checkout_product-image">
                                             <div>
                                                 <p class="checkout-widjet_product-title">Aero Canvas Loafers x 2 </p>
                                                 <p class="checkout-widjet_price">$120.00</p>
@@ -530,9 +570,11 @@
                                             </div>
                                         </div>
                                     </td>
+                                </tr>
+                                <tr>
                                     <td>
                                         <div class="checkout-widjet_product">
-                                            <img src="src/img/images/cart/product_02.jpg" alt="" class="cart_product-image">
+                                            <img src="src/img/images/cart/product_02.jpg" alt="" class="checkout_product-image">
                                             <div>
                                                 <p class="checkout-widjet_product-title">F Gear Gym Bag x 3 </p>
                                                 <p class="checkout-widjet_price">$420.00</p>
@@ -547,9 +589,11 @@
                                             </div>
                                         </div>
                                     </td>
+                                </tr>
+                                <tr>
                                     <td>
                                         <div class="checkout-widjet_product">
-                                            <img src="src/img/images/cart/product_03.jpg" alt="" class="cart_product-image">
+                                            <img src="src/img/images/cart/product_03.jpg" alt="" class="checkout_product-image">
                                             <div>
                                                 <p class="checkout-widjet_product-title">handful of model x 1 </p>
                                                 <p class="checkout-widjet_price">$87.00</p>

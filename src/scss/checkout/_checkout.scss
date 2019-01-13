@@ -1,0 +1,61 @@
+.checkout {
+    &_total {
+        th {
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            padding: 18px 30px;
+
+            &:first-child {
+                width: 50%;
+                text-align: left;
+            }
+            &:last-child {
+                text-align: right;
+                width: 50px;
+            }
+        }
+        td {
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+            padding: 6px 30px;
+
+            &:first-child {
+                text-align: left;
+            }
+            &:last-child {
+                text-align: right;
+                width: 50px;
+            }
+        }
+        thead,
+        tbody {
+            border: 1px solid $gray_color;
+        }
+    }
+    &_total-sum {
+        border: none;
+
+        td {
+            border-top: 1px solid $gray_color;
+            border-bottom: 1px solid $gray_color;
+            text-align: right;
+
+            &:last-child {
+                
+            }
+        }
+    }
+    &_total-title {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &_total-bottom {
+        td {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}

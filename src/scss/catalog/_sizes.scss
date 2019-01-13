@@ -1,9 +1,16 @@
 .sizes {
+    font-size: 0;
+    letter-spacing: 0;
+    white-space: nowrap;
+    margin: 0 0 10px;
+
     &_button {
         cursor: pointer;
         color: $gray_color;
         background: transparent;
         border: 1px solid currentColor;
+        font-size: 13px;
+        font-weight: normal;
         display: inline-block;
         line-height: 28px;
         height: 28px;
@@ -14,8 +21,12 @@
         text-transform: uppercase;
 
         &.active,
-        &:hover {
+        &:hover,
+        input:checked + & {
             color: $color;
+        }
+        &:last-child {
+            margin: 0;
         }
     }
 }

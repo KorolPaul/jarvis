@@ -1,3 +1,55 @@
 .checkout-widjet {
+    margin: -19px 0 0;
+    width: 100%;
 
+    td {
+        border-top: 1px solid $gray-color;
+        border-bottom: 1px solid $gray-color;
+        padding: 20px 0;
+    }
+    tr:last-child td {
+        border-bottom: none;
+        padding-bottom: 30px;
+    }
+    &_product {
+        display: flex;
+    }
+    &_product-image {
+        width: 80px;
+        margin: 0 20px 0 0;
+    }
+    &_product-title {
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0 0 18px;
+    }
+    &_price {
+        margin: 0 0 18px;
+        color: $gray_color;
+    }
+    &_edit,
+    &_delete {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        padding: 5px;
+        opacity: .5;
+        filter: grayscale(1);
+        transition: .2s ease-in-out opacity,
+                    .2s ease-in-out filter;
+
+        &:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+        
+        .material-icons {
+            font-size: 16px;
+        }
+    }
+    &_delete {
+        .material-icons {
+            color: $bright_color;
+        }
+    }
 }

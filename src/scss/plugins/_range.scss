@@ -11,7 +11,7 @@
     }
   }
   .slider.slider-horizontal .slider-track {
-    height: 4px;
+    height: 2px;
     width: 100%;
     margin-top: -5px;
     top: 50%;
@@ -90,20 +90,18 @@
   .slider-track {
     position: absolute;
     cursor: pointer;
-    background: #ccc;
+    background: $gray_color;
     border-radius: 4px;
   }
   .slider-selection {
     position: absolute;
     background: $bright_color;
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
     border-radius: 4px;
   }
   .slider-selection.tick-slider-selection {
     background-image: linear-gradient(to bottom, #8ac1ef 0%, #82b3de 100%);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8ac1ef', endColorstr='#ff82b3de', GradientType=0);
   }
   .slider-track-low,
   .slider-track-high {
@@ -116,14 +114,15 @@
     cursor: pointer;
     position: absolute;
     top: -2px;
-    width: 18px;
-    height: 18px;
-    background-color: $color;
-    border: 4px solid $bright_color;
+    width: 15px;
+    height: 15px;
+    background-color: $light_color;
+    border: 2px solid $bright_color;
     border-radius: 50%;
     transition: .2s ease-in-out background;
 
-    &:hover {
+    &:hover,
+    & + & {
         background: $bright_color;
     }
   }

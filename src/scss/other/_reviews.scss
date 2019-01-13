@@ -1,0 +1,40 @@
+.reviews {
+    background: $light-gray_color;
+    padding: 50px 0;
+
+    &_item {
+        width: 100%;
+        padding: 0 15px;
+        display: flex;
+        align-items: flex-start;
+    }
+    &_image {
+        flex-shrink: 0;
+        width: 90px;
+        margin: 0 20px 0 0;
+    }
+    &_info {
+        p {
+            text-align: justify;
+        }
+    }
+    &_info-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin: 35px 0 0 0;
+    }
+    &_name {
+        color: $bright_color;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0 0 3px;
+    }
+    &_social-icon {
+        color: $color;
+        margin: 0 0 0 12px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
