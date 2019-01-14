@@ -8,9 +8,14 @@
         align-items: center;
         justify-content: center;
         padding: 10px;
-        
+        @include tablet {
+            border-left: none;
+            border-bottom: 1px solid $gray_color; 
+            justify-content: flex-start;
+        }
+
         &:first-child {
-            border: none;
+            border-left: none;
         }
     }
     &_icon.material-icons {

@@ -1,12 +1,23 @@
 .header {
     background: $light-gray_color;
+    position: relative;
+    overflow: hidden;
+    @include tablet {
+        overflow: visible;
+    }
 
     &_container {
         position: relative;
+        @include mobile {
+            max-width: 90vw;
+        }
     }
     &_top {
         padding: 30px 0;
-        
+        @include mobile {
+            padding: 10px 0;
+        }
+
         .header__main & {
             position: absolute;
             top: 0;
@@ -20,6 +31,9 @@
     }
     &_controls {
         display: flex;
+        @include tablet {
+            justify-content: flex-end;
+        }
     }
     &_bottom {
         

@@ -3,7 +3,8 @@ $(window).on('load', function () {
     /* Menu toggle */
     $('.menu-toggle').on('click', function(e) {
         e.preventDefault();
-        $(this).next().toggleClass('opened');
+        $(this).toggleClass('opened');
+        $('.menu').toggleClass('opened');
     });
 
     $('.menu').on('click', '.menu_list-item__parent > a', function(e) {
@@ -37,8 +38,14 @@ $(window).on('load', function () {
     });
 
     /* Widjet */
-    $('.cart-button, .widjet_close').on('click', function() {
-        $('.widjet').toggleClass('opened');
+    $('.cart-button').on('click', function() {
+        $('#cart-widjet').toggleClass('opened');
+    });
+    $('.settings-button').on('click', function() {
+        $('#profile-widjet').toggleClass('opened');
+    });
+    $('.widjet_close').on('click', function() {
+        $('.widjet').removeClass('opened');
     });
 
  });

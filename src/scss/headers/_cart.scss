@@ -1,10 +1,8 @@
-.cart {
-    
-}
-
 .cart-button {
+    cursor: pointer;
     display: flex;
     align-items: center;
+    
 
     .header__main & {
         color: $light_color;
@@ -17,9 +15,18 @@
         width: 30px;
         margin: 0 8px 0 0;
         display: inline-block;
+        transition: .2s ease-in-out opacity;
+
+        &:hover {
+            opacity: .7;
+        }
         
         .header__main & {
             background-image: url(#{$img-path}/icons/shopbag.svg);
+
+            &:hover {
+                color: $bright_color;
+            }
         }
     }
     &_title {

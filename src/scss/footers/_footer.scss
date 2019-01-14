@@ -4,14 +4,24 @@
     
     &_contact {
         color: $light_color;
+        @include mobile {
+            margin: 0 0 10px;
+        }
     }
     &_contact-icon {
         @extend .material-icons;
         float: left;
         margin: 0 20px 0 0;
+        @include tablet {
+            margin-right: 10px;
+        }
 
         .material-icons {
             font-size: 40px;
+            @include tablet {
+                font-size: 20px;
+                line-height: 31px;
+            }
         }
     }
     &_contact-title {
@@ -27,6 +37,9 @@
     }
     &_menu {
         padding: 74px 0 48px;
+        @include mobile {
+            padding: 20px 0 10px;
+        }
     }
     &_menu-title {
         color: $light_color;
@@ -77,7 +90,7 @@
         font-size: 11px;
         color: $light_color;
         background: transparent;
-        padding: 10px 30px 10px 6px;
+        padding: 10px 40px 10px 6px;
         width: 100%;
     }
     &_newslatter-button {
@@ -87,7 +100,7 @@
         padding: 5px;
         position: absolute;
         right: 6px;
-        top: 3px;
+        top: 8px;
         color: #a5aab5;
         transition: .2s ease-in-out color;
 
@@ -117,6 +130,11 @@
             background: $light_color;
             color: #5c616e;
             text-decoration: none;
+        }
+    }
+    &_logo {
+        @include tablet {
+            display: none;
         }
     }
 }

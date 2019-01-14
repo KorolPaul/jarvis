@@ -9,10 +9,13 @@
     white-space: nowrap;
 }
 @mixin tablet() {
+    @media all and (max-width: 992px) { @content; }
+}
+@mixin mobile() {
     @media all and (max-width: 768px) { @content; }
 }
 @mixin media($resolution) {
-    @media all and (min-width: $resolution) { @content; }
+    @media all and (max-width: $resolution) { @content; }
 }
 @mixin placeholder-color($color) {
     &::-webkit-input-placeholder {

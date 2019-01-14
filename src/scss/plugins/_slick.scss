@@ -142,7 +142,7 @@
 }
 
 .slick-prev {
-    left: 0;
+    left: 50px;
 
     .gallery_carousel & {
         left: 10px;
@@ -150,7 +150,7 @@
 }
 
 .slick-next {
-    right: 0;
+    right: 50px;
 
     .gallery_carousel & {
         right: 10px;

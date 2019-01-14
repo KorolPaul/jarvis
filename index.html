@@ -29,13 +29,14 @@
     <header class="header header__main">
         <div class="header_container container">
             <div class="header_top">
+                <button class="menu-toggle"></button>
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-12 col-md-2">
+                    <div class="col-6 col-lg-2">
                         <a href="/" class="logo">
                             <img src="src/img/logo.svg" alt="">
                         </a>
                     </div>
-                    <div class="col-12 col-md-8">
+                    <div class="col-12 col-lg-8 menu-holder">
                         <nav class="menu">
                             <ul class="menu_list">
                                 <li class="menu_list-item">
@@ -325,7 +326,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-12 col-md-2">
+                    <div class="col-6 col-md-6 col-lg-2">
                         <div class="header_controls">
                             <button class="search-button">
                                 <span class="material-icons">search</span>
@@ -375,32 +376,196 @@
                 </div>
             </div>
         </div>
+        <div class="widjet" id="profile-widjet">
+            <button class="widjet_close">
+                <span class="material-icons">clear</span>
+            </button>
+            <div class="widjet-menu">
+                <p class="widjet-menu_title">My Account</p>
+                <a href="/login.html" class="widjet-menu_link widjet-menu_link__with-icon">
+                    <span class="material-icons">person</span>
+                    My Account
+                </a>
+                <a href="/wishlist.html" class="widjet-menu_link widjet-menu_link__with-icon">
+                    <span class="material-icons">favorite_border</span>
+                    My Wishlist
+                </a>
+                <a href="/camparison.html" class="widjet-menu_link widjet-menu_link__with-icon">
+                    <span class="material-icons">sort</span>
+                    Compare
+                </a>
+                <a href="/checkout.html" class="widjet-menu_link widjet-menu_link__with-icon">
+                    <span class="material-icons">done_all</span>
+                    Checkout
+                </a>
+                <a href="/login.html" class="widjet-menu_link widjet-menu_link__with-icon">
+                    <span class="material-icons">lock</span>
+                    Log In
+                </a>
+            </div>
+            <div class="widjet-menu">
+                <p class="widjet-menu_title">Language</p>
+                <a href="/login.html" class="widjet-menu_link">
+                    <img src="./src/img/flags/uk.jpg" alt="" class="widjet-menu_icon">
+                    English
+                </a>
+                <a href="/login.html" class="widjet-menu_link">
+                    <img src="./src/img/flags/ge.jpg" alt="" class="widjet-menu_icon">
+                    German
+                </a>
+                <a href="/login.html" class="widjet-menu_link">
+                    <img src="./src/img/flags/es.jpg" alt="" class="widjet-menu_icon">
+                    Español
+                </a>
+                <a href="/login.html" class="widjet-menu_link">
+                    <img src="./src/img/flags/fr.jpg" alt="" class="widjet-menu_icon">
+                    French
+                </a>
+                <a href="/login.html" class="widjet-menu_link">
+                    <img src="./src/img/flags/ru.jpg" alt="" class="widjet-menu_icon">
+                    Russian
+                </a>
+            </div>
+            <div class="widjet-menu">
+                <p class="widjet-menu_title">Currency</p>
+                <a href="/login.html" class="widjet-menu_link">
+                    $ USD - US Dollar
+                </a>
+               <a href="/login.html" class="widjet-menu_link">
+                    € EUR - Euro
+                </a>
+                <a href="/login.html" class="widjet-menu_link">
+                    £ GBP - GB Pound
+                </a>
+                <a href="/login.html" class="widjet-menu_link">
+                    $ CAD - Canadian Dollar
+                </a>
+                <a href="/login.html" class="widjet-menu_link">
+                    $ AUD - Australian Dollar
+                </a>
+            </div>
+        </div>
+        <div class="widjet" id="cart-widjet">
+            <button class="widjet_close">
+                <span class="material-icons">clear</span>
+            </button>
+            <p class="widjet_title">RECENTLY ADDED ITEM(S)</p>
+            <table class="checkout-widjet">
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <div class="checkout-widjet_product">
+                                <img src="src/img/images/cart/product_01.jpg" alt="" class="checkout-widjet_product-image">
+                                <div>
+                                    <p class="checkout-widjet_product-title">Aero Canvas Loafers x 2 </p>
+                                    <p class="checkout-widjet_count">
+                                        1 x <span class="checkout-widjet_count-price">$250.00</span>
+                                    </p>
+                                    <div>
+                                        <button class="cart_edit">
+                                            <span class="material-icons">create</span>
+                                        </button>
+                                        <button class="cart_delete">
+                                            <span class="material-icons">close</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="checkout-widjet_product">
+                                <img src="src/img/images/cart/product_02.jpg" alt="" class="checkout-widjet_product-image">
+                                <div>
+                                    <p class="checkout-widjet_product-title">F Gear Gym Bag x 3 </p>
+                                    <p class="checkout-widjet_count">
+                                        1 x <span class="checkout-widjet_count-price">$160.00</span>
+                                    </p>
+                                    <div>
+                                        <button class="cart_edit">
+                                            <span class="material-icons">create</span>
+                                        </button>
+                                        <button class="cart_delete">
+                                            <span class="material-icons">close</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="checkout-widjet_product">
+                                <img src="src/img/images/cart/product_03.jpg" alt="" class="checkout-widjet_product-image">
+                                <div>
+                                    <p class="checkout-widjet_product-title">handful of model x 1 </p>
+                                    <p class="checkout-widjet_count">
+                                        1 x <span class="checkout-widjet_count-price">$430.00</span>
+                                    </p>
+                                    <div>
+                                        <button class="cart_edit">
+                                            <span class="material-icons">create</span>
+                                        </button>
+                                        <button class="cart_delete">
+                                            <span class="material-icons">close</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="checkout-widjet_total-row">
+                        <td>
+                            <span class="checkout-widjet_total">Sub Total</span>
+                        </td>
+                        <td>
+                            <span class="checkout-widjet_total-price">$840.00</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="checkout-widjet_cart-button">
+                                <span class="checkout-widjet_cart-button-icon"></span>
+                                View cart
+                            </button>
+                        </td>
+                        <td>
+                            <button class="checkout-widjet_checkout-button">
+                                Check out
+                                <span class="material-icons">reply</span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </header>
     <div class="content">
         <div class="container">
             <div class="features row">
-                <div class="features_item col-3">
+                <div class="features_item col-12 col-md-6 col-lg-3">
                     <div class="features_icon material-icons">local_airport</div>
                     <div>
                         <span class="features_title">free shipping</span>
                         <span class="features_text">ON ORDER OVER $200</span>
                     </div>
                 </div>
-                <div class="features_item col-3">
+                <div class="features_item col-12 col-md-6 col-lg-3">
                     <div class="features_icon material-icons">local_phone</div>
                     <div>
                         <span class="features_title">24 hour</span>
                         <span class="features_text">active support</span>
                     </div>
                 </div>
-                <div class="features_item col-3">
+                <div class="features_item col-12 col-md-6 col-lg-3">
                     <div class="features_icon material-icons">payment</div>
                     <div>
                         <span class="features_title">Easy payment</span>
                         <span class="features_text">optimal for payment</span>
                     </div>
                 </div>
-                <div class="features_item col-3">
+                <div class="features_item col-12 col-md-6 col-lg-3">
                     <div class="features_icon material-icons">card_giftcard</div>
                     <div>
                         <span class="features_title">Special gift card</span>
@@ -1213,10 +1378,10 @@
     <footer class="footer">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-md-3">
-                    <img class="footer_logo" src="src/img/logo.png" alt="">
+                <div class="col-0 col-lg-3">
+                    <img class="footer_logo" src="src/img/logo.svg" alt="">
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-4">
                     <div class="footer_contact">
                         <div class="footer_contact-icon">
                             <span class="material-icons">place</span>
@@ -1225,7 +1390,7 @@
                         <span class="footer_contact-text">795 Folsom Ave, NY 20001 </span>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-4">
                     <div class="footer_contact">
                         <div class="footer_contact-icon">
                             <span class="material-icons">mail_outline</span>
@@ -1234,7 +1399,7 @@
                         <a class="footer_contact-text" href="mailto:inquiry@perfectusinc.com">inquiry@perfectusinc.com</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-4">
                     <div class="footer_contact">
                         <div class="footer_contact-icon">
                             <span class="material-icons">phone_in_talk</span>
@@ -1245,44 +1410,44 @@
                 </div>
             </div>
             <div class="row justify-content-between">
-                <div class="col-12 col-md-2">
+                <div class="col-6 col-md-2">
                     <div class="footer_menu">
                         <p class="footer_menu-title">my account</p>
-                        <a href="#" class="footer_menu-link">My Account</a>
-                        <a href="#" class="footer_menu-link">Order History</a>
-                        <a href="#" class="footer_menu-link">Wish List</a>
-                        <a href="#" class="footer_menu-link">Checkout</a>
+                        <a href="/login.html" class="footer_menu-link">My Account</a>
+                        <a href="/cart.html" class="footer_menu-link">Order History</a>
+                        <a href="/wishlist.html" class="footer_menu-link">Wish List</a>
+                        <a href="/checkout.html" class="footer_menu-link">Checkout</a>
                         <a href="#" class="footer_menu-link">Advanced search</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-6 col-md-2">
                     <div class="footer_menu">
                         <p class="footer_menu-title">shopping</p>
-                        <a href="#" class="footer_menu-link">shopping</a>
-                        <a href="#" class="footer_menu-link">Your Orders</a>
-                        <a href="#" class="footer_menu-link">Addresses</a>
-                        <a href="#" class="footer_menu-link">Wishlist Items</a>
-                        <a href="#" class="footer_menu-link">Wishlist Items</a>
+                        <a href="/catalog.html" class="footer_menu-link">shopping</a>
+                        <a href="/cart.html" class="footer_menu-link">Your Orders</a>
+                        <a href="/cart.html" class="footer_menu-link">Addresses</a>
+                        <a href="/wishlist.html" class="footer_menu-link">Wishlist Items</a>
+                        <a href="/login.html" class="footer_menu-link">Account</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-6 col-md-2">
                     <div class="footer_menu">
                         <p class="footer_menu-title">services</p>
-                        <a href="#" class="footer_menu-link">Contact Us</a>
-                        <a href="#" class="footer_menu-link">Returns</a>
-                        <a href="#" class="footer_menu-link">Site Map</a>
-                        <a href="#" class="footer_menu-link">Wish List</a>
-                        <a href="#" class="footer_menu-link">Newsletter</a>
+                        <a href="/contacts.html" class="footer_menu-link">Contact Us</a>
+                        <a href="/about-us.html" class="footer_menu-link">Returns</a>
+                        <a href="/" class="footer_menu-link">Site Map</a>
+                        <a href="/wishlist.html" class="footer_menu-link">Wish List</a>
+                        <a href="/blog-1-column-sidebar.html" class="footer_menu-link">Newsletter</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-6 col-md-2">
                     <div class="footer_menu">
                         <p class="footer_menu-title">extras</p>
-                        <a href="#" class="footer_menu-link">Evouchers</a>
-                        <a href="#" class="footer_menu-link">Gift card</a>
-                        <a href="#" class="footer_menu-link">Gift experiance</a>
-                        <a href="#" class="footer_menu-link">Weddding gift list</a>
-                        <a href="#" class="footer_menu-link">Next credit card account</a>
+                        <a href="/about-us.html" class="footer_menu-link">Evouchers</a>
+                        <a href="/about-us.html" class="footer_menu-link">Gift card</a>
+                        <a href="/about-us.html" class="footer_menu-link">Gift experiance</a>
+                        <a href="/catalog.html" class="footer_menu-link">Weddding gift list</a>
+                        <a href="/login.html" class="footer_menu-link">Next credit card account</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-3">
@@ -1319,144 +1484,7 @@
         </div>
     </footer>
 
-    <div class="widjet">
-        <button class="widjet_close">
-            <span class="material-icons">clear</span>
-        </button>
-        <div class="widjet-menu">
-            <p class="widjet-menu_title">My Account</p>
-            <a href="/login.html" class="widjet-menu_link widjet-menu_link__with-icon">
-                <span class="material-icons">person</span>
-                My Account
-            </a>
-            <a href="/wishlist.html" class="widjet-menu_link widjet-menu_link__with-icon">
-                <span class="material-icons">favorite_border</span>
-                My Wishlist
-            </a>
-            <a href="/camparison.html" class="widjet-menu_link widjet-menu_link__with-icon">
-                <span class="material-icons">sort</span>
-                Compare
-            </a>
-            <a href="/checkout.html" class="widjet-menu_link widjet-menu_link__with-icon">
-                <span class="material-icons">done_all</span>
-                Checkout
-            </a>
-            <a href="/login.html" class="widjet-menu_link widjet-menu_link__with-icon">
-                <span class="material-icons">lock</span>
-                Log In
-            </a>
-        </div>
-        <div class="widjet-menu">
-            <p class="widjet-menu_title">Language</p>
-            <a href="/login.html" class="widjet-menu_link">
-                <img src="./src/img/flags/uk.jpg" alt="" class="widjet-menu_icon">
-                English
-            </a>
-            <a href="/login.html" class="widjet-menu_link">
-                <img src="./src/img/flags/ge.jpg" alt="" class="widjet-menu_icon">
-                German
-            </a>
-            <a href="/login.html" class="widjet-menu_link">
-                <img src="./src/img/flags/es.jpg" alt="" class="widjet-menu_icon">
-                Español
-            </a>
-            <a href="/login.html" class="widjet-menu_link">
-                <img src="./src/img/flags/fr.jpg" alt="" class="widjet-menu_icon">
-                French
-            </a>
-            <a href="/login.html" class="widjet-menu_link">
-                <img src="./src/img/flags/ru.jpg" alt="" class="widjet-menu_icon">
-                Russian
-            </a>
-        </div>
-        <div class="widjet-menu">
-            <p class="widjet-menu_title">Currency</p>
-            <a href="/login.html" class="widjet-menu_link">
-                $ USD - US Dollar
-            </a>
-           <a href="/login.html" class="widjet-menu_link">
-                € EUR - Euro
-            </a>
-            <a href="/login.html" class="widjet-menu_link">
-                £ GBP - GB Pound
-            </a>
-            <a href="/login.html" class="widjet-menu_link">
-                $ CAD - Canadian Dollar
-            </a>
-            <a href="/login.html" class="widjet-menu_link">
-                $ AUD - Australian Dollar
-            </a>
-        </div>
-    </div>
-    <div class="widjet active">
-        <button class="widjet_close">
-            <span class="material-icons">clear</span>
-        </button>
-        <div class="widjet-menu">
-            <p class="widjet-menu_title">RECENTLY ADDED ITEM(S)</p>
-            <table class="checkout-widjet">
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="checkout-widjet_product">
-                                <img src="src/img/images/cart/product_01.jpg" alt="" class="checkout-widjet_product-image">
-                                <div>
-                                    <p class="checkout-widjet_product-title">Aero Canvas Loafers x 2 </p>
-                                    <p class="checkout-widjet_price">$120.00</p>
-                                    <div>
-                                        <button class="cart_edit">
-                                            <span class="material-icons">create</span>
-                                        </button>
-                                        <button class="cart_delete">
-                                            <span class="material-icons">close</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="checkout-widjet_product">
-                                <img src="src/img/images/cart/product_02.jpg" alt="" class="checkout-widjet_product-image">
-                                <div>
-                                    <p class="checkout-widjet_product-title">F Gear Gym Bag x 3 </p>
-                                    <p class="checkout-widjet_price">$420.00</p>
-                                    <div>
-                                        <button class="cart_edit">
-                                            <span class="material-icons">create</span>
-                                        </button>
-                                        <button class="cart_delete">
-                                            <span class="material-icons">close</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="checkout-widjet_product">
-                                <img src="src/img/images/cart/product_03.jpg" alt="" class="checkout-widjet_product-image">
-                                <div>
-                                    <p class="checkout-widjet_product-title">handful of model x 1 </p>
-                                    <p class="checkout-widjet_price">$87.00</p>
-                                    <div>
-                                        <button class="cart_edit">
-                                            <span class="material-icons">create</span>
-                                        </button>
-                                        <button class="cart_delete">
-                                            <span class="material-icons">close</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+    
 
     <script src="src/js/jquery-3.3.1.min.js"></script>
     <script src="src/js/bootstrap-slider.min.js"></script>
@@ -1473,6 +1501,14 @@
             dots: false,
             prevArrow: '<button type="button" class="slick-prev">prev</button>',
             nextArrow: '<button type="button" class="slick-next">next</button>',
+            responsive: [
+                {
+                    breakpoint: 1420,
+                    settings: {
+                        arrows: false
+                    }
+                },
+            ]
         });
     </script>
 </body>
