@@ -1,5 +1,13 @@
 .tags {
     margin: 0 0 45px;
+
+    &__indent-small {
+        margin-bottom: 25px;
+    }
+    &_title {
+        margin: 0 5px 0 0;
+        text-transform: uppercase;
+    }
 }
 
 .tag {

@@ -1,4 +1,5 @@
 .filters {
+    padding: 0 20px 0 0;
 
     &_section {
         margin: 0 0 30px;
@@ -52,6 +53,7 @@
             font-size: $font-size;
             text-transform: none;
         }
+        &:hover,
         input:checked + & {
             color: $bright_color;
         }

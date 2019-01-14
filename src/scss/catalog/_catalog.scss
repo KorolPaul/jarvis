@@ -1,14 +1,60 @@
 .catalog {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -30px;
+        width: 1px;
+        background: $gray_color;
+    }
 
     &_controls {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin: 0 0 25px;
     }
 
-    &_content {
-        display: flex;
-        flex-wrap: wrap;
+    &_content-tab {
+        display: none;
 
+        &.active {
+            display: block;
+        }
+    }
+    &_views {
+        font-size: 0;
+        letter-spacing: 0;
+    }
+    &_view-button {
+        cursor: pointer;
+        color: $gray_color;
+        border: 1px solid currentColor;
+        height: 28px;
+        width: 28px;
+        background: $light_color;
+        padding: 0;
+        margin: 0 10px 0 0;
+        text-align: center;
+        transition: .2s ease-in-out background,
+                    .2s ease-in-out color;
 
+        &:hover,
+        &.active {
+            background: $bright_color;
+            color: $light_color;
+        }
+        .material-icons {
+            line-height: 28px;
+        }
+    }
+    &_control-name {
+        font-size: 14px;
+        margin: 0 10px 0 0;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 }

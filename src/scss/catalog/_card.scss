@@ -10,7 +10,8 @@
     }
 
     &__small,
-    &__nano {
+    &__nano,
+    &__big {
         display: flex;
         text-align: left;
         align-items: flex-start;
@@ -32,6 +33,7 @@
     &_image-wrapper {
         position: relative;
         margin: 0 0 15px;
+        flex-shrink: 0;
     }
     &_controls {
         background: $light_color;
@@ -89,6 +91,12 @@
         &:hover {
             color: $bright_color;
             text-decoration: none;
+        }
+
+        .product-card__big & {
+            font-size: 16px;
+            font-weight: 600;
+            margin-right: 200px;
         }
     }
     &_price {
@@ -191,6 +199,38 @@
 
         &:hover {
             color: $bright_color;
+        }
+    }
+    &_info {
+        margin: 0 0 0 30px;
+    }
+    &_data {
+        margin: 20px 0;
+    }
+    &_data-item {
+        @extend .product_data-item;
+    }
+    &_data-title {
+        @extend .product_data-title;
+    }
+    &_data-value {
+        @extend .product_data-value;
+    }
+    &_rating {
+        position: absolute;
+        right: 0;
+        top: 24px;
+        text-align: right;
+    }
+    &_category {
+        font-size: $font-size__small;
+        color: $gray_color;
+        text-decoration: none;
+        display: block;
+        margin: 0 0 3px;
+
+        &:hover {
+            color: $gray_color;
         }
     }
 }

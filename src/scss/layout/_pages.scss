@@ -3,12 +3,21 @@
     justify-content: center;
     margin: 0 0 100px;
 
+    &__small {
+        margin: 0;
+    }
+
     &_holder {
         background: $light-gray_color;
         border-radius: 20px;
         padding: 10px 80px;
         text-align: center;
         display: inline-block;
+
+        .pages__small & {
+            background: transparent;
+            padding: 0;
+        }
     }
     &_link {
         background: $light_color;
@@ -20,5 +29,9 @@
         border-radius: 13px;
         margin: 0 5px;
         padding: 0 8px;
+
+        .pages__small & {
+            background: $light-gray_color;
+        }
     }
 }

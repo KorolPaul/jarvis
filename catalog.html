@@ -578,8 +578,8 @@
                             </div>
                         </div>
                         <div class="filters_section">
-                            <input type="checkbox" id="filter-6" checked>
-                            <label class="filters_title" for="filter-6">
+                            <input type="checkbox" id="filter-7" checked>
+                            <label class="filters_title" for="filter-7">
                                 Popular Tags
                                 <span class="material-icons">keyboard_arrow_down</span>
                             </label>
@@ -606,28 +606,28 @@
                     <div class="catalog">
                         <div class="catalog_controls">
                             <div class="catalog_views">
-                                <button class="catalog_view-button">
-                                    <span class="material-items">view_module</span>
+                                <button class="catalog_view-button active" data-tab="!">
+                                    <span class="material-icons">view_module</span>
                                 </button>
-                                <button class="catalog_view-button">
-                                    <span class="material-items">view_list</span>
+                                <button class="catalog_view-button" data-tab="2">
+                                    <span class="material-icons">view_list</span>
                                 </button>
                             </div>
                             <div>
-                                <span>Sortby</span>
+                                <span class="catalog_control-name">Sortby</span>
                                 <select name="" id="">
                                     <option value="">Best sellers</option>
                                     <option value="">Price</option>
                                 </select>
                             </div>
                             <div>
-                                <span>Show</span>
+                                <span class="catalog_control-name">Show</span>
                                 <select name="" id="">
                                     <option value="">16</option>
                                     <option value="">32</option>
                                 </select>
                             </div>
-                            <div class="pages">
+                            <div class="pages pages__small">
                                 <div class="pages_holder">
                                     <a href="#" class="pages_link">prev</a>
                                     <a href="#" class="pages_link">1</a>
@@ -639,181 +639,782 @@
                             </div>
                         </div>
                         <div class="catalog_content">
-                            <div class="product-card">
-                                <div class="product-card_image-wrapper">
-                                    <img src="src/img/images/products/new_arrivals_product_01.jpg" alt="" class="product-card_image">
-                                    <div class="product-card_controls">
-                                        <button class="product-card_control material-icons">shopping_basket</button>
-                                        <button class="product-card_control material-icons">favorite_border</button>
-                                        <button class="product-card_control material-icons">sort</button>
-                                        <button class="product-card_control material-icons">remove_red_eye</button>
+                            <div class="catalog_content-tab" data-tab="!">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/new_arrivals_product_01.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">Bonorum et Malorum</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$470.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <span class="product-card_discount">-30%</span>
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/new_arrivals_product_02.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">handful of model</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$189.00</span>
+                                                <span class="product-card_price-old">$470.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/new_arrivals_product_03.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">slightly believable</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$250.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/product_10.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#"> therefore always</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$250.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/product_11.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">predefined chunks</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$810.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/product_12.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">therefore always</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$250.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/new_arrivals_product_04.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">predefined chunks</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$410.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/new_arrivals_product_05.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">Billum qui dolorem eum</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$180.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/new_arrivals_product_06.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">handful of model</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$857.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/product_13.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#"> therefore always</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$910.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/product_14.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">predefined chunks</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$180.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/product_15.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">handful of model</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$857.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="product-card">
+                                            <span class="product-card_discount">-50%</span>
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/new_arrivals_product_08.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">therefore always</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$189.00</span>
+                                                <span class="product-card_price-old">$360.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/new_arrivals_product_07.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">undoubtable source</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$310.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/new_arrivals_product_01.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#"> eiusmod tempor</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$250.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/product_16.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">handful of model</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$189.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/product_17.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">Bonorum et Malorum</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$470.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-card">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/product_18.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <a class="product-card_title" href="#">slightly believable</a>
+                                            <div class="rating">
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star rating_star__filled material-icons">star</button>
+                                                <button class="rating_star material-icons">star_border</button>
+                                            </div>
+                                            <div class="product-card_price">
+                                                <span class="product-card_price-value">$250.00</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <a class="product-card_title" href="#">Bonorum et Malorum</a>
-                                <div class="rating">
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star material-icons">star_border</button>
-                                </div>
-                                <div class="product-card_price">
-                                    <span class="product-card_price-value">$470.00</span>
-                                </div>
                             </div>
-                            <div class="product-card">
-                                <span class="product-card_discount">-30%</span>
-                                <div class="product-card_image-wrapper">
-                                    <img src="src/img/images/products/new_arrivals_product_02.jpg" alt="" class="product-card_image">
-                                    <div class="product-card_controls">
-                                        <button class="product-card_control material-icons">shopping_basket</button>
-                                        <button class="product-card_control material-icons">favorite_border</button>
-                                        <button class="product-card_control material-icons">sort</button>
-                                        <button class="product-card_control material-icons">remove_red_eye</button>
+                            <div class="catalog_content-tab active" data-tab="2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="product-card product-card__big">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/new_arrivals_product_01.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card_info">
+                                                <a href="#" class="product-card_category">T-shirt, Jeans</a>
+                                                <a class="product-card_title" href="#">Bonorum et Malorum</a>
+                                                <div class="product-card_rating">
+                                                    <div class="rating">
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star material-icons">star_border</button>
+                                                        <div class="rating_reviews">
+                                                            <span class="rating_reviews-count">(34 reviews) </span>
+                                                            <span class="rating_reviews-slash">/</span>
+                                                            <a class="rating_write-review" href="#">Write a review?</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$470.00</span>
+                                                </div>
+                                                <div class="product-card_data">
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Availability:</span>
+                                                        <span class="product-card_data-value">In stock</span>
+                                                    </div>
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Product code: </span>
+                                                        <span class="product-card_data-value">0405689</span>
+                                                    </div>
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Brand:</span>
+                                                        <span class="product-card_data-value">Lee</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card_text">
+                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card product-card__big">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/new_arrivals_product_02.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card_info">
+                                                <a href="#" class="product-card_category">Jacket, Jeans, Shoes</a>
+                                                <a class="product-card_title" href="#">undoubtable source</a>
+                                                <div class="product-card_rating">
+                                                    <div class="rating">
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star material-icons">star_border</button>
+                                                        <div class="rating_reviews">
+                                                            <span class="rating_reviews-count">(34 reviews) </span>
+                                                            <span class="rating_reviews-slash">/</span>
+                                                            <a class="rating_write-review" href="#">Write a review?</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$390.00</span>
+                                                </div>
+                                                <div class="product-card_data">
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Availability:</span>
+                                                        <span class="product-card_data-value">In stock</span>
+                                                    </div>
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Product code: </span>
+                                                        <span class="product-card_data-value">0405689</span>
+                                                    </div>
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Brand:</span>
+                                                        <span class="product-card_data-value">Lee</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card_text">
+                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card product-card__big">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/new_arrivals_product_03.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card_info">
+                                                <a href="#" class="product-card_category">T-shirt, Jeans</a>
+                                                <a class="product-card_title" href="#">Solid Neck Black T-Shirt</a>
+                                                <div class="product-card_rating">
+                                                    <div class="rating">
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star material-icons">star_border</button>
+                                                        <div class="rating_reviews">
+                                                            <span class="rating_reviews-count">(34 reviews) </span>
+                                                            <span class="rating_reviews-slash">/</span>
+                                                            <a class="rating_write-review" href="#">Write a review?</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$149.00</span>
+                                                </div>
+                                                <div class="product-card_data">
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Availability:</span>
+                                                        <span class="product-card_data-value">In stock</span>
+                                                    </div>
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Product code: </span>
+                                                        <span class="product-card_data-value">0405689</span>
+                                                    </div>
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Brand:</span>
+                                                        <span class="product-card_data-value">Lee</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card_text">
+                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card product-card__big">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/new_arrivals_product_04.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card_info">
+                                                <a href="#" class="product-card_category">Jacket, Jeans, Shoes</a>
+                                                <a class="product-card_title" href="#">predefined chunks</a>
+                                                <div class="product-card_rating">
+                                                    <div class="rating">
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star material-icons">star_border</button>
+                                                        <div class="rating_reviews">
+                                                            <span class="rating_reviews-count">(34 reviews) </span>
+                                                            <span class="rating_reviews-slash">/</span>
+                                                            <a class="rating_write-review" href="#">Write a review?</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$410.00</span>
+                                                </div>
+                                                <div class="product-card_data">
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Availability:</span>
+                                                        <span class="product-card_data-value">In stock</span>
+                                                    </div>
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Product code: </span>
+                                                        <span class="product-card_data-value">0405689</span>
+                                                    </div>
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Brand:</span>
+                                                        <span class="product-card_data-value">Lee</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card_text">
+                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card product-card__big">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/new_arrivals_product_05.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card_info">
+                                                <a href="#" class="product-card_category">T-shirt, Jeans</a>
+                                                <a class="product-card_title" href="#">Solid Round Neck  T-Shirt</a>
+                                                <div class="product-card_rating">
+                                                    <div class="rating">
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star material-icons">star_border</button>
+                                                        <div class="rating_reviews">
+                                                            <span class="rating_reviews-count">(34 reviews) </span>
+                                                            <span class="rating_reviews-slash">/</span>
+                                                            <a class="rating_write-review" href="#">Write a review?</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$290.00</span>
+                                                </div>
+                                                <div class="product-card_data">
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Availability:</span>
+                                                        <span class="product-card_data-value">In stock</span>
+                                                    </div>
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Product code: </span>
+                                                        <span class="product-card_data-value">0405689</span>
+                                                    </div>
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Brand:</span>
+                                                        <span class="product-card_data-value">Lee</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card_text">
+                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card product-card__big">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/product_11.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card_info">
+                                                <a href="#" class="product-card_category">Bags</a>
+                                                <a class="product-card_title" href="#"> therefore always</a>
+                                                <div class="product-card_rating">
+                                                    <div class="rating">
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star material-icons">star_border</button>
+                                                        <div class="rating_reviews">
+                                                            <span class="rating_reviews-count">(34 reviews) </span>
+                                                            <span class="rating_reviews-slash">/</span>
+                                                            <a class="rating_write-review" href="#">Write a review?</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$810.00</span>
+                                                </div>
+                                                <div class="product-card_data">
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Availability:</span>
+                                                        <span class="product-card_data-value">In stock</span>
+                                                    </div>
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Product code: </span>
+                                                        <span class="product-card_data-value">0405689</span>
+                                                    </div>
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Brand:</span>
+                                                        <span class="product-card_data-value">Lee</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card_text">
+                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card product-card__big">
+                                            <div class="product-card_image-wrapper">
+                                                <img src="src/img/images/products/product_13.jpg" alt="" class="product-card_image">
+                                                <div class="product-card_controls">
+                                                    <button class="product-card_control material-icons">shopping_basket</button>
+                                                    <button class="product-card_control material-icons">favorite_border</button>
+                                                    <button class="product-card_control material-icons">sort</button>
+                                                    <button class="product-card_control material-icons">remove_red_eye</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-card_info">
+                                                <a href="#" class="product-card_category">Bags</a>
+                                                <a class="product-card_title" href="#"> therefore always</a>
+                                                <div class="product-card_rating">
+                                                    <div class="rating">
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star rating_star__filled material-icons">star</button>
+                                                        <button class="rating_star material-icons">star_border</button>
+                                                        <div class="rating_reviews">
+                                                            <span class="rating_reviews-count">(34 reviews) </span>
+                                                            <span class="rating_reviews-slash">/</span>
+                                                            <a class="rating_write-review" href="#">Write a review?</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card_price">
+                                                    <span class="product-card_price-value">$610.00</span>
+                                                </div>
+                                                <div class="product-card_data">
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Availability:</span>
+                                                        <span class="product-card_data-value">In stock</span>
+                                                    </div>
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Product code: </span>
+                                                        <span class="product-card_data-value">0405689</span>
+                                                    </div>
+                                                    <div class="product-card_data-item">
+                                                        <span class="product-card_data-title">Brand:</span>
+                                                        <span class="product-card_data-value">Lee</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-card_text">
+                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <a class="product-card_title" href="#">handful of model</a>
-                                <div class="rating">
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star material-icons">star_border</button>
-                                </div>
-                                <div class="product-card_price">
-                                    <span class="product-card_price-value">$189.00</span>
-                                    <span class="product-card_price-old">$470.00</span>
-                                </div>
                             </div>
-                            <div class="product-card">
-                                <div class="product-card_image-wrapper">
-                                    <img src="src/img/images/products/new_arrivals_product_03.jpg" alt="" class="product-card_image">
-                                    <div class="product-card_controls">
-                                        <button class="product-card_control material-icons">shopping_basket</button>
-                                        <button class="product-card_control material-icons">favorite_border</button>
-                                        <button class="product-card_control material-icons">sort</button>
-                                        <button class="product-card_control material-icons">remove_red_eye</button>
-                                    </div>
-                                </div>
-                                <a class="product-card_title" href="#">slightly believable</a>
-                                <div class="rating">
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star material-icons">star_border</button>
-                                </div>
-                                <div class="product-card_price">
-                                    <span class="product-card_price-value">$250.00</span>
-                                </div>
+                        </div>
+                        <div class="catalog_controls">
+                            <div>
+                                <span class="catalog_control-name">Show</span>
+                                <select name="" id="">
+                                    <option value="">16</option>
+                                    <option value="">32</option>
+                                </select>
                             </div>
-                            <div class="product-card">
-                                <div class="product-card_image-wrapper">
-                                    <img src="src/img/images/products/new_arrivals_product_04.jpg" alt="" class="product-card_image">
-                                    <div class="product-card_controls">
-                                        <button class="product-card_control material-icons">shopping_basket</button>
-                                        <button class="product-card_control material-icons">favorite_border</button>
-                                        <button class="product-card_control material-icons">sort</button>
-                                        <button class="product-card_control material-icons">remove_red_eye</button>
-                                    </div>
-                                </div>
-                                <a class="product-card_title" href="#">predefined chunks</a>
-                                <div class="rating">
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star material-icons">star_border</button>
-                                </div>
-                                <div class="product-card_price">
-                                    <span class="product-card_price-value">$410.00</span>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <div class="product-card_image-wrapper">
-                                    <img src="src/img/images/products/new_arrivals_product_05.jpg" alt="" class="product-card_image">
-                                    <div class="product-card_controls">
-                                        <button class="product-card_control material-icons">shopping_basket</button>
-                                        <button class="product-card_control material-icons">favorite_border</button>
-                                        <button class="product-card_control material-icons">sort</button>
-                                        <button class="product-card_control material-icons">remove_red_eye</button>
-                                    </div>
-                                </div>
-                                <a class="product-card_title" href="#">Billum qui dolorem eum</a>
-                                <div class="rating">
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star material-icons">star_border</button>
-                                </div>
-                                <div class="product-card_price">
-                                    <span class="product-card_price-value">$180.00</span>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <div class="product-card_image-wrapper">
-                                    <img src="src/img/images/products/new_arrivals_product_06.jpg" alt="" class="product-card_image">
-                                </div>
-                                <a class="product-card_title" href="#">handful of model</a>
-                                <div class="rating">
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star material-icons">star_border</button>
-                                </div>
-                                <div class="product-card_price">
-                                    <span class="product-card_price-value">$857.00</span>
-                                </div>
-                                <div class="product-card_out">
-                                    <span class="product-card_out-text">OUT off stock!</span>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <div class="product-card_image-wrapper">
-                                    <img src="src/img/images/products/new_arrivals_product_07.jpg" alt="" class="product-card_image">
-                                    <div class="product-card_controls">
-                                        <button class="product-card_control material-icons">shopping_basket</button>
-                                        <button class="product-card_control material-icons">favorite_border</button>
-                                        <button class="product-card_control material-icons">sort</button>
-                                        <button class="product-card_control material-icons">remove_red_eye</button>
-                                    </div>
-                                </div>
-                                <a class="product-card_title" href="#">undoubtable source</a>
-                                <div class="rating">
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star material-icons">star_border</button>
-                                </div>
-                                <div class="product-card_price">
-                                    <span class="product-card_price-value">$310.00</span>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <span class="product-card_discount">-50%</span>
-                                <div class="product-card_image-wrapper">
-                                    <img src="src/img/images/products/new_arrivals_product_08.jpg" alt="" class="product-card_image">
-                                    <div class="product-card_controls">
-                                        <button class="product-card_control material-icons">shopping_basket</button>
-                                        <button class="product-card_control material-icons">favorite_border</button>
-                                        <button class="product-card_control material-icons">sort</button>
-                                        <button class="product-card_control material-icons">remove_red_eye</button>
-                                    </div>
-                                </div>
-                                <a class="product-card_title" href="#">therefore always</a>
-                                <div class="rating">
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star rating_star__filled material-icons">star</button>
-                                    <button class="rating_star material-icons">star_border</button>
-                                </div>
-                                <div class="product-card_price">
-                                    <span class="product-card_price-value">$189.00</span>
-                                    <span class="product-card_price-old">$360.00</span>
+                            <div class="pages pages__small">
+                                <div class="pages_holder">
+                                    <a href="#" class="pages_link">prev</a>
+                                    <a href="#" class="pages_link">1</a>
+                                    <a href="#" class="pages_link active">2</a>
+                                    <a href="#" class="pages_link">3</a>
+                                    <a href="#" class="pages_link">4</a>
+                                    <a href="#" class="pages_link">next</a>
                                 </div>
                             </div>
                         </div>
@@ -960,6 +1561,17 @@
                 $(this).parent().find('#value-2').val(e.value[1]);
             });
         }
+
+        /* View selector */
+        $('.catalog_view-button').click(function() {
+            var activeClass = 'active';
+            $('.catalog_view-button').removeClass(activeClass);
+            $('.catalog_content-tab').removeClass(activeClass);
+
+            $(this).addClass(activeClass);
+            $('.catalog_content-tab[data-tab="' + $(this).data('tab') + '"]').addClass(activeClass);
+        });
+
     </script>
 </body>
 
