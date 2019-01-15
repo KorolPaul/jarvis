@@ -42,9 +42,15 @@
     &_paremeters {
         display: flex;
         margin: 0 0 40px;
+        @include mobile {
+            display: block;
+        }
     }
     &_paremeters-item {
         margin: 0 40px 0 0;
+        @include mobile {
+            margin: 0 0 15px;
+        }
     }
     &_paremeters-title {
         font-size: 16px;
@@ -52,6 +58,9 @@
     }
     &_bottom {
         display: flex;
+        @include mobile {
+            flex-wrap: wrap;
+        }
     }
     &_add-to-cart {
         cursor: pointer;
@@ -64,7 +73,10 @@
         margin: 0 15px;
         transition: .2s ease-in-out color,
                     .2s ease-in-out background;
-
+        @include mobile {
+            margin-bottom: 15px;
+        }
+        
         &:hover {
             background: $light_color;
             color: $color;    

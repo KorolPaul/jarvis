@@ -8,6 +8,9 @@
     &_buttons {
         flex-shrink: 0;
         width: 25%;
+        @include mobile {
+            width: 33%;
+        }
     }
     &_button {
         display: block;
@@ -23,6 +26,12 @@
         width: 100%;
         transition: .2s ease-in-out color,
                     .2s ease-in-out border-color;
+        @include mobile {
+            font-size: 12px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding: 10px;
+        }
 
         & + & {
             border-top-color: transparent; 
@@ -46,6 +55,9 @@
         display: none;
         border: 1px solid $gray_color;
         padding: 20px 30px;
+        @include mobile {
+            padding: 15px;
+        }
 
         &.active {
             display: block;

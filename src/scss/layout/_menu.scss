@@ -44,6 +44,7 @@
         text-transform: uppercase;
         display: inline-block;
         margin: 0 10px;
+        letter-spacing: 1px;
         @include mobile {
             color: $color;
             padding: 10px 20px;
@@ -99,7 +100,7 @@
     }
     &_arrow {
         font-size: 10px;
-        margin: 0 0 0 3px;
+        margin: 0 0 0 1px;
         @include mobile {
             visibility: hidden;
         }

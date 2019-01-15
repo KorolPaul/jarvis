@@ -389,6 +389,12 @@
                                 <div class="gallery_carousel-item">
                                     <img src="https://via.placeholder.com/110x130" alt="" class="gallery_carousel-image">
                                 </div>
+                                <div class="gallery_carousel-item">
+                                    <img src="https://via.placeholder.com/110x130" alt="" class="gallery_carousel-image">
+                                </div>
+                                <div class="gallery_carousel-item">
+                                    <img src="https://via.placeholder.com/110x130" alt="" class="gallery_carousel-image">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -922,7 +928,7 @@
                 <div class="col-12">
                     <div class="search">
                         <div class="search_select">
-                            <select name="" id="">
+                            <select>
                                 <option value="">All Categories</option>
                                 <option value="">clothes</option>
                                 <option value="">Shoes</option>
@@ -954,7 +960,30 @@
             slidesToScroll: 1,
             dots: false,
             prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-            nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
+            nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+            responsive: [
+                {
+                    breakpoint: 960,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 720,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 540,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+            ]
         });
     </script>
 </body>

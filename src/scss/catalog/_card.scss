@@ -103,7 +103,7 @@
             font-weight: 600;
             margin-right: 200px;
             @include mobile {
-                margin-right: 100px;
+                margin-right: 0;
             }
         }
     }
@@ -230,6 +230,10 @@
         right: 0;
         top: 24px;
         text-align: right;
+        @include mobile {
+            text-align: left;
+            position: static;
+        }
     }
     &_category {
         font-size: $font-size__small;
