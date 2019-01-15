@@ -16,6 +16,11 @@
         text-align: left;
         align-items: flex-start;
     }
+    &__big {
+        @include media(1120px) {
+            display: block;
+        }
+    }
 
     &_image {
         display: block;
@@ -97,6 +102,9 @@
             font-size: 16px;
             font-weight: 600;
             margin-right: 200px;
+            @include mobile {
+                margin-right: 100px;
+            }
         }
     }
     &_price {
@@ -203,6 +211,7 @@
     }
     &_info {
         margin: 0 0 0 30px;
+        position: relative;
     }
     &_data {
         margin: 20px 0;

@@ -3,6 +3,10 @@
     flex-direction: column;
     align-items: center;
     padding: 180px 30px;
+    @include mobile {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
     &_image {
         display: block;
@@ -21,6 +25,9 @@
         position: relative;
         width: 50vw;
         max-width: 540px;
+        @include mobile {
+            width: 100%;
+        }
 
         .material-icons {
             font-size: 20px;

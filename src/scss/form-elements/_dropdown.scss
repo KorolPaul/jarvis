@@ -4,7 +4,8 @@
 
     &_button {
         cursor: pointer;
-        display: inline-block;
+        display: block;
+        width: 100%;
         background: $light-gray_color;
         border: 1px solid $light-gray_color;
         color: $color;
@@ -16,10 +17,25 @@
                     .2s ease-in-out border-color,
                     .2s ease-in-out color;
 
-        &:hover {
+        &:hover,
+        &.active {
             background-color: $color;
             border-color: $color;
             color: $light-gray_color;
+        }
+    }
+    &_arrow {
+        vertical-align: middle;
+        margin: 0 0 0 10px;
+    }
+    &_popup {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+
+        &.opened {
+            display: block;
         }
     }
 }

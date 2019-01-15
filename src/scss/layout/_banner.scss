@@ -2,8 +2,13 @@
     position: relative;
     color: $light_color;
     margin: 0 0 80px;
+    @include mobile {
+        margin-bottom: 50px;
+    }
 
     &_image {
+        min-height: 200px;
+        object-fit: cover;
         width: 100%;
     }
     &_holder {

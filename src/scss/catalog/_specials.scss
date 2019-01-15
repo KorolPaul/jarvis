@@ -1,4 +1,8 @@
 .specials {
+    @include mobile {
+        margin-bottom: 30px;
+    }
+
     &_column {
         border: 1PX solid transparent;
         padding: 15px;
@@ -6,6 +10,48 @@
 
         &:hover {
             border-color: $bright_color;
+        }
+    }
+    &_navigation {
+        padding: 5px 0 55px;
+        text-align: right;
+        @include tablet {
+            text-align: center;
+            padding: 20px 0;
+        }
+    }
+    &_navigation-button {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        padding: 0;
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin: 0 7px;
+
+        &:hover {
+            color: $bright_color;
+        }
+        &.active {
+            color: $bright_color;
+
+            &::before {
+                content: '[';
+                color: $color;
+                margin: 0 3px 0 0;
+            }
+            &::after {
+                content: ']';
+                color: $color;
+                margin: 0 0 0 3px;
+            }
+        }
+    }
+    &_tab {
+        display: none;
+
+        &.active {
+            display: block;
         }
     }
 }

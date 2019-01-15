@@ -17,6 +17,92 @@ Base
 1.1 Google fonts connection
 1.2 Default tags styling
 
+Form elements
+2.1 Buttons
+2.2 Text input 
+2.3 Textarea 
+2.4 Radio 
+2.5 Checkbox 
+2.6 Label 
+2.7 Number 
+2.8 Form 
+2.9 Dropdown 
+2.10 Range
+
+Layout
+3.1 Headings 
+3.2 Main menu 
+3.3 Social 
+3.4 Toggle menu button 
+3.5 Logo 
+3.6 Currencies 
+3.7 Showcase 
+3.8 Breadcrumbs 
+3.9 Post 
+3.10 Sidebar 
+3.11 Content holder 
+3.12 Tabs 
+3.13 Slider 
+3.14 Banner 
+3.15 News 
+3.15 Blog entry 
+3.17 Blog grid 
+3.18 Pages 
+3.19 Information 
+3.20 Accordion 
+3.21 Contacts 
+3.22 Widjet 
+3.23 Table wrapper 
+3.24 Portfolio
+
+Headers
+4.1 Default header 
+4.2 Search widjet 
+4.3 Serrings widjet 
+4.4 Cart widjet 
+
+Footers 
+5.1 Default footer
+
+Other 
+6.1 Features 
+6.2 Rating 
+6.3 Brands 
+6.4 Contacts widjet 
+6.5 Tags 
+6.6 Categories 
+6.7 Calendar 
+6.8 Error 404 
+6.9 Counters 
+6.10 Advantages 
+6.11 Team 
+6.12 Reviews 
+6.13 Login 
+6.14 Latest news
+
+Catalog 
+7.1 Arrivals 
+7.2 Card 
+7.3 Specials 
+7.4 Catalog grid 
+7.5 Banners 
+7.6 Product 
+7.7 Gallery 
+7.8 Colors 
+7.9 Sizes 
+7.10 Camparison 
+7.11 Filters 
+7.12 Catalog
+
+Checkout 
+8.1 Cart 
+8.2 Checkout 
+8.3 Checkout widjet 
+
+Plugins
+9.1 Range input 
+9.2 Dropdown plugin 
+9.3 Slider plugin 
 
 --------------------------------------------------------------*/
 
@@ -35,120 +121,162 @@ Styles based on Normalize @link https://github.com/necolas/normalize.css
 /* 1.2 Default tags styling */
 @import  "basic/default";
 
-/*Form elements*/
-/* 2.0 Buttons*/
+/* Form elements */
+/* 2.1 Buttons */
 @import  "form-elements/button";
-/* 2.1 Text input */
+/* 2.2 Text input */
 @import  "form-elements/input-text";
-/* 2.2 Textarea */
+/* 2.3 Textarea */
 @import  "form-elements/textarea";
-/* 2.3 Radio */
+/* 2.4 Radio */
 @import  "form-elements/radio";
-/* 2.4 Checkbox */
+/* 2.5 Checkbox */
 @import  "form-elements/checkbox";
-/* 2.5 Label */
+/* 2.6 Label */
 @import  "form-elements/label";
-/* 2.6 Number */
+/* 2.7 Number */
 @import  "form-elements/number";
+/* 2.8 Form */
 @import  "form-elements/form";
+/* 2.9 Dropdown */
 @import  "form-elements/dropdown";
+/* 2.10 Range */
 @import  "form-elements/range";
 
 
-/*layout*/
-/* 3.0 Headings */
+/* Layout */
+/* 3.1 Headings */
 @import  "layout/headings";
-/* 3.3 Main menu */
+/* 3.2 Main menu */
 @import  "layout/menu";
-/* 3.4 Social */
+/* 3.3 Social */
 @import  "layout/social";
-/* 3.5 Toggle menu button */
+/* 3.4 Toggle menu button */
 @import  "layout/menu-toggle";
-/* 3.6 404 page */
-@import  "layout/error-404";
-/* 3.7 Logo */
+/* 3.5 Logo */
 @import  "layout/logo";
-/* 3.8 Currencies */
+/* 3.6 Currencies */
 @import  "layout/currencies";
-
-/* 3.10 Showcase */
+/* 3.7 Showcase */
 @import  "layout/showcase";
-/* 3.11 Breadcrumbs */
+/* 3.8 Breadcrumbs */
 @import  "layout/breadcrumbs";
-/* 3.12 Post */
+/* 3.9 Post */
 @import  "layout/post";
-/* 3.13 Gallery */
-/* 3.14 Post navigation */
-@import  "layout/post-navigation";
-/* 3.15 Comments */
-@import  "layout/comments";
-/* 3.16 Sidebar */
+/* 3.10 Sidebar */
 @import  "layout/sidebar";
-/* 3.17 Content holder */
+/* 3.11 Content holder */
 @import  "layout/content";
-/* 3.18 Tabs */
+/* 3.12 Tabs */
 @import  "layout/tabs";
-/* 3.19 Slider */
+/* 3.13 Slider */
 @import  "layout/slider";
+/* 3.14 Banner */
 @import  "layout/banner";
+/* 3.15 News */
 @import  "layout/news";
+/* 3.16 Blog entry */
 @import  "layout/blog-entry";
+/* 3.17 Blog grid */
 @import  "layout/blog-grid";
+/* 3.18 Pages */
 @import  "layout/pages";
+/* 3.19 Information */
 @import  "layout/information";
+/* 3.20 Accordion */
 @import  "layout/accordion";
+/* 3.21 Contacts */
 @import  "layout/contacts";
+/* 3.22 Widjet */
 @import  "layout/widjet";
+/* 3.23 Table wrapper */
+@import  "layout/table-wrapper";
+/* 3.24 Portfolio */
+@import  "layout/portfolio";
 
 /* Headers */
+/* 4.1 Default header */
 @import  "headers/header";
+/* 4.2 Search widjet */
 @import  "headers/search";
+/* 4.3 Serrings widjet */
 @import  "headers/settings";
+/* 4.4 Cart widjet */
 @import  "headers/cart";
 
-/* Footrrs */
+/* Footers */
+/* 5.1 Default footer */
 @import  "footers/footer";
 
-/* other */
+/* Other */
+/* 6.1 Features */
 @import "other/features";
+/* 6.2 Rating */
 @import "other/rating";
+/* 6.3 Brands */
 @import "other/brands";
+/* 6.4 Contacts widjet */
 @import "other/contacts-widjet";
+/* 6.5 Tags */
 @import "other/tags";
+/* 6.6 Categories */
 @import "other/categories";
+/* 6.7 Calendar */
 @import "other/calendar";
+/* 6.8 Error 404 */
 @import "other/error-404";
+/* 6.9 Counters */
 @import "other/counters";
+/* 6.10 Advantages */
 @import "other/advantages";
+/* 6.11 Team */
 @import "other/team";
+/* 6.12 Reviews */
 @import "other/reviews";
+/* 6.13 Login */
 @import "other/login";
+/* 6.14 Latest news */
 @import "other/latest-news";
 
 /* catalog */
+/* 7.1 Arrivals */
 @import "catalog/arrivals";
+/* 7.2 Card */
 @import "catalog/card";
+/* 7.3 Specials */
 @import "catalog/specials";
+/* 7.4 Catalog grid */
 @import "catalog/catalog-grid";
+/* 7.5 Banners */
 @import "catalog/banners";
+/* 7.6 Product */
 @import "catalog/product";
+/* 7.7 Gallery */
 @import "catalog/gallery";
+/* 7.8 Colors */
 @import "catalog/colors";
+/* 7.9 Sizes */
 @import "catalog/sizes";
+/* 7.10 Camparison */
 @import "catalog/camparison";
+/* 7.11 Filters */
 @import "catalog/filters";
+/* 7.12 Catalog */
 @import "catalog/catalog";
 
-/* checkout */
+/* Checkout */
+/* 8.1 Cart */
 @import "checkout/cart";
+/* 8.2 Checkout */
 @import "checkout/checkout";
+/* 8.3 Checkout widjet */
 @import "checkout/checkout-widjet";
 
 /*Plugins*/
-/* 6.1 Range input */
+/* 9.1 Range input */
 @import  "plugins/range";
-/* 6.1 Dropdown */
+/* 9.2 Dropdown plugin */
 @import  "plugins/chosen";
-/* 6.1 Slider plugin */
+/* 9.3 Slider plugin */
 @import  "plugins/slick";
 

@@ -21,10 +21,19 @@
     }
     &_product {
         display: flex;
+        align-items: flex-start;
+        @include mobile {
+            display: block;
+        }
     }
     &_product-image {
         width: 80px;
         margin: 0 20px 0 0;
+        @include mobile {
+            width: 100%;
+            display: block;
+            margin: 0 0 10px 0;
+        }
     }
     &_product-title {
         font-weight: 600;
@@ -85,6 +94,10 @@
         padding-right: 20px;
         text-transform: uppercase;
         margin: 0 8px 0 0;
+        @include mobile {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
         &:hover {
             background: $light_color;
@@ -101,6 +114,9 @@
         display: inline-block;
         vertical-align: -4px;
         transition: .2s ease-in-out filter;
+        @include mobile {
+            display: none;
+        }
 
         .checkout-widjet_cart-button:hover & {
             filter: brightness(0);
@@ -114,6 +130,10 @@
         padding-right: 20px;
         text-transform: uppercase;
         margin: 0 0 0 8px;
+        @include mobile {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
         &:hover {
             background: $light_color;
@@ -124,6 +144,9 @@
             font-size: 20px;
             vertical-align: -4px;
             margin: 0 0 0 10px;
+            @include mobile {
+                display: none;
+            }
         }
     }
 }

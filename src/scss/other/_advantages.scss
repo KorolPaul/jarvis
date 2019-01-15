@@ -1,11 +1,17 @@
 .advantages {
     margin: 75px 0;
+    @include mobile {
+        margin: 30px 0;
+    }
 
     .material-icons {
         font-size: 50px;
     }
     &_item {
         text-align: center;
+        @include mobile {
+            margin: 0 0 20px;
+        }
     }
     &_title {
         font-size: 18px;

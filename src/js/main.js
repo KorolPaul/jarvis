@@ -44,6 +44,9 @@ $(window).on('load', function () {
     $('.settings-button').on('click', function() {
         $('#profile-widjet').toggleClass('opened');
     });
+    $('.search-button').on('click', function() {
+        $('#search-widjet').toggleClass('opened');
+    });
     $('.widjet_close').on('click', function() {
         $('.widjet').removeClass('opened');
     });

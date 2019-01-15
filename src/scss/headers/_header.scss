@@ -1,7 +1,7 @@
 .header {
     background: $light-gray_color;
     position: relative;
-    overflow: hidden;
+    z-index: 1;
     @include tablet {
         overflow: visible;
     }
@@ -36,6 +36,6 @@
         }
     }
     &_bottom {
-        
+
     }
 }

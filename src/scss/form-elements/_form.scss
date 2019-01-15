@@ -15,6 +15,9 @@
         display: flex;
         justify-content: space-between;
         margin: 0 0 15px;
+        @include mobile {
+           display: block;
+        }
 
         &__indent-botton {
             margin-bottom: 30px;
@@ -24,16 +27,35 @@
         display: flex;
         flex-direction: column;
         flex-grow: 1;
+        @include mobile {
+            margin: 0 0 15px;
+        }
 
         & + & {
             margin: 0 0 0 30px;
+            @include tablet {
+                margin-left: 15px;
+            }
+            @include mobile {
+                margin: 0 0 15px;
+            }
         }
         &__align_right {
             flex-direction: row;
             justify-content: flex-end;
+            @include mobile {
+                display: block;
+            }
         }
         &__small {
             flex-grow: 0;
+        }
+
+        .button {
+            @include tablet {
+                width: 100%;
+                margin: 0 0 10px;
+            }
         }
     }
     &_text {
@@ -42,6 +64,9 @@
     &_link {
         color: $color;
         text-align: right;
+        @include mobile {
+            text-align: left;
+        }
     }
     &_fieldset {
         border: 1px solid $gray_color;
@@ -53,6 +78,10 @@
         font-size: 14px;
         text-transform: uppercase;
         position: relative;
+        @include mobile {
+            display: block;
+            text-align: center;
+        }
 
         &::before {
             content: '';
@@ -61,6 +90,9 @@
             position: absolute;
             top: 50%;
             left: 150%;
+            @include mobile {
+                display: none;
+            }
         }
         &::after {
             content: '';
@@ -69,6 +101,9 @@
             position: absolute;
             top: 50%;
             right: 150%;
+            @include mobile {
+                display: none;
+            }
         }
     }
 }

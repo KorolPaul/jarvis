@@ -1,5 +1,9 @@
 .camparison {
     margin: 0 0 100px;
+    min-width: 930px;
+    @include mobile {
+        margin: 0;
+    }
 
     td {
         border: 1px solid #e8e8e8;

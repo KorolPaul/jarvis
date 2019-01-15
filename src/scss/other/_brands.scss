@@ -10,7 +10,14 @@
     &_item {
         opacity: .6;
         transition: .2s ease-in-out opacity;
+        margin: 0 10px;
 
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
         &:hover {
             opacity: 1;
         }

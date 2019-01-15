@@ -1,5 +1,8 @@
 .login {
     margin: 0 0 100px;
+    @include mobile {
+        margin: 0 0 50px;
+    }
 
     &_facebook,
     &_google {
@@ -24,5 +27,10 @@
     }
     &_google {
         background: #d34836;
+    }
+    &_column {
+        @include mobile {
+            margin: 0 0 30px;
+        }
     }
 }

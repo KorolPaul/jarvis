@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     margin: 0 0 100px;
+    @include mobile {
+        margin: 0 0 50px;
+    }
 
     &__small {
         margin: 0;
@@ -13,6 +16,11 @@
         padding: 10px 80px;
         text-align: center;
         display: inline-block;
+        white-space: nowrap;
+        @include mobile {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
         .pages__small & {
             background: transparent;
@@ -29,6 +37,10 @@
         border-radius: 13px;
         margin: 0 5px;
         padding: 0 8px;
+        @include mobile {
+            padding-left: 4px;
+            padding-right: 4px;
+        }
 
         .pages__small & {
             background: $light-gray_color;

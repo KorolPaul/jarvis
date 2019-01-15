@@ -5,10 +5,9 @@
   }
   .slider.slider-horizontal {
     width: 100%;
+    width: calc(100% - 14px);
     height: 20px;
-    @include tablet {
-        width: 210px;
-    }
+    margin: 0 9px;
   }
   .slider.slider-horizontal .slider-track {
     height: 2px;

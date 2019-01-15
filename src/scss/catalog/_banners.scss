@@ -1,10 +1,28 @@
 .banners {
+    width: 100%; 
+    margin-bottom: 50px;
+
+    td {
+        @include mobile {
+            display: block;
+        }
+    }
     td {
         vertical-align: top;
         padding: 0;
+        @include mobile {
+            display: block;
+            margin: 0 0 15px;
+        }
 
         &:not([rowspan]) {
             padding: 0 30px 30px;
+            @include tablet {
+                padding: 0 15px 18px;
+            }
+            @include mobile {
+                padding: 0;
+            }
         }
     }
 
@@ -15,6 +33,11 @@
     }
     &_image {
         min-width: 100%;
+        @include mobile {
+            height: 33vh;
+            object-fit: cover;
+            width: 100%;
+        }
     }
     &_text {
         text-align: center;
@@ -37,6 +60,10 @@
         text-transform: uppercase;
         padding: 0 1px;
         border-bottom: 3px solid currentColor;
+        @include tablet {
+            font-size: 30px;
+            line-height: 35px;
+        }
 
         &__border-top {
             border-top: 3px solid currentColor;
@@ -46,12 +73,18 @@
             border-bottom: none;
             font-size: 60px;
             line-height: 50px;
+            @include tablet {
+                font-size: 40px;
+            }
         }
     }
     &_subtitle {
         font-size: 20px;
         line-height: 1.2;
         text-transform: uppercase;
+        @include tablet {
+            font-size: 16px;
+        }
     }
     &_link {
         color: $bright_color;

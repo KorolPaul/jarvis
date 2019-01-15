@@ -1,6 +1,9 @@
 .information {
     display: flex;
     margin: 0 0 100px;
+    @include mobile {
+        margin: 0 0 50px;
+    }
 
     &_buttons {
         flex-shrink: 0;

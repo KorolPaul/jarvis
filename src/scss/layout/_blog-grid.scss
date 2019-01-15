@@ -4,9 +4,15 @@
     &__sidebar {
         display: flex;
         justify-content: space-between;
+        @include mobile {
+            display: block;
+        }
     }
 
     &_content {
         width: 66%;
+        @include mobile {
+            width: 100%;
+        }
     }
 }

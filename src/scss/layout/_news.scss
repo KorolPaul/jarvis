@@ -2,9 +2,12 @@
     display: block;
     position: relative;
     margin: 0 0 100px;
+    @include mobile {
+        margin-bottom: 50px;
+    }
 
     &_image {
-
+        width: 100%;
     }
     &_info {
         background: rgba(0, 0, 0, .5);

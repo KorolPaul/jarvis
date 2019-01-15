@@ -1,0 +1,7 @@
+.table-wrapper {
+    @include tablet {
+        width: 100%;
+        overflow: auto;
+        margin: 0 0 50px;
+    }
+}

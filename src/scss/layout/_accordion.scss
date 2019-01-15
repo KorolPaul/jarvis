@@ -2,15 +2,21 @@
     margin: 0 0 100px;
     box-shadow: 0 10px 5px rgba(#000, .15);
     border-radius: 10px;
+    @include mobile {
+        margin: 0 0 50px;
+    }
 
     &_title {
         cursor: pointer;
         background: #e0e6ec;
         font-size: 18px;
         text-transform: uppercase;
-        padding: 25px 30px;
+        padding: 25px 50px 25px 30px;
         position: relative;
         margin: 0 0 1px;
+        @include mobile {
+            padding: 20px 50px 20px 15px;
+        }
 
         &:hover,
         input:checked + & {
@@ -40,19 +46,37 @@
         overflow: hidden;
         max-height: 0;
         transition: .3s ease-in-out max-height;
+        @include mobile {
+            max-height: none;
+            display: none;
+        }
 
         input:checked + label + & {
             max-height: 1000px;
+            @include mobile {
+                max-height: none;
+                display: block;
+            }
         }
     }
     &_content {
         padding: 25px 30px;
+        @include mobile {
+            padding: 20px;
+        }
     }
     &_columns {
         display: flex;
         justify-content: space-between;
+        @include mobile {
+            display: block;
+        }
     } 
     &_column {
         width: 47%;
+        @include mobile {
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
 }

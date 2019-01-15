@@ -1,0 +1,138 @@
+.portfolio {
+    margin: 0 0 80px;
+
+    &_categories {
+        margin: 0 0 60px;
+        text-align: center;
+        @include mobile {
+            margin-bottom: 20px;
+        }
+    }
+    &_category-link {
+        color: $gray_color;
+        margin: 0 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0 0 10px;
+        border-bottom: 1px solid transparent;
+        transition: .2s ease-in-out color,
+                    .2s ease-in-out border;
+        @include mobile {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        &:hover,
+        &.active {
+            color: $bright-color;
+            border-color: $bright-color;
+            text-decoration: none;
+        }
+    }
+    &_link {
+        display: block;
+        margin: 0 0 30px;
+        overflow: hidden;
+        position: relative;
+
+        .portfolio_grid &,
+        .portfolio_wide-item & {
+            margin: 0;
+        }
+    }
+    &_image {
+        width: 100%;
+        transition: .4s ease-in-out transform;
+
+        .portfolio_link:hover & {
+            transform: scale(1.05);
+        }
+    }
+    &_wide-row {
+        margin: 0;
+    }
+    &_wide-item {
+        padding: 0;
+    }
+    &_info {
+        background: $light_color;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        text-align: center;
+        transition: .3s ease-in-out opacity;
+
+        .portfolio_link:hover & {
+            opacity: .8;
+        }
+    }
+    &_info-title {
+        color: $color;
+        font-size: 15px;
+    }
+    &_info-subtitle {
+        color: $bright-color;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    &_info-likes {
+        color: $color;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        vertical-align: middle;
+        font-size: 13px;
+
+        .material-icons {
+            font-size: 13px;
+            vertical-align: -1px;
+        }
+    }
+    &_info-outside {
+        background: $color;
+        color: $light_color;
+        padding: 10px;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+
+        &.material-icons {
+            font-size: 16px;
+        }
+    }
+    &_grid {
+        margin: 0 -15px;
+        width: 100%;
+
+        tr {
+            @include mobile {
+                display: block;
+            }
+        }
+        td {
+            padding: 15px;
+            vertical-align: top;
+            @include tablet {
+                padding: 8px;
+            }
+            @include mobile {
+                display: block;
+            }
+        }
+
+        &__wide {
+            margin: 0;
+
+            td {
+                padding: 0;
+            }
+        }
+    }
+} 

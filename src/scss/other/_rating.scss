@@ -19,12 +19,21 @@
         font-family: $font-family__heading;
         vertical-align: 3px;
         margin: 0 0 0 5px;
+        @include mobile {
+            text-align: right;
+        }
     }
     &_reviews-slash {
         margin: 0 3px;
+        @include mobile {
+            display: none;
+        }
     }
     &_write-review {
         color: $color;
         text-decoration: underline;
+        @include mobile {
+            display: block;
+        }
     }
 }
