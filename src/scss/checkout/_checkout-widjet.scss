@@ -94,6 +94,7 @@
         padding-right: 20px;
         text-transform: uppercase;
         margin: 0 8px 0 0;
+        white-space: nowrap;
         @include mobile {
             padding-left: 10px;
             padding-right: 10px;
@@ -130,6 +131,7 @@
         padding-right: 20px;
         text-transform: uppercase;
         margin: 0 0 0 8px;
+        white-space: nowrap;
         @include mobile {
             padding-left: 10px;
             padding-right: 10px;

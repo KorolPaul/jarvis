@@ -1506,6 +1506,13 @@ h6,
   -ms-flex-positive: 1;
   flex-grow: 1;
   margin: 0 30px 0 0;
+  min-width: 150px;
+}
+
+@media all and (max-width: 768px) {
+  .submenu_column {
+    min-width: none;
+  }
 }
 
 .submenu_column:last-child {
@@ -2032,7 +2039,7 @@ h6,
 .banner {
   position: relative;
   color: #fff;
-  margin: 0 0 80px;
+  margin: 0 0 100px;
 }
 
 @media all and (max-width: 768px) {
@@ -2097,7 +2104,7 @@ h6,
 .news {
   display: block;
   position: relative;
-  margin: 0 0 100px;
+  margin: 0 0 120px;
 }
 
 @media all and (max-width: 768px) {
@@ -3718,7 +3725,7 @@ input:checked + label + .accordion_content-wrapper {
 }
 
 .tag__small {
-  color: #c8c8c8;
+  color: #aaa;
   text-transform: none;
   font-size: 12px;
   padding: 2px 8px;
@@ -4794,7 +4801,7 @@ input:checked + label + .accordion_content-wrapper {
 /* 7.5 Banners */
 .banners {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 }
 
 @media all and (max-width: 768px) {
@@ -5935,6 +5942,7 @@ input:checked + .filters_label {
   padding-right: 20px;
   text-transform: uppercase;
   margin: 0 8px 0 0;
+  white-space: nowrap;
 }
 
 @media all and (max-width: 768px) {
@@ -5980,6 +5988,7 @@ input:checked + .filters_label {
   padding-right: 20px;
   text-transform: uppercase;
   margin: 0 0 0 8px;
+  white-space: nowrap;
 }
 
 @media all and (max-width: 768px) {
