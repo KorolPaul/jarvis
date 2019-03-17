@@ -23,6 +23,9 @@
         justify-content: center;
         opacity: 0;
         transition: .2s ease-in-out opacity;
+        @include tablet {
+            opacity: 1;
+        }
 
         &:hover {
             opacity: 1;

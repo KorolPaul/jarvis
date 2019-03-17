@@ -180,4 +180,7 @@
         margin: 20px -10px 0;
         order: 3;
     }
+    @include mobile {
+        margin: 0;
+    }
 }

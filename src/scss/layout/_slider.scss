@@ -25,9 +25,6 @@
         @include tablet {
             width: 100%;
         }
-        @include mobile {
-            top: 35%;
-        }
     }
     &_title {
         color: $light_color;
