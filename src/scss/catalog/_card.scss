@@ -24,11 +24,10 @@
 
     &_image {
         display: block;
-        width: 100%;
+        margin: auto;
 
         .product-card__small & {
             margin: 0 16px 0 0;
-            width: auto;
         }
         .product-card__nano & {
             margin: 0 16px 0 0;

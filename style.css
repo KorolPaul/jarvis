@@ -4470,12 +4470,11 @@ input:checked + label + .accordion_content-wrapper {
 
 .product-card_image {
   display: block;
-  width: 100%;
+  margin: auto;
 }
 
 .product-card__small .product-card_image {
   margin: 0 16px 0 0;
-  width: auto;
 }
 
 .product-card__nano .product-card_image {
